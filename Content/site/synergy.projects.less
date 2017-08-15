@@ -1,0 +1,139 @@
+﻿/*General*/
+
+body {
+    /*Copy address*/
+    div[copy-address] .address-header {
+        margin-left: 10px;
+    }
+
+    div[copy-address] .address-body {
+        margin-left: 20px;
+        border-bottom: solid gray 1px;
+        padding-bottom: 5px;
+        cursor: pointer;
+    }
+
+    div[copy-address] .address-body-empty {
+        margin-left: 20px;
+        padding-bottom: 5px;
+    }
+
+    div[copy-address] .contact-header {
+        color: green;
+    }
+
+    div[copy-address] .contact-body {
+        border-bottom: solid gray 1px;
+        margin-bottom: 10px;
+        margin: 10px;
+    }
+
+    div[copy-address] .dropdown-menu {
+        min-width: 250px;
+        right: 0;
+        left: initial;
+        max-height: 500px;
+        overflow: auto;
+    }
+
+    #copyAddressLink {
+        &:link &:visited &:hover &:active {
+            color: #27b4b9;
+        }
+
+        text-decoration: none;
+    }
+
+    .force-approve-icon {
+        font-size: 1.5em;
+        padding-top: 0 !important;
+    }
+}
+
+//charts
+
+.chart-holder {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-bottom: 20px;
+
+    a {
+        color: black;
+    }
+
+    h5 {
+        margin-bottom: 5px;
+    }
+}
+
+#project-aged-debtor-chart {
+    width: 100%;
+    position: relative;
+}
+
+.wip-bar {
+    height: 40px;
+    float: left;
+    margin: 5px 0 20px;
+    border-right: 1px solid white;
+}
+
+.wip-bar:hover .wip-bar-child {
+    display: block;
+}
+
+.wip-bar-child {
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    display: none;
+    font-size: 12px;
+    color: white;
+    line-height: 31px;
+    padding-left: 10px;
+}
+
+.nonbillable-project-detail {
+    .no-left-padding {
+        padding-left: 0px;
+    }
+
+    .contacts-list {
+        margin: 0;
+        padding: 0;
+        /*list-style-type: none;*/
+        list-style-type: none;
+        /*-webkit-padding-start: 20px;*/
+        /*display: inline-block;*/
+    }
+
+    .contact-list-item {
+        color: white;
+        background: #197bbd;
+        border: 1px solid #357ebd;
+        border-radius: 4px;
+        cursor: pointer;
+        display: inline;
+        margin: 2px;
+        padding: 1px 5px;
+        /*display: inline-block;*/
+        float: left;
+        font: 12px 'Open Sans', Arial, Helvetica, Freesans, sans-serif;
+        /*line-height: 25px;*/
+        line-height: 1.42857143;
+    }
+
+    .contact-list-tag {
+        display: inline;
+    }
+}
+
+.view-transactions {
+    .status {
+        padding-top: 0px !important;
+        .popover-content {
+            min-width: 200px;
+        }
+    }
+}

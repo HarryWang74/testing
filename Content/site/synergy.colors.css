@@ -1,0 +1,12 @@
+﻿.warning {
+  color: #ff9933;
+}
+.success {
+  color: #33cc66;
+}
+.danger {
+  color: #ea6149;
+}
+.teal {
+  color: #27b4b9 !important;
+}

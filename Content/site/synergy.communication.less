@@ -1,0 +1,376 @@
+﻿@import "synergy.colors.less";
+@import "../bootstrap/variables.less";
+
+.communication {
+
+
+    .list-group-item {
+        margin-bottom: 5px;
+    }
+
+    .communication-title {
+    }
+}
+
+.modal.fade:not(.in).left .modal-dialog {
+    -webkit-transform: translate3d(-25%, 0, 0);
+    transform: translate3d(-25%, 0, 0);
+}
+
+.modal.fade:not(.in).right .modal-dialog {
+    -webkit-transform: translate3d(25%, 0, 0);
+    transform: translate3d(25%, 0, 0);
+}
+
+.modal.fade:not(.in).bottom .modal-dialog {
+    -webkit-transform: translate3d(0, 25%, 0);
+    transform: translate3d(0, 25%, 0);
+}
+/* Alternative Angles */
+.modal.fade:not(.in).top-left .modal-dialog {
+    -webkit-transform: translate3d(-25%, -25%, 0);
+    transform: translate3d(-25%, -25%, 0);
+}
+
+.modal.fade:not(.in).top-right .modal-dialog {
+    -webkit-transform: translate3d(25%, -25%, 0);
+    transform: translate3d(25%, -25%, 0);
+}
+
+.modal.fade:not(.in).bottom-left .modal-dialog {
+    -webkit-transform: translate3d(-25%, 25%, 0);
+    transform: translate3d(-25%, 25%, 0);
+}
+
+.modal.fade:not(.in).bottom-right .modal-dialog {
+    -webkit-transform: translate3d(25%, 25%, 0);
+    transform: translate3d(25%, 25%, 0);
+}
+
+.modal.fade.in .modal-body {
+    bottom: 0;
+}
+
+// GCS: This is removed because this implementation is too vauge and breaks all the alert close buttons
+//.close {
+//    margin-top: -20px;
+//    text-shadow: 0 1px 0 #ffffff;
+//}
+// ~
+
+.popup-button {
+    margin-left: 140px;
+    margin-top: 77px;
+    font-weight: bold;
+}
+
+@media (max-width: @screen-xs-max) {
+    .communication {
+        .communication-title {
+            font-weight: bold;
+        }
+
+        .communication-type {
+            position: relative;
+            top: 1px;
+            padding-left: 5px;
+        }
+
+        .tab {
+            position: relative;
+            height: 120px;
+            left: 1px;
+            top: -10px;
+            color: white;
+        }
+
+        .box-rotate {
+            position: relative;
+            top: 10px;
+        }
+    }
+}
+
+
+
+.angular-ui-tree-nodes {
+    padding-left: 10px !important;
+}
+
+.expand-text {
+    padding-right: 30px;
+}
+
+
+span.label.label-primary {
+    position: relative;
+    top: -18px;
+}
+
+.folder-expand {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    padding: 0;
+    display: inline-block;
+    opacity: 0.8;
+    height: 35px;
+    font-size: 30px;
+    line-height: 30px;
+    padding-right: 5px;
+}
+
+
+/*.share-folder-area {
+    background-color: @color-gray-dark;
+
+    .header {
+        margin: 0;
+        padding: 0 5px;
+        font-weight: bold;
+        line-height: 35.5px;
+        font-size: 15px;
+        color: white;
+    }
+
+    .smallHeader {
+        font-size: 12px;
+        color: white;
+        padding-right: 27px;
+
+        > div > span {
+            font-size: 14px;
+            position: absolute;
+            top: 12px;
+            right: 37px;
+        }
+    }
+
+    .selectedDocuments {
+        overflow-y: scroll;
+        height: 374px;
+        background-color: white;
+    }
+}
+
+.selectedFolders {
+    .header {
+        margin: 0;
+        padding: 0 5px;
+        font-weight: bold;
+        line-height: 35.5px;
+    }
+
+    .selectedDocuments {
+        overflow-y: scroll;
+        height: 247px;
+    }
+}*/
+
+.communications-nav {
+    padding: 0;
+    top: -1px;
+    position: relative;
+
+
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        background-color: white;
+
+        a {
+            padding: 10.0px 5px;
+            border-top: 0;
+        }
+
+        > li[id="root"] a {
+            color: #333333;
+            padding-left: 5px;
+            border: 0;
+            width: 40px;
+
+            &.selected {
+                color: white;
+            }
+        }
+
+        li {
+            color: #333333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        > li .item .tools {
+            position: absolute;
+            right: 0;
+            top: 1px;
+        }
+
+
+
+
+        > li.selected {
+            background-color: @color-gray-light;
+            color: white;
+        }
+    }
+
+    .btn.btn-default.dropdown-toggle.toggle {
+        color: #999999;
+        background-color: transparent;
+        border: 0;
+    }
+
+
+
+    ul.header {
+        margin: 0;
+        padding: 0 5px 0 3%;
+        background: #f0eff4;
+        font-weight: bold;
+        list-style: none;
+        line-height: 35.5px;
+
+        .files {
+            position: relative;
+            top: -19px;
+            padding-right: 98px;
+            line-height: 0;
+        }
+    }
+
+    .files {
+        position: relative;
+        top: -25px;
+        padding-right: 55px;
+    }
+
+    .folder {
+        color: @color-gray-light;
+        font-size: 20px;
+
+        &.selected {
+            color: white;
+        }
+    }
+
+    .folder-arrow {
+        font-size: 15px;
+        color: @color-gray-light;
+
+        &.selected {
+            color: white;
+        }
+    }
+
+    .folder-name {
+        color: @color-gray-light !important;
+
+        &.selected {
+            color: white !important;
+        }
+    }
+
+    .dndDragover {
+        background-color: darkgray !important;
+    }
+
+    .angular-ui-tree {
+        background-color: whitesmoke !important;
+
+        .tree-node .tools {
+            position: relative;
+            top: -40px;
+        }
+
+        .tree-node .fileDetails {
+            position: relative;
+            top: -29px;
+            padding-right: 50px;
+        }
+
+        .second-level {
+            background-color: darkgray !important;
+        }
+
+
+        .tree-node {
+            border: 1px solid #dddddd;
+            background-color: white;
+            //height: 42px;
+            &.selected {
+                background-color: @color-gray-light;
+                color: white;
+            }
+        }
+
+        .tree-node-content {
+            margin: 10px;
+
+            .selected {
+                color: white;
+            }
+        }
+    }
+
+    /*.range-1 {
+        color: white;
+    }
+
+    .range-2 {
+        color: yellow;
+    }
+
+    .range-3 {
+        color: orange;
+    }
+
+    .range-4 {
+        color: green;
+    }
+
+    .range-5 {
+        color: blue;
+    }
+
+    .range-6 {
+        color: red;
+    }
+
+
+    .angular-ui-tree-handle {
+        height: 32px;
+    }
+
+    .dropdown-menu > li > a {
+        padding: 7px 20px;
+    }
+
+    .expand {
+        padding: 2px 10px;
+        top: 10px;
+        position: absolute;
+        color: black !important;
+    }*/
+}
+
+
+.communication-create{
+
+    tags-input {
+
+        .tags{
+            height:auto;
+
+        }
+
+    }
+
+    .file-upload-gap {
+     padding-top: 6px;
+    }
+
+}

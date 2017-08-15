@@ -1,0 +1,64 @@
+﻿@import "variables";
+@import "mixin";
+
+ul.organisation {
+
+    li {
+        margin-bottom: 20px;
+
+        &.expired {
+            border: 1px solid @alert-danger-border;
+        }
+
+        &.trial {
+            border: 1px solid @alert-info-border;
+        }
+
+        .h4 {
+            color: black;
+        }
+
+        p.organisation-user {
+            font-size: 12px;
+            color: @gray;
+            margin-top: 3px;
+
+            b {
+                color: black;
+            }
+        }
+
+        .organisation-links {
+
+            a {
+                color: @link-color;
+                text-decoration: none;
+                margin-left: 6px;
+            }
+        }
+    }
+}
+
+ul.organisation-summary {
+    margin: 0;
+
+    li {
+        margin-bottom: 1px;
+        padding: 3px;
+
+        a {
+            color: @gray-deepdark;
+            text-decoration: none;
+            margin-left: 6px;
+
+            img {
+                height: 30px;
+                width: 30px;
+            }
+
+            &:hover {
+                color: @link-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+﻿.alert.alert-success.alert-connect {
+  padding: 15px 10px;
+  margin: -15px -10px 0 -10px;
+}
+.alert.alert-success.alert-connect p {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+}
+.alert.alert-success.alert-connect a {
+  color: white;
+}
+.alert.alert-success.alert-connect a:visited {
+  color: white;
+}

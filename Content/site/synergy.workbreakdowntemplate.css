@@ -1,0 +1,344 @@
+﻿.warning {
+  color: #ff9933;
+}
+.success {
+  color: #33cc66;
+}
+.danger {
+  color: #ea6149;
+}
+.teal {
+  color: #27b4b9 !important;
+}
+.work-breakdown-template .toggle-icon {
+  font-size: 30px;
+}
+.work-breakdown-template .has-error {
+  border: 1px solid #ea6149 !important;
+}
+.work-breakdown-template .breakdownItem-name-wrapper {
+  display: inline-block;
+}
+.work-breakdown-template .added-buttons {
+  float: left;
+  display: inline;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+.work-breakdown-template .added-buttons .buttons-wrapper {
+  display: none;
+}
+.work-breakdown-template li:hover .buttons-wrapper a {
+  color: #fff !important;
+}
+.work-breakdown-template li.breakdown-template-item {
+  /*display: none !important;*/
+}
+.work-breakdown-template li.breakdown-template-item.stage,
+.work-breakdown-template li.breakdown-template-item.phase,
+.work-breakdown-template li.breakdown-template-item.task {
+  /*display: block !important;*/
+  display: block;
+}
+.work-breakdown-template li.adding {
+  color: #fff;
+  background: #666666 !important;
+}
+.work-breakdown-template li.adding .icon-font-plus {
+  background: #33cc66;
+}
+.work-breakdown-template li.adding .icon-font-close2,
+.work-breakdown-template li.adding .icon-font-pencil {
+  color: #fff;
+}
+.work-breakdown-template li.adding .item-buttons-bordered {
+  color: #666666;
+  background: #fff;
+}
+.work-breakdown-template li.adding .added-buttons .buttons-wrapper {
+  display: inline;
+}
+.work-breakdown-template li.adding .added-buttons .buttons-wrapper a {
+  color: #fff;
+}
+.work-breakdown-template .add-btn {
+  padding: 0px !important;
+  display: inline-block !important;
+}
+.work-breakdown-template .table-title {
+  color: #333333;
+  margin-left: 110px;
+  font-size: 12px;
+}
+.work-breakdown-template .icon-font-plus {
+  padding: 0px !important;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -o-border-radius: 999px;
+  border-radius: 999px;
+  background: #999999;
+  display: inline-block !important;
+  width: 25px;
+  height: 25px;
+  color: #fff !important;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 24px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.work-breakdown-template .responsive-list ul.content li {
+  min-height: 50px;
+}
+.work-breakdown-template .label-holder {
+  display: inline;
+  float: left;
+  width: 50px;
+  margin-top: 10px;
+}
+@media (max-width: 767px) {
+  .work-breakdown-template .label-holder {
+    display: block;
+    width: 100%;
+  }
+}
+.work-breakdown-template .color-picker-element {
+  top: -5px;
+}
+.work-breakdown-template .repeat-row {
+  margin-left: 10px;
+}
+.work-breakdown-template .main-content {
+  overflow-x: visible !important;
+  overflow-y: visible !important;
+}
+.work-breakdown-template .evo-colorind,
+.work-breakdown-template .evo-colorind-ie {
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -o-border-radius: 999px;
+  border-radius: 999px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #fff;
+  background: #27b4b9;
+}
+.work-breakdown-template span.drag-grip {
+  display: inline-block !important;
+  background-image: url('/Content/img/icon-drag-row-dark.png');
+  width: 20px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-color: transparent !important;
+  position: absolute !important;
+  top: 0px !important;
+  left: 0px !important;
+  background-position-y: 50%;
+}
+.work-breakdown-template .edit-buttons {
+  float: right;
+}
+.work-breakdown-template .edit-buttons .icon-font-close2 {
+  margin-left: 30px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 10px;
+  color: #ea6149;
+}
+.work-breakdown-template .edit-buttons .icon-font-pencil {
+  margin-top: 5px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  margin-right: 30px;
+  font-size: 20px;
+  color: #999999;
+}
+.work-breakdown-template .edit-buttons .item-buttons {
+  cursor: pointer;
+}
+.work-breakdown-template .edit-buttons .item-buttons-bordered {
+  margin-top: -8px;
+  font-size: 12px;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -o-border-radius: 999px;
+  border-radius: 999px;
+  background: #999999;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.work-breakdown-template .breakdown-template-item {
+  padding: 0px !important;
+  border: 0 !important;
+}
+.work-breakdown-template li.phase div.body {
+  display: inline;
+  float: left;
+  margin-left: 15px;
+}
+.work-breakdown-template li.phase div.body .item-textbox {
+  /*min-width: 420px;*/
+  min-width: 390px;
+  margin-left: 40px;
+}
+@media (max-width: 767px) {
+  .work-breakdown-template li.phase div.body {
+    float: none;
+  }
+  .work-breakdown-template li.phase div.body .item-textbox {
+    min-width: 200px;
+  }
+}
+.work-breakdown-template li.stage div.body {
+  display: inline;
+  float: left;
+  margin-left: 35px;
+}
+.work-breakdown-template li.stage div.body .item-textbox {
+  min-width: 370px;
+}
+@media (max-width: 767px) {
+  .work-breakdown-template li.stage div.body {
+    float: none;
+  }
+  .work-breakdown-template li.stage div.body .item-textbox {
+    min-width: 200px;
+  }
+}
+.work-breakdown-template li.task div.body {
+  display: inline;
+  float: left;
+  margin-left: 90px;
+}
+@media (max-width: 767px) {
+  .work-breakdown-template li.task div.body {
+    float: none;
+  }
+}
+.work-breakdown-template .item-textbox {
+  border: 1px solid #dddddd;
+  padding: 10px;
+  color: #333333 !important;
+  min-width: 350px;
+  margin-left: 10px;
+}
+@media (max-width: 767px) {
+  .work-breakdown-template .item-textbox {
+    min-width: 200px;
+  }
+}
+.work-breakdown-template .drag-grip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #dddddd;
+}
+.work-breakdown-template .color-selector-icon {
+  position: absolute;
+  font-size: 1.5em;
+}
+.work-breakdown-template li.stage span.color-selector-icon {
+  left: 24px;
+}
+.work-breakdown-template li.task span.color-selector-icon {
+  left: 42px;
+}
+.work-breakdown-template .add-item-link a:link {
+  color: #333333 !important;
+}
+.work-breakdown-template li div span.add-item-link.phase {
+  left: 15px;
+  top: 7px;
+  position: relative;
+}
+.work-breakdown-template li div span.add-item-link.stage {
+  left: 15px;
+  top: 7px;
+  position: relative;
+}
+.work-breakdown-template li div span.add-item-link.task {
+  left: 15px;
+  position: relative;
+  top: 7px;
+}
+.work-breakdown-template .drop-menu-button {
+  float: right;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: inherit;
+}
+.work-breakdown-template .drop-menu-button:hover {
+  background-color: inherit;
+}
+.work-breakdown-template .color-picker-add-on {
+  padding: 0;
+  border: 0;
+  background-color: inherit;
+  position: relative;
+  right: 10px;
+}
+.work-breakdown-template .drag-grip {
+  cursor: move;
+}
+.work-breakdown-template ul[dnd-list],
+.work-breakdown-template ul[dnd-list] > li {
+  position: relative;
+}
+.work-breakdown-template ul[dnd-list] {
+  min-height: 42px;
+  padding-left: 0px;
+}
+.work-breakdown-template ul[dnd-list] .dndDraggingSource {
+  display: none;
+}
+.work-breakdown-template ul[dnd-list] .dndPlaceholder {
+  display: block;
+  background-color: #ddd;
+  padding: 10px 15px;
+  min-height: 42px;
+}
+.work-breakdown-template ul[dnd-list] li {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd !important;
+  display: block;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.work-breakdown-template ul[dnd-list] li dnd-nodrag {
+  display: block;
+  padding: 5px 15px;
+}
+@media (max-width: 960px) {
+  .work-breakdown-template .added-buttons {
+    float: none;
+    display: block;
+  }
+  .work-breakdown-template li.phase div.body,
+  .work-breakdown-template li.stage div.body,
+  .work-breakdown-template li.task div.body {
+    display: block;
+    float: none;
+    margin-left: 20px;
+  }
+  .work-breakdown-template .label-holder {
+    float: none;
+    display: block;
+  }
+}

@@ -1,0 +1,467 @@
+﻿@import "synergy.colors.less";
+@import "../bootstrap/variables.less";
+
+#site-wrapper {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#site-canvas {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+}
+
+#site-menu-left, #site-menu-right {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: @color-gray-darkest;
+    color: @color-page;
+    font-size: 14px;
+    padding: 0;
+
+    a, .btn-link {
+        color: @color-page;
+        font-size: 14px;
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .btn {
+        &.btn-link {
+            &.btn-toggle-chevron {
+                text-align: center;
+            }
+
+            &.btn-darker {
+                color: @color-gray-lightest;
+
+                &:hover {
+                    color: @color-teal;
+                }
+            }
+
+            &.btn-toggle-darker {
+                background: @color-gray-deepdark;
+
+                &:hover {
+                    color: @color-teal;
+                }
+            }
+
+            &:hover {
+                color: @color-teal;
+            }
+        }
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .row {
+        border-bottom: 1px solid @color-gray-dark;
+
+        &.bordered {
+            div[class^="col-"] {
+                border-right: 1px solid @color-gray-dark;
+            }
+        }
+
+        &.bordered-right-bottom {
+            div[class^="col-"] {
+                border-right: 1px solid @color-gray-dark;
+                border-bottom: 1px solid @color-gray-dark;
+            }
+        }
+
+        span[class^="icon-font-"] {
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 18px;
+            line-height: 18px;
+            padding: 12px 3px;
+        }
+
+        span[class^="icon-font-chevron"] {
+            color: white;
+
+            &:hover {
+                color: @color-teal;
+            }
+        }
+
+        &.menu-title-row {
+            .btn-link {
+                color: @color-gray-lightest;
+                padding: 15px 3px;
+
+                &:hover {
+                    color: @color-teal;
+                }
+
+                &.toggle-nav-right, &.toggle-nav-left {
+                    text-align: center;
+                    padding-left: 0;
+                    padding-right: 0;
+                    font-size: 24px;
+                    line-height: 24px;
+                    padding: 12px 3px;
+                }
+            }
+        }
+
+        &.menu-header-row {
+            .btn-link {
+                color: @color-gray-lightest;
+
+                &:hover {
+                    color: @color-teal;
+                }
+            }
+        }
+
+
+
+        &.menu-organisation-row {
+            div[class^="col-"] {
+
+                .btn-link {
+                    padding: 20px 10px;
+
+                    img {
+                        margin: -10px 10px -10px 0;
+                    }
+                }
+            }
+        }
+
+        &.menu-section-row {
+            .btn-link {
+                padding: 10px 0 10px 10px;
+
+                smaller {
+                    font-size: 10px;
+                }
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 6px;
+                }
+
+                span[class^="icon-font-chevron"] {
+                }
+            }
+        }
+
+        &.menu-group-row {
+            div[class^="col-"] {
+
+                .btn-link {
+                    padding: 20px 10px;
+
+                    img {
+                        margin: -10px 10px -10px 0;
+                    }
+                }
+            }
+        }
+
+        &.menu-sub-area {
+            background: @color-gray-deepdark;
+        }
+
+        &.menu-profile-row {
+            div[class^="col-"] {
+
+                .btn-link {
+                    padding: 20px 10px;
+
+                    img {
+                        margin: -10px 10px -10px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#site-menu-underlay {
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#site-menu-overlay {
+    width: 320px;
+    display: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1060;
+    box-shadow: 10px 0 10px -10px #333;
+    background: @color-gray-darkest;
+    color: @color-page;
+    font-size: 14px;
+    padding: 0;
+	.sideMenuExtraBtns{
+		padding-top: 20px;
+		.row{
+			border-bottom: none;
+		}
+		.btn-roundCorner{
+			width: 140px;
+		}
+	}
+    a, .btn-link {
+        color: @color-page;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .btn {
+        &.btn-link {
+            &.btn-toggle-chevron {
+                text-align: center;
+            }
+
+            &.btn-darker {
+                color: @color-gray-lightest;
+
+                &:hover {
+                    color: @color-teal;
+                }
+            }
+
+            &.btn-toggle-darker {
+                background: @color-gray-deepdark;
+
+                &:hover {
+                    color: @color-teal;
+                }
+            }
+
+            &:hover {
+                color: @color-teal;
+            }
+        }
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+
+    > .row {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+    .row {
+        border-bottom: 1px solid @color-gray-dark;
+
+        &.bordered {
+            div[class^="col-"] {
+                border-right: 1px solid @color-gray-dark;
+            }
+        }
+
+        &.bordered-right-bottom {
+            div[class^="col-"] {
+                border-right: 1px solid @color-gray-dark;
+                border-bottom: 1px solid @color-gray-dark;
+            }
+        }
+
+        span[class^="icon-font-"] {
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 18px;
+            line-height: 18px;
+            padding: 12px 3px;
+        }
+
+        span[class^="icon-font-chevron"] {
+            color: white;
+
+            &:hover {
+                color: @color-teal;
+            }
+        }
+
+        &.menu-title-row {
+            .btn-link {
+                color: @color-gray-lightest;
+                padding: 15px 3px;
+
+                &:hover {
+                    color: @color-teal;
+                }
+
+                &.toggle-nav-right, &.toggle-nav-left {
+                    text-align: center;
+                    padding-left: 0;
+                    padding-right: 0;
+                    font-size: 24px;
+                    line-height: 24px;
+                    padding: 12px 3px;
+                }
+            }
+        }
+
+        &.menu-header-row {
+            .btn-link {
+                color: @color-gray-lightest;
+
+                &:hover {
+                    color: @color-teal;
+                }
+            }
+        }
+
+
+
+        &.menu-organisation-row {
+            div[class^="col-"] {
+
+                .btn-link {
+                    padding: 20px 10px;
+
+                    img {
+                        margin: -10px 10px -10px 0;
+                    }
+                }
+            }
+        }
+
+        &.menu-section-row {
+            .btn-link {
+                padding: 10px 0 10px 10px;
+
+                :first-child {
+                    overflow: hidden;
+                    display: inline-block;
+
+                    b {
+                        text-overflow: ellipsis;
+                        width: 100%;
+                        display: inline-block;
+                        overflow: hidden;
+                    }
+                }
+
+                smaller {
+                    font-size: 10px;
+                }
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 6px;
+                }
+
+                span[class^="icon-font-chevron"] {
+                }
+            }
+        }
+
+        &.menu-sub-area {
+            background: @color-gray-deepdark;
+        }
+
+
+
+        &.menu-profile-row {
+            div[class^="col-"] {
+
+                .btn-link {
+                    padding: 20px 10px;
+
+                    img {
+                        margin: -10px 10px -10px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#site-menu-left {
+    left: -300px;
+}
+
+#site-menu-right {
+    right: -300px;
+}
+
+#site-wrapper.show-nav-left #site-canvas {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+}
+
+#site-wrapper.show-nav-right #site-canvas {
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+}
+
+.menu-half-link-with-icon {
+    position: relative;
+
+    .subtitle {
+        position: absolute;
+        font-size: 9px;
+        left: 40px;
+        top: 4px;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #site-menu-overlay {
+
+        &::-webkit-scrollbar {
+            width: 2px;
+            height: 2px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+        /* the new scrollbar will have a flat appearance with the set background color */
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        /* this will style the thumb, ignoring the track */
+        &::-webkit-scrollbar-button {
+            background-color: transparent;
+        }
+        /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+        &::-webkit-scrollbar-corner {
+            background-color: white;
+        }
+    }
+}

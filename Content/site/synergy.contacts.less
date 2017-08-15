@@ -1,0 +1,636 @@
+﻿@import "synergy.colors.less";
+@import "../bootstrap/variables.less";
+
+.owner-email-change-text {
+    position: relative;
+    right: 10px;
+    top: -26px;
+    float: right;
+}
+
+.portal-personnel-contact {
+    /*margin-top: 0px;
+    padding-left: 40px;
+    padding-top: 2px !important;*/
+    font-size: 13px;
+    padding-left: 40px;
+    top: 0;
+    position: absolute;
+}
+
+.portal-contact {
+    padding-left: 40px;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+    margin: 0;
+}
+
+
+
+.project-contact-invitation {
+    padding: 0;
+    padding-top: 10px;
+    margin: 0 1px 10px 0;
+    background-color: @color-gray-highlight;
+}
+
+.contact-merge {
+    .merge-contact-header {
+        border-radius: 2px;
+        color: white;
+        font-size: 2em;
+        padding: 10px;
+        margin-bottom: 15px;
+
+        @media only screen and (max-width: 490px) {
+            font-size: 1em;
+        }
+    }
+
+    .swap-icon {
+        position: absolute;
+        font-size: 5em;
+        right: -42px;
+        top: 85px;
+        z-index: 1000;
+        background-color: #F0EFF4;
+        cursor: pointer;
+    }
+
+    .swap-icon-text {
+        position: absolute;
+        font-size: 1.1em;
+        right: -29.5px;
+        top: 104px;
+        font-weight: bold;
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+
+    .outer-container {
+        display: flex;
+        /*align-items: center;*/
+        justify-content: center;
+        /*height: 30vh;*/
+        position: relative;
+    }
+
+    .inner-container {
+        /*width: 400px;*/
+        margin: 0 auto;
+
+        h3 {
+            @media only screen and (max-width: 490px) {
+                margin-left: 5px;
+                width: 100%;
+            }
+        }
+
+        .control-label {
+            font-size: 1.2em;
+
+            @media only screen and (max-width: 370px) {
+                font-size: 1em;
+            }
+        }
+    }
+
+    .item {
+        border-radius: 3px;
+        width: 47%;
+        height: 250px;
+        padding: 35px;
+        position: relative;
+
+        @media only screen and (max-width: 490px) {
+            height: 300px;
+            padding: 5px;
+        }
+    }
+
+    .item-left {
+        border: 1px solid gray;
+        margin-right: 10px;
+    }
+
+    .item-right {
+        border: 1px solid red;
+        margin-left: 10px;
+    }
+
+    .item-text {
+        position: absolute;
+        width: 75%;
+        max-width: 500px;
+
+        h3 {
+            @media only screen and (max-width: 370px) {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.contact-edit {
+    &.btn-contact-edit {
+        border: 1px solid grey;
+        background-color: transparent;
+            margin: 3px;
+    }
+
+    &.section-close {
+        color: #ea6149;
+        font-size: 1.3em;
+        width: 5%;
+        padding-right: 0;
+        padding-left: 8px;
+        padding-top: 13px;
+
+        &.address {
+            padding-top: 0;
+        }
+    }
+
+    &.address-header {
+        color: #27b4b9;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    &.text-closable {
+        width: 95%;
+        display: inline;
+    }
+
+    &.extras-button-section {
+        margin-top: -5px;
+        margin-bottom: 5px;
+    }
+}
+
+
+.select-address {
+    .address-header {
+        margin-left: 10px;
+    }
+
+    .address-body {
+        margin-left: 20px;
+        padding-bottom: 5px;
+        cursor: pointer;
+    }
+
+    .address {
+        margin-left: 10px;
+        border-bottom: solid gray 1px;
+        cursor: pointer;
+        margin-bottom: 12px;
+    }
+
+    .address-type {
+        cursor: pointer;
+    }
+
+    .address-body-empty {
+        margin-left: 20px;
+        padding-bottom: 5px;
+    }
+
+    .contact-header {
+        /*color: green;*/
+        margin-bottom: 7px;
+        margin-left: 5px;
+    }
+
+    .contact-body {
+        margin-bottom: 10px;
+        margin: 10px;
+    }
+
+    li.contact-body:hover,
+    li.contact-body.active {
+        .item-heading {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .sub {
+            color: #fff;
+        }
+
+        color: #fff;
+        background-color: #337ab7;
+    }
+
+    .dropdown-menu {
+        min-width: 250px;
+        left: initial;
+        max-height: 500px;
+        overflow: auto;
+    }
+}
+
+
+/*div[select-contact-address] .address-header {
+    margin-left: 10px;
+}
+
+div[select-contact-address] .address-body {
+    margin-left: 20px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+div[select-contact-address] .address {
+    margin-left: 10px;
+    border-bottom: solid gray 1px;
+    cursor: pointer;
+}
+
+div[select-contact-address] address {
+    margin-bottom: 12px;
+}
+
+div[select-contact-address] .address-type {
+    cursor: pointer;
+}
+
+div[select-contact-address] .address-body-empty {
+    margin-left: 20px;
+    padding-bottom: 5px;
+}
+
+&div[select-contact-address] .contact-header {
+    color: green;
+    margin-bottom: 7px;
+}
+
+div[select-contact-address] .contact-body {
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+div[select-contact-address] .dropdown-menu {
+    min-width: 250px;
+    left: initial;
+    max-height: 500px;
+    overflow: auto;
+}*/
+
+#selectAddressInput {
+    width: 100%;
+    /*min-width: 250px;*/
+    height: 40px;
+    /*padding-left: 10px;*/
+}
+
+.select-address {
+    .dropdown {
+        height: 100%;
+    }
+}
+
+.contact-details, .item-details {
+    address {
+        white-space: normal;
+    }
+}
+
+.contact-icon-holder {
+    display: table;
+    margin-left: 0;
+    margin-right: auto;
+
+    a {
+        margin: 0 3px;
+        width: 25px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        display: block !important;
+        margin-right: -40px;
+
+        a {
+            margin: 0 1px !important;
+        }
+    }
+}
+
+.overflow-visible {
+    overflow: visible !important;
+}
+
+.potal-project-contact-holder {
+    position: absolute;
+    font-size: 20px;
+    top: 4px;
+    z-index: 100;
+    right: 0;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .left-offset {
+        padding-top: 0px !important;
+        padding-left: 65px !important;
+
+        a {
+            display: inline-block;
+        }
+    }
+
+    .contact-title {
+        margin-top: 5px;
+        // position: relative;
+        // top: -11px;
+        // padding-bottom: 25px !important;
+    }
+
+    .contact-personnel {
+        // position: absolute;
+        // top: -49.5px;
+        // left: 44px;
+        // padding-bottom: 5px;
+    }
+
+
+
+    .contact-role {
+        left: 34px;
+        top: 16px;
+        display: block !important;
+        position: absolute !important;
+    }
+
+    .float-over-list {
+        display: inline-block !important;
+        float: right;
+    }
+
+    .potal-project-contact-holder {
+        margin-bottom: 10px;
+    }
+
+    .content-with-image {
+        .avator-wrapper {
+            img {
+                margin: 10px;
+            }
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .contact-icon-holder {
+        margin-top: 20px;
+    }
+
+    .float-over-list {
+        float: right;
+        display: inline-block;
+        margin-right: -40px;
+    }
+}
+
+#blue1-background, #blue2-background, #blue3-background, #blue4-background {
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 10px;
+    margin: 0px;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    span {
+        position: relative;
+        bottom: 5px;
+    }
+}
+
+#blue1-background {
+    background: @color-light-blue;
+    margin-right: 1px !important;
+}
+
+#blue2-background {
+    background: @color-dark-blue-dark;
+    margin-right: 1px !important;
+
+    span {
+        font-size: 20px;
+        bottom: 7px;
+    }
+}
+
+#blue3-background {
+    background: @color-dark-blue-dark;
+    margin-right: 1px !important;
+
+    span {
+        bottom: 7px;
+    }
+}
+
+#blue4-background {
+    background: @color-dark-blue-darkest;
+
+    span {
+        font-size: 19px;
+        bottom: 7px;
+    }
+}
+
+
+
+.left-offset {
+    padding-top: 10px;
+
+    a {
+        display: inline-block;
+    }
+}
+
+
+
+ul.content-with-image li:hover {
+    a.icon-cell {
+        color: #fff !important;
+    }
+}
+
+.project-contact-page {
+  @media(max-width: 991px){
+    .address-wrapper{
+      padding-left: 45px;
+    }
+  }
+
+  .social-medias{
+      .place-holder{
+        display: inline-block;
+        width: 25px;
+      }
+      span{
+        color: @color-teal;
+        font-size: 18px;
+      }
+      @media(max-width: 991px){
+        padding-left: 45px;
+      }
+    }
+
+    li:hover .social-medias a span{
+      color: #fff;
+    }
+
+    .flagsicon-wrapper {
+        margin-bottom: 10px;
+
+        .empty-place-holder {
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            margin-right: 1px !important;
+            margin-left: 0px;
+        }
+    }
+
+    @media(max-width: 767px) {
+        .contact-method-wrapper {
+            margin-left: 54px;
+        }
+    }
+
+    @media(min-width: 768px) and (max-width: 991px) {
+        .contact-method-wrapper {
+            margin-left: 33px;
+        }
+    }
+}
+
+.icon-font-spinner-holder{
+        width: 15px;
+    height: 17px;
+
+    .icon-spin{
+        font-size:30px !important;
+        position: relative !important;
+        left: -3px !important;
+        top: -5px;
+
+    }
+}
+
+.postcode-dropdown{
+    position:relative;
+    ul{
+        width:100% !important;
+    }
+
+
+  a{
+       text-overflow: ellipsis;
+        display: block;
+        overflow: hidden
+   }
+}
+
+.postcode-show-more{
+    position: absolute;
+    right: 10px;
+    top: -21px;
+}
+
+.lblTown{
+    .postcode-show-more{
+        z-index:99;
+        right:50px !important;
+    }
+}
+
+#contact-editor-postcode-show{
+    top:3px !important;
+}
+
+.postcode-auto-load{
+    font-size:25px;
+    position:absolute;
+    top: 27px;
+    right: 12px;
+    color: @color-teal;
+}
+
+#office-project-add{
+    /*Hide these fields for modal when adding office project contact*/
+    #chk_isCareOf, #chk_isCareOf + label, #chk_isInvoiceContact, #chk_isInvoiceContact + label{
+        display:none;
+    }
+}
+
+.contactIndex{
+	.contactListing{
+		.row-only{
+			display: block !important;
+		}
+	}
+}
+
+.contactDetailEdit{
+	#homeaddress-group, #workaddress-group, #postaladdress-group, #otheraddress-group{
+		.icon-font-remove{
+			padding-top: 5px;
+			padding-right: 20px;
+		}
+	}
+}
+
+.contactInvoice{
+	@media (max-width: @screen-md){
+		.text-right{
+			text-align: left;
+		}
+	}
+
+
+	.totals.content{
+		@media (max-width: 991px){
+			.col-md-7.col-xs-9{
+				width: 100%;
+			}
+			.col-md-1.col-xs-3.text-right{
+				width: 100%;
+				text-align: left;
+			}
+		}
+	}
+	.mainTable{
+		.col-md-1.col-sm-6.text-right{
+			text-align: left;
+		}
+	}
+}
+
+.contactAudit{
+	.fullText{
+		white-space: normal !important;
+	}
+}
+
+.contactProjects{
+	@media (max-width: @screen-md){
+		ul.content > span{
+			padding: 5px 0px !important;
+		}
+		.workBreakDownMobileHeading{
+			margin-bottom: 0px;
+		}
+	}
+}

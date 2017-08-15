@@ -1,0 +1,338 @@
+﻿@import "synergy.colors.less";
+@import "../bootstrap/variables.less";
+
+.upsell-title {
+  text-transform: uppercase;
+}
+
+.upsell-description {
+  text-transform: lowercase;
+}
+
+.panel.organisation {
+    margin-bottom: 20px;
+
+    &.expired {
+
+        .panel-body {
+            border: 1px solid @alert-danger-border;
+            box-shadow: 0 0 3px @alert-danger-border;
+        }
+    }
+
+    &.trial {
+
+        .panel-body {
+            border: 1px solid @alert-info-border;
+            box-shadow: 0 0 3px @alert-info-border;
+        }
+    }
+
+    .bd {
+        padding-top: 22px;
+    }
+
+    .title {
+        color: @color-text;
+        font-size: 18px;
+    }
+
+    .guide {
+        right: 0;
+    }
+
+    p.organisation-user {
+        font-size: 12px;
+        color: @gray;
+        margin-top: 3px;
+
+        b {
+            color: black;
+        }
+    }
+
+    .organisation-links {
+
+        a {
+            margin: 3px 3px 3px 0;
+            display: block;
+            color: @color-text;
+            text-decoration: underline;
+        }
+    }
+}
+
+ul.organisation-summary {
+    margin: 0;
+    background: @color-page;
+
+    li {
+        margin-bottom: 1px;
+        padding: 3px;
+        border: none;
+
+        a {
+            color: @color-gray-deepdark;
+            text-decoration: none;
+            margin-left: 6px;
+
+            img {
+                height: 30px;
+                width: 30px;
+            }
+
+            &:hover {
+                color: @link-color;
+            }
+        }
+    }
+}
+
+.report-logo-preview {
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 110px;
+    height: 60px;
+    /*width: 100% !important;*/
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    background-color: white;
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    a {
+        position: absolute;
+        bottom: 2px;
+        right: 2px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .logo-editor{
+        position:absolute;
+        bottom:0;
+        right:0;
+    }
+}
+
+.report-logo-select {
+    float: right;
+    margin: 0 5px 5px 0;
+    padding-top: 2px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    background: #777777;
+    position: absolute;
+    top: 38px;
+    left: 95px;
+}
+
+
+.organisation-logo-preview {
+    float: left;
+    margin: 0 5px 5px 0;
+    height: 100% !important;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    a {
+        position: absolute;
+        bottom: 2px;
+        right: 2px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.organisation-logo-select {
+    float: right;
+    margin: 0 5px 5px 0;
+    padding-top: 2px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    background: #777777;
+    position: relative;
+    top: -22px;
+    left: 4px;
+}
+
+.organisation-logo-remove {
+    float: right;
+    margin: 0 5px 5px 0;
+    padding-top: 2px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    background: #777777;
+    position: relative;
+    top: -22px;
+    left: 4px;
+}
+
+.organisation-home-page{
+  .banner-wrapper{
+    padding-top: 50px;
+  }
+
+  .intro-banner-container{
+    display: table;
+    width: 100%;
+    padding: 0 !important;
+
+    button{
+      position: absolute;
+      right: 20px;
+      top: 53px;
+      font-size: 30px;
+      color:white;
+      opacity:1;
+
+      &:hover{
+          opacity:0.8;
+      }
+    }
+
+   }
+
+  .intro-banner{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: 30px;
+    padding: 0px 30px;
+    background: @color-light-blue;
+
+
+    .btn{
+      margin-top: 30px;
+      display: inline-block;
+      background: #fff;
+      padding-left: 30px;
+      padding-right: 30px;
+      color: @color-light-blue;
+      font-weight: bold;
+      font-size: 14px;
+      &:hover{
+        color: @color-light-blue-darker;
+      }
+    }
+    h2{
+      text-align: center;
+      font-size: 22px;
+      color: #fff;
+      line-height: 130%;
+      a{
+        font-weight: bold;
+        color: #fff;
+
+      }
+    }
+  }
+}
+
+.organisation-template-folder-tree{
+  .arrow-btn-wrapper{
+    width: 20px;
+    .arrow-btn{
+      font-size: 15px;
+      color: @color-gray-lighter;
+    }
+  }
+
+  .selected{
+    .tree-handle, .arrow-btn, .btn-link{
+      color: #fff;
+    }
+  }
+  .btn-link{
+    width: 70%;
+    text-align: left;
+    color: @color-text;
+  }
+  .edit-folder-btn, .tree-handle{
+    background: transparent;
+    border: none;
+    border-color: none;
+    color: @color-gray-lighter;
+    &:Hover{
+      color: @color-gray-lighter;
+    }
+  }
+
+  .tree-handle{
+    font-size: 20px;
+    width: 40px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .tree-node-content{
+    padding-left: 30px;
+  }
+}
+
+.orglogo-wrapper{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+  .logo-editor{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+  .logo{
+    display: block;
+    width: 100%;
+  }
+}
+
+.loading{
+  background-image: url("/Content/img/ajax-loader.gif") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+.responsive-dimension-holder{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.responsive-dimension-dummy{
+    margin-top:100%;
+}
+
+.projectsListView.responsive-list{
+	.col-md-4.row-only{
+
+		line-height: 0px;
+		white-space: normal !important;
+	}
+	.list-inline{
+		padding-top: 5px;
+		.TagButtonLink{
+			display: inline-block;
+			padding-bottom: 5px;
+		}
+	}
+}

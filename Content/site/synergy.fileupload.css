@@ -1,0 +1,104 @@
+﻿.bulkActionInLine {
+  position: relative;
+  top: -40px;
+}
+.row-height {
+  height: 0;
+}
+.file-upload-gap {
+  padding-top: 25px;
+}
+.file-upload {
+  position: relative;
+  border: 2px dotted transparent;
+}
+.file-upload > .commands {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+.file-upload > .commands > input[type='file'] {
+  position: absolute;
+  height: 0;
+  width: 0;
+  z-index: -1;
+}
+.file-upload .progress {
+  margin-top: 10px;
+}
+.file-upload .my-drop-zone {
+  text-align: center;
+  font-size: 13px;
+  color: #bbbbbb;
+}
+.file-upload.nv-file-over {
+  border-color: #5adfe3;
+}
+.file-upload .status-display {
+  text-align: right;
+  padding-top: 10px;
+}
+.file-upload2 {
+  position: relative;
+  border: 2px dotted transparent;
+}
+.file-upload2 > .commands {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+.file-upload2 > .commands > input[type='file'] {
+  position: absolute;
+  height: 0;
+  width: 0;
+  z-index: -1;
+}
+.file-upload2 .progress {
+  margin-top: 10px;
+}
+.file-upload2 .my-drop-zone {
+  text-align: center;
+  font-size: 13px;
+  color: #bbbbbb;
+}
+.file-upload2.nv-file-over {
+  border-color: #5adfe3;
+}
+.file-upload2 .status-display {
+  text-align: right;
+  padding-top: 10px;
+}
+.file-upload1 {
+  position: relative;
+  border: 2px dotted transparent;
+}
+.file-upload1 > .commands {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+.file-upload1 > .commands > input[type='file'] {
+  position: absolute;
+  height: 0;
+  width: 0;
+  z-index: -1;
+}
+.file-upload1 .progress {
+  margin-top: 10px;
+}
+.file-upload1 .my-drop-zone {
+  text-align: center;
+  font-size: 13px;
+  color: #bbbbbb;
+}
+.file-upload1.nv-file-over {
+  border-color: #5adfe3;
+}
+.file-upload1 .status-display {
+  text-align: right;
+  padding-top: 10px;
+}
+/*# sourceMappingURL=synergy.fileupload.css.map */

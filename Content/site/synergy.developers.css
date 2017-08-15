@@ -1,0 +1,143 @@
+﻿.warning {
+  color: #ff9933;
+}
+.success {
+  color: #33cc66;
+}
+.danger {
+  color: #ea6149;
+}
+.teal {
+  color: #27b4b9 !important;
+}
+.application-image {
+  width: 100%;
+}
+.developer-nav {
+  width: 250px;
+  padding-top: 100px;
+  float: left;
+}
+.developer-nav h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.developer-nav li {
+  position: relative;
+  display: block;
+  padding: 10px;
+  margin-bottom: -1px;
+  margin-left: 20px;
+  border-left: 3px solid #27b4b9;
+  font-weight: bold;
+  font-size: 14px;
+  color: #666666;
+}
+.developer-nav li:hover {
+  cursor: pointer;
+  background: #bde6ff !important;
+}
+.developer-nav li:nth-child(even) {
+  background: #EBEBEB;
+}
+.developer-nav li:nth-child(odd) {
+  background: white;
+}
+@media screen and (max-width: 769px) {
+  .developer-nav {
+    width: 100%;
+    padding-top: 20px !important;
+  }
+}
+.developer-nav .accordion-toggle:after {
+  /* symbol for "opening" panels */
+  font-family: 'Glyphicons Halflings';
+  /* essential for enabling glyphicon */
+  content: "\e114";
+  /* adjust as needed, taken from bootstrap.css */
+  float: right;
+  /* adjust as needed */
+  color: #27b4b9;
+  /* adjust as needed */
+}
+.developer-nav .accordion-toggle.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content: "\e080";
+  /* adjust as needed, taken from bootstrap.css */
+}
+.developer-content {
+  padding-top: 40px;
+  margin-left: 350px;
+}
+@media screen and (max-width: 769px) {
+  .developer-content {
+    margin-left: 0;
+  }
+}
+.developer-header {
+  color: #27b4b9;
+  font-weight: bold;
+  font-size: 36px;
+}
+.developer-content-section,
+.developer-api-section {
+  border-top: solid 1px #D6D3D3;
+  margin-top: 15px;
+  padding-top: 15px;
+  float: right;
+}
+.developer-content-section h2,
+.developer-api-section h2 {
+  color: #2cc4c9;
+  margin-bottom: 10px;
+}
+.developer-content-section p,
+.developer-api-section p {
+  font-size: 13px;
+}
+.developer-content-section .block,
+.developer-api-section .block {
+  display: block;
+  margin-bottom: 5px;
+}
+.developer-api-section {
+  float: none;
+  display: inline-block;
+}
+.developer-api-section span {
+  font-size: 14px;
+}
+.developer-api-section h1 {
+  word-break: break-all;
+}
+.developer-api-section code {
+  word-break: break-all;
+}
+.developer-content-header h1 {
+  color: #666666;
+  font-weight: bold;
+  font-size: 24px;
+}
+.api-label {
+  display: inline-block;
+  font-weight: bold;
+  width: 100px;
+}
+#collapseApiDocs li a,
+#collapseAdvanced li a,
+#collapseGettingStarted li a {
+  color: inherit;
+  display: block;
+}
+#collapseApiDocs li a:active,
+#collapseAdvanced li a:active,
+#collapseGettingStarted li a:active {
+  color: #27b4b9;
+}
+/*Toggles chevrons on dropdown*/
+.api-dropdown[aria-expanded=true] .icon-font-chevron-right {
+  display: none;
+}
+.api-dropdown[aria-expanded=false] .icon-font-chevron-down {
+  display: none;
+}

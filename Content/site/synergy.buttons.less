@@ -1,0 +1,154 @@
+﻿@import "synergy.colors.less";
+@import "../bootstrap/variables.less";
+@import "../bootstrap/buttons.less";
+@import "../bootstrap/mixins.less";
+
+
+.btn {
+    /*&.btn-contact-edit {
+        border: 1px solid grey;
+        background-color: transparent;
+    }*/
+    /*&.btn-contact-section-close {
+        color: #ea6149;
+        padding-right: 0;
+    }*/
+    &:hover, &:focus {
+        color: @color-dark-blue; 
+        text-decoration: none;
+
+        &.dialog-primary-button
+        {
+        color: @color-dark-blue !important;
+    }
+    }
+
+    
+
+    &.btn-primary {
+        border-bottom: 2px solid @color-teal-darker;
+
+        &:hover, &:focus {
+            color: white;
+        }
+    }
+
+    &.btn-default {
+        border-bottom: 2px solid @color-gray;
+
+        &:hover, &:focus {
+            color: white;
+        }
+    }
+
+    &.btn-success {
+        border-bottom: 2px solid @color-green-darker;
+
+        &:hover, &:focus {
+            color: white;
+        }
+    }
+
+    &.btn-danger {
+        border-bottom: 2px solid @color-red-darker;
+
+        &:hover, &:focus {
+            color: white;
+        }
+    }
+
+    &.btn-warning {
+        border-bottom: 2px solid @color-orange-darker;
+
+        &:hover, &:focus {
+            color: white;
+        }
+    }
+
+    &.btn-info {
+        border-bottom: 2px solid @color-light-blue-darker;
+
+        &:hover, &:focus {
+            color: @color-dark-blue;
+        }
+    }
+
+    &.btn-link {
+        border-bottom: none;
+
+        &.btn-danger {
+            color: @color-red;
+        }
+
+        span.chevron {
+            /*color: @color-teal;*/
+            font-size: 25px;
+            position: relative;
+            top: 6px;
+            padding-left: 20px;
+        }
+    }
+
+    &.btn-action {
+        min-width: 170px;
+        position: relative;
+
+        &.btn-block, &.btn-link, &.btn-inline {
+            min-width: 0;
+        }
+
+        span.caret {
+            position: absolute;
+            top: 18px;
+            right: 10px;
+        }
+    }
+
+    &.btn-cancel-delete {
+        min-width: 170px;
+        position: relative;
+    }
+
+    &.btn-fixed-width {
+        width: 120px;
+        font-size: 13px;
+        text-align: left;
+    }
+}
+
+.btn-group {
+    > .btn-lg + .dropdown-toggle {
+        margin-left: 1px;
+    }
+
+    .btn-large {
+        min-width: 145px;
+
+        &.dropdown-toggle {
+            min-width: 0;
+        }
+    }
+}
+
+.btn-label {
+    padding: 2px;
+    float: right;
+
+    &.btn-link{
+        padding: 0;
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+
+    .btn {
+        &.btn-large {
+            min-width: 150px;
+        }
+
+        &.btn-action {
+            min-width: 40px;
+            position: relative;
+        }
+    }
+}

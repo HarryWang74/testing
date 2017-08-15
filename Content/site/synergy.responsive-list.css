@@ -1,0 +1,1137 @@
+﻿.responsive-list {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+.responsive-list ul.header {
+  margin: 0;
+  padding: 0;
+  background: #f0eff4;
+  font-weight: bold;
+  list-style: none;
+}
+.responsive-list ul.header > li {
+  padding: 10px 50px 10px 10px;
+  margin: 0;
+}
+.responsive-list ul.header > li > .row {
+  position: relative;
+}
+.responsive-list ul.header > li > .row a {
+  color: #555555;
+}
+.responsive-list ul.header > li > .row a:hover {
+  color: #27b4b9;
+}
+.responsive-list ul.header > li > .row.header-grouping span {
+  display: block;
+  border-bottom: 1px solid #aaa;
+  text-align: center;
+}
+.responsive-list ul.totals {
+  margin: 0;
+  padding: 0;
+  background: #f0eff4;
+  color: #999999;
+  list-style: none;
+  border: 1px solid #aaaaaa;
+}
+.responsive-list ul.totals > li {
+  padding: 10px 50px 10px 10px;
+  margin: 0;
+}
+.responsive-list ul.totals > li > .row {
+  position: relative;
+}
+.responsive-list ul.totals > li > .row h5 {
+  font-weight: bold;
+}
+.responsive-list.no-tools ul.header > li,
+.responsive-list.no-tools ul.content > li,
+.responsive-list.no-tools ul.totals > li {
+  padding-right: 10px;
+}
+.responsive-list.drag-indicator ul.header > li,
+.responsive-list.drag-indicator ul.content > li,
+.responsive-list.drag-indicator ul.totals > li {
+  padding-left: 25px;
+}
+.responsive-list ul.footer {
+  margin: 0;
+  padding: 0;
+  background: #f0eff4;
+  font-weight: bold;
+  list-style: none;
+}
+.responsive-list ul.footer > li {
+  padding: 10px 40px 10px 10px;
+  margin: 0;
+}
+.responsive-list ul.content,
+.responsive-list ul.content-with-image {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  box-shadow: 0 0 3px #dddddd;
+  border-top: 1px solid #777777;
+}
+.responsive-list ul.content > li,
+.responsive-list ul.content-with-image > li {
+  padding: 0 50px 0 10px;
+  margin: 0;
+  margin-bottom: 1px;
+  border-bottom: 1px solid #777777;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  min-height: 40px;
+  position: relative;
+}
+.responsive-list ul.content > li.no-tools,
+.responsive-list ul.content-with-image > li.no-tools {
+  padding: 0 10px 0 10px;
+}
+.responsive-list ul.content > li.with-bulk-actions,
+.responsive-list ul.content-with-image > li.with-bulk-actions {
+  min-height: 39px;
+}
+.responsive-list ul.content > li .drag-grip,
+.responsive-list ul.content-with-image > li .drag-grip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #dddddd;
+}
+.responsive-list ul.content > li.level-1 > .row > div[class^="col-"],
+.responsive-list ul.content-with-image > li.level-1 > .row > div[class^="col-"] {
+  padding-left: 20px;
+}
+.responsive-list ul.content > li.level-2 > .row > div[class^="col-"],
+.responsive-list ul.content-with-image > li.level-2 > .row > div[class^="col-"] {
+  padding-left: 40px;
+}
+.responsive-list ul.content > li.level-3 > .row > div[class^="col-"],
+.responsive-list ul.content-with-image > li.level-3 > .row > div[class^="col-"] {
+  padding-left: 60px;
+}
+.responsive-list ul.content > li.empty,
+.responsive-list ul.content-with-image > li.empty {
+  padding: 0;
+}
+.responsive-list ul.content > li.empty .well,
+.responsive-list ul.content-with-image > li.empty .well {
+  margin: 0;
+}
+.responsive-list ul.content > li.empty .well p,
+.responsive-list ul.content-with-image > li.empty .well p {
+  margin: 0;
+}
+.responsive-list ul.content > li.empty .well a,
+.responsive-list ul.content-with-image > li.empty .well a {
+  color: #27b4b9;
+}
+.responsive-list ul.content > li.empty .well a:hover,
+.responsive-list ul.content-with-image > li.empty .well a:hover {
+  text-decoration: underline;
+  color: #0062a2;
+}
+.responsive-list ul.content > li a,
+.responsive-list ul.content-with-image > li a {
+  color: #333333;
+}
+.responsive-list ul.content > li a.sublink,
+.responsive-list ul.content-with-image > li a.sublink {
+  color: #27b4b9;
+}
+.responsive-list ul.content > li span.sublink,
+.responsive-list ul.content-with-image > li span.sublink {
+  color: #27b4b9;
+}
+.responsive-list ul.content > li .text-muted,
+.responsive-list ul.content-with-image > li .text-muted {
+  font-size: 10px;
+  margin-top: 3px;
+  color: #777777;
+}
+.responsive-list ul.content > li .text-link,
+.responsive-list ul.content-with-image > li .text-link {
+  color: #269d4e;
+}
+.responsive-list ul.content > li .text-indent,
+.responsive-list ul.content-with-image > li .text-indent {
+  margin-left: 35px;
+}
+.responsive-list ul.content > li:nth-child(odd),
+.responsive-list ul.content-with-image > li:nth-child(odd) {
+  background: #ffffff;
+}
+.responsive-list ul.content > li:nth-child(odd).primary,
+.responsive-list ul.content-with-image > li:nth-child(odd).primary {
+  background: #d2fbfc;
+}
+.responsive-list ul.content > li:nth-child(odd).info,
+.responsive-list ul.content-with-image > li:nth-child(odd).info {
+  background: #ccf1fe;
+}
+.responsive-list ul.content > li:nth-child(odd).success,
+.responsive-list ul.content-with-image > li:nth-child(odd).success {
+  background: #56ff8f;
+}
+.responsive-list ul.content > li:nth-child(odd).warning,
+.responsive-list ul.content-with-image > li:nth-child(odd).warning {
+  background: #ffd36e;
+}
+.responsive-list ul.content > li:nth-child(odd).danger,
+.responsive-list ul.content-with-image > li:nth-child(odd).danger {
+  background: #ffa18f;
+}
+.responsive-list ul.content > li:nth-child(odd):hover,
+.responsive-list ul.content-with-image > li:nth-child(odd):hover {
+  background-color: #5ebaf2;
+  color: white;
+}
+.responsive-list ul.content > li:nth-child(odd):hover > a,
+.responsive-list ul.content-with-image > li:nth-child(odd):hover > a,
+.responsive-list ul.content > li:nth-child(odd):hover .text-muted,
+.responsive-list ul.content-with-image > li:nth-child(odd):hover .text-muted,
+.responsive-list ul.content > li:nth-child(odd):hover > div > div > a,
+.responsive-list ul.content-with-image > li:nth-child(odd):hover > div > div > a {
+  color: white;
+}
+.responsive-list ul.content > li:nth-child(odd):hover > a.text-link,
+.responsive-list ul.content-with-image > li:nth-child(odd):hover > a.text-link,
+.responsive-list ul.content > li:nth-child(odd):hover > div > div > a.text-link,
+.responsive-list ul.content-with-image > li:nth-child(odd):hover > div > div > a.text-link {
+  color: white;
+}
+.responsive-list ul.content > li:nth-child(odd):hover > input.text-link,
+.responsive-list ul.content-with-image > li:nth-child(odd):hover > input.text-link,
+.responsive-list ul.content > li:nth-child(odd):hover > div > div > input.text-link,
+.responsive-list ul.content-with-image > li:nth-child(odd):hover > div > div > input.text-link {
+  color: white;
+}
+.responsive-list ul.content > li:nth-child(odd):hover a.sublink,
+.responsive-list ul.content-with-image > li:nth-child(odd):hover a.sublink {
+  color: white;
+}
+.responsive-list ul.content > li:nth-child(odd):hover .tools div.btn.btn-default,
+.responsive-list ul.content-with-image > li:nth-child(odd):hover .tools div.btn.btn-default {
+  color: white;
+}
+.responsive-list ul.content > li:nth-child(even),
+.responsive-list ul.content-with-image > li:nth-child(even) {
+  background: #f0eff4;
+}
+.responsive-list ul.content > li:nth-child(even).primary,
+.responsive-list ul.content-with-image > li:nth-child(even).primary {
+  background: #aefafc;
+}
+.responsive-list ul.content > li:nth-child(even).info,
+.responsive-list ul.content-with-image > li:nth-child(even).info {
+  background: #b5e8fe;
+}
+.responsive-list ul.content > li:nth-child(even).success,
+.responsive-list ul.content-with-image > li:nth-child(even).success {
+  background: #45f17f;
+}
+.responsive-list ul.content > li:nth-child(even).warning,
+.responsive-list ul.content-with-image > li:nth-child(even).warning {
+  background: #ffc14d;
+}
+.responsive-list ul.content > li:nth-child(even).danger,
+.responsive-list ul.content-with-image > li:nth-child(even).danger {
+  background: #ff8c75;
+}
+.responsive-list ul.content > li:nth-child(even):hover,
+.responsive-list ul.content-with-image > li:nth-child(even):hover {
+  background-color: #3192d4;
+  color: white;
+}
+.responsive-list ul.content > li:nth-child(even):hover > a,
+.responsive-list ul.content-with-image > li:nth-child(even):hover > a,
+.responsive-list ul.content > li:nth-child(even):hover .text-muted,
+.responsive-list ul.content-with-image > li:nth-child(even):hover .text-muted,
+.responsive-list ul.content > li:nth-child(even):hover > div > div > a,
+.responsive-list ul.content-with-image > li:nth-child(even):hover > div > div > a {
+  color: white;
+}
+.responsive-list ul.content > li:nth-child(even):hover > a.text-link,
+.responsive-list ul.content-with-image > li:nth-child(even):hover > a.text-link,
+.responsive-list ul.content > li:nth-child(even):hover > div > div > a.text-link,
+.responsive-list ul.content-with-image > li:nth-child(even):hover > div > div > a.text-link {
+  color: white;
+}
+.responsive-list ul.content > li:nth-child(even):hover > input.text-link,
+.responsive-list ul.content-with-image > li:nth-child(even):hover > input.text-link,
+.responsive-list ul.content > li:nth-child(even):hover > div > div > input.text-link,
+.responsive-list ul.content-with-image > li:nth-child(even):hover > div > div > input.text-link {
+  color: white;
+}
+.responsive-list ul.content > li:nth-child(even):hover a.sublink,
+.responsive-list ul.content-with-image > li:nth-child(even):hover a.sublink {
+  color: white;
+}
+.responsive-list ul.content > li:nth-child(even):hover .tools div.btn.btn-default,
+.responsive-list ul.content-with-image > li:nth-child(even):hover .tools div.btn.btn-default {
+  color: white;
+}
+.responsive-list ul.content > li.primary,
+.responsive-list ul.content-with-image > li.primary {
+  background-color: #d2fbfc;
+}
+.responsive-list ul.content > li.form-row,
+.responsive-list ul.content-with-image > li.form-row {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.responsive-list ul.content > li.form-row .form-control,
+.responsive-list ul.content-with-image > li.form-row .form-control,
+.responsive-list ul.content > li.form-row label,
+.responsive-list ul.content-with-image > li.form-row label {
+  height: 32px;
+}
+.responsive-list ul.content > li.form-row .form-control,
+.responsive-list ul.content-with-image > li.form-row .form-control {
+  padding: 0;
+  padding-left: 5px;
+  height: 28px;
+}
+.responsive-list ul.content > li.form-row div[class^="col-"] label,
+.responsive-list ul.content-with-image > li.form-row div[class^="col-"] label {
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+  font-weight: normal;
+}
+.responsive-list ul.content > li .bulk-action-left,
+.responsive-list ul.content-with-image > li .bulk-action-left {
+  position: absolute;
+  left: -40px;
+  top: -1px;
+  z-index: 100000;
+}
+.responsive-list ul.content > li .tools,
+.responsive-list ul.content-with-image > li .tools {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.responsive-list ul.content > li .tools a.btn,
+.responsive-list ul.content-with-image > li .tools a.btn {
+  color: white;
+}
+.responsive-list ul.content > li .tools a.btn.btn-default,
+.responsive-list ul.content-with-image > li .tools a.btn.btn-default,
+.responsive-list ul.content > li .tools a.btn div.btn-default,
+.responsive-list ul.content-with-image > li .tools a.btn div.btn-default {
+  background-color: transparent;
+  border: none;
+  color: #777777;
+}
+.responsive-list ul.content > li .tools div.btn.btn-default,
+.responsive-list ul.content-with-image > li .tools div.btn.btn-default {
+  background-color: transparent;
+  border: none;
+  color: #999999;
+}
+.responsive-list ul.content > li .tools ul.dropdown-menu > li > a,
+.responsive-list ul.content-with-image > li .tools ul.dropdown-menu > li > a {
+  color: #555555;
+}
+.responsive-list ul.content > li .tools ul.dropdown-menu > li > a:hover,
+.responsive-list ul.content-with-image > li .tools ul.dropdown-menu > li > a:hover {
+  color: white;
+}
+.responsive-list ul.content > li .title,
+.responsive-list ul.content-with-image > li .title {
+  font-weight: bold;
+}
+.responsive-list ul.content > li .not-active,
+.responsive-list ul.content-with-image > li .not-active {
+  text-decoration: line-through;
+  color: #888888;
+}
+.responsive-list ul.content > li .row,
+.responsive-list ul.content-with-image > li .row {
+  position: relative;
+}
+.responsive-list ul.content > li .row h1,
+.responsive-list ul.content-with-image > li .row h1,
+.responsive-list ul.content > li .row h2,
+.responsive-list ul.content-with-image > li .row h2,
+.responsive-list ul.content > li .row h3,
+.responsive-list ul.content-with-image > li .row h3,
+.responsive-list ul.content > li .row h4,
+.responsive-list ul.content-with-image > li .row h4,
+.responsive-list ul.content > li .row h5,
+.responsive-list ul.content-with-image > li .row h5,
+.responsive-list ul.content > li .row h6,
+.responsive-list ul.content-with-image > li .row h6 {
+  margin: 0;
+}
+.responsive-list ul.content > li .row.row-extra-info,
+.responsive-list ul.content-with-image > li .row.row-extra-info {
+  padding: 3px;
+  border: 1px #dddddd solid;
+}
+.responsive-list ul.content > li .row.row-extra-info h5,
+.responsive-list ul.content-with-image > li .row.row-extra-info h5 {
+  padding: 4px;
+}
+.responsive-list ul.content > li .row.row-extra-info .btn-link:hover,
+.responsive-list ul.content-with-image > li .row.row-extra-info .btn-link:hover {
+  color: #0062a2;
+  text-decoration: underline;
+}
+.responsive-list ul.content > li .row hr,
+.responsive-list ul.content-with-image > li .row hr {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.responsive-list ul.content > li .row div[class^="col-"],
+.responsive-list ul.content-with-image > li .row div[class^="col-"] {
+  overflow-x: hidden;
+  overflow: hidden;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: block;
+  position: relative;
+}
+.responsive-list ul.content > li .row div[class^="col-"].selector-cell,
+.responsive-list ul.content-with-image > li .row div[class^="col-"].selector-cell {
+  padding: 0 1px;
+  overflow: visible !important;
+  overflow-x: visible !important;
+}
+.responsive-list ul.content > li .row div[class^="col-"].input-cell,
+.responsive-list ul.content-with-image > li .row div[class^="col-"].input-cell {
+  padding: 0 1px;
+}
+.responsive-list ul.content > li .row div[class^="col-"] input[type="checkbox"],
+.responsive-list ul.content-with-image > li .row div[class^="col-"] input[type="checkbox"] {
+  padding-top: 2px;
+  margin: 0;
+}
+.responsive-list ul.content > li .row div[class^="col-"].row-only,
+.responsive-list ul.content-with-image > li .row div[class^="col-"].row-only {
+  display: block;
+}
+.responsive-list ul.content > li .row div[class^="col-"].card-only,
+.responsive-list ul.content-with-image > li .row div[class^="col-"].card-only {
+  display: none;
+}
+.responsive-list ul.content > li .row div[class^="col-"].content-progress-column > a,
+.responsive-list ul.content-with-image > li .row div[class^="col-"].content-progress-column > a,
+.responsive-list ul.content > li .row div[class^="col-"].content-progress-column > span,
+.responsive-list ul.content-with-image > li .row div[class^="col-"].content-progress-column > span {
+  padding-bottom: 3px;
+}
+.responsive-list ul.content > li .row div[class^="col-"].content-phase-column img,
+.responsive-list ul.content-with-image > li .row div[class^="col-"].content-phase-column img {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+}
+.responsive-list ul.content > li .row div[class^="col-"].content-phase-column span.phase-edit,
+.responsive-list ul.content-with-image > li .row div[class^="col-"].content-phase-column span.phase-edit {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.responsive-list ul.content > li .row div[class^="col-"].content-stage-column img,
+.responsive-list ul.content-with-image > li .row div[class^="col-"].content-stage-column img {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+}
+.responsive-list ul.content > li .row div[class^="col-"].content-stage-column span.stage-edit,
+.responsive-list ul.content-with-image > li .row div[class^="col-"].content-stage-column span.stage-edit {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.responsive-list ul.content > li .row div[class^="col-"].content-task-column img,
+.responsive-list ul.content-with-image > li .row div[class^="col-"].content-task-column img {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+}
+.responsive-list ul.content > li .row div[class^="col-"].content-task-column span.task-edit,
+.responsive-list ul.content-with-image > li .row div[class^="col-"].content-task-column span.task-edit {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.responsive-list ul.content > li .row div[class^="col-"] > a,
+.responsive-list ul.content-with-image > li .row div[class^="col-"] > a,
+.responsive-list ul.content > li .row div[class^="col-"] > span,
+.responsive-list ul.content-with-image > li .row div[class^="col-"] > span {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  overflow-x: hidden;
+  overflow: hidden;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.responsive-list ul.content > li .row div[class^="col-"] > a.label,
+.responsive-list ul.content-with-image > li .row div[class^="col-"] > a.label,
+.responsive-list ul.content > li .row div[class^="col-"] > span.label,
+.responsive-list ul.content-with-image > li .row div[class^="col-"] > span.label {
+  display: inline-block;
+  margin-top: 9px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.responsive-list ul.content > li .row div[class^="col-"] .icon-cell,
+.responsive-list ul.content-with-image > li .row div[class^="col-"] .icon-cell {
+  padding-top: 4px;
+  padding-bottom: 0px;
+  font-size: 22px;
+}
+.responsive-list ul.content > li .row div[class^="col-"] .icon-cell-large,
+.responsive-list ul.content-with-image > li .row div[class^="col-"] .icon-cell-large {
+  padding-top: 6px;
+  padding-bottom: 0px;
+  font-size: 30px;
+}
+.responsive-list ul.content > li .row div[class^="col-"] .icon-cell-inline,
+.responsive-list ul.content-with-image > li .row div[class^="col-"] .icon-cell-inline {
+  display: inline-block;
+}
+.responsive-list ul.content > li .row div[class^="col-"] .icon-cell-inline.green,
+.responsive-list ul.content-with-image > li .row div[class^="col-"] .icon-cell-inline.green {
+  background-color: #269d4e !important;
+}
+.responsive-list ul.content > li .row div[class^="col-"] > input[type=checkbox],
+.responsive-list ul.content-with-image > li .row div[class^="col-"] > input[type=checkbox] {
+  margin-top: 10px;
+}
+.responsive-list ul.content > li .row div[class^="col-"].level-1,
+.responsive-list ul.content-with-image > li .row div[class^="col-"].level-1 {
+  padding-left: 10px;
+}
+.responsive-list ul.content > li .row div[class^="col-"].level-2,
+.responsive-list ul.content-with-image > li .row div[class^="col-"].level-2 {
+  padding-left: 15px;
+}
+.responsive-list ul.content > li .row div[class^="col-"].level-3,
+.responsive-list ul.content-with-image > li .row div[class^="col-"].level-3 {
+  padding-left: 20px;
+}
+.responsive-list ul.content > li .row div[class^="col-"].level-4,
+.responsive-list ul.content-with-image > li .row div[class^="col-"].level-4 {
+  padding-left: 35px;
+}
+.responsive-list ul.content > li .row.row-error,
+.responsive-list ul.content-with-image > li .row.row-error {
+  color: white;
+  font-weight: bold;
+}
+.responsive-list ul.content > li .row.row-error > div[class^="col-"] > span,
+.responsive-list ul.content-with-image > li .row.row-error > div[class^="col-"] > span {
+  padding: 5px;
+}
+.responsive-list ul.content > li:nth-child(odd) > div.row-extra-info,
+.responsive-list ul.content-with-image > li:nth-child(odd) > div.row-extra-info {
+  background: #ffffff;
+  color: #555555;
+}
+.responsive-list ul.content > li:nth-child(odd) > div.row-extra-info.primary,
+.responsive-list ul.content-with-image > li:nth-child(odd) > div.row-extra-info.primary {
+  background: #d2fbfc;
+}
+.responsive-list ul.content > li:nth-child(odd) > div.row-extra-info.info,
+.responsive-list ul.content-with-image > li:nth-child(odd) > div.row-extra-info.info {
+  background: #ccf1fe;
+}
+.responsive-list ul.content > li:nth-child(odd) > div.row-extra-info.success,
+.responsive-list ul.content-with-image > li:nth-child(odd) > div.row-extra-info.success {
+  background: #56ff8f;
+}
+.responsive-list ul.content > li:nth-child(odd) > div.row-extra-info.warning,
+.responsive-list ul.content-with-image > li:nth-child(odd) > div.row-extra-info.warning {
+  background: #ffd36e;
+}
+.responsive-list ul.content > li:nth-child(odd) > div.row-extra-info.danger,
+.responsive-list ul.content-with-image > li:nth-child(odd) > div.row-extra-info.danger {
+  background: #ffa18f;
+}
+.responsive-list ul.content > li:nth-child(even) > div.row-extra-info,
+.responsive-list ul.content-with-image > li:nth-child(even) > div.row-extra-info {
+  background: #f0eff4;
+  color: #555555;
+}
+.responsive-list ul.content > li:nth-child(even) > div.row-extra-info.primary,
+.responsive-list ul.content-with-image > li:nth-child(even) > div.row-extra-info.primary {
+  background: #aefafc;
+}
+.responsive-list ul.content > li:nth-child(even) > div.row-extra-info.info,
+.responsive-list ul.content-with-image > li:nth-child(even) > div.row-extra-info.info {
+  background: #b5e8fe;
+}
+.responsive-list ul.content > li:nth-child(even) > div.row-extra-info.success,
+.responsive-list ul.content-with-image > li:nth-child(even) > div.row-extra-info.success {
+  background: #45f17f;
+}
+.responsive-list ul.content > li:nth-child(even) > div.row-extra-info.warning,
+.responsive-list ul.content-with-image > li:nth-child(even) > div.row-extra-info.warning {
+  background: #ffc14d;
+}
+.responsive-list ul.content > li:nth-child(even) > div.row-extra-info.danger,
+.responsive-list ul.content-with-image > li:nth-child(even) > div.row-extra-info.danger {
+  background: #ff8c75;
+}
+.responsive-list ul.content > li input[type="checkbox"].group-checkbox,
+.responsive-list ul.content-with-image > li input[type="checkbox"].group-checkbox {
+  position: absolute;
+  margin: 0;
+  left: -30px;
+  top: 10px;
+}
+.responsive-list ul.content > li input[type="checkbox"].right-checkbox,
+.responsive-list ul.content-with-image > li input[type="checkbox"].right-checkbox {
+  position: absolute;
+  margin: 0;
+  left: -30px;
+  top: 10px;
+  z-index: 1000;
+}
+.responsive-list ul.content > li .text-small,
+.responsive-list ul.content-with-image > li .text-small {
+  font-size: 11px;
+  margin-top: 5px;
+}
+.responsive-list ul.content > li .card-title,
+.responsive-list ul.content-with-image > li .card-title {
+  display: none;
+}
+.responsive-list ul.content > li select.inline-control,
+.responsive-list ul.content-with-image > li select.inline-control,
+.responsive-list ul.content > li input.inline-control,
+.responsive-list ul.content-with-image > li input.inline-control {
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  box-shadow: none;
+  padding: 0;
+  color: black;
+  border-bottom: 1px dashed black !important;
+  margin: 0 2px;
+  height: 20px;
+  width: 100%;
+  background: transparent;
+}
+.responsive-list ul.content > li span.currency-symbol,
+.responsive-list ul.content-with-image > li span.currency-symbol {
+  width: 8px;
+  margin-left: -8px;
+}
+.responsive-list ul.content > li select.inline-control,
+.responsive-list ul.content-with-image > li select.inline-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+.responsive-list ul.content > li select.inline-control::-ms-expand,
+.responsive-list ul.content-with-image > li select.inline-control::-ms-expand {
+  display: none;
+}
+.responsive-list ul.content > li select.inline-control:focus,
+.responsive-list ul.content-with-image > li select.inline-control:focus,
+.responsive-list ul.content > li input.inline-control:focus,
+.responsive-list ul.content-with-image > li input.inline-control:focus {
+  border: none;
+  box-shadow: none;
+}
+.responsive-list ul.content > li .inline-control-selector::before,
+.responsive-list ul.content-with-image > li .inline-control-selector::before {
+  position: absolute;
+  pointer-events: none;
+  bottom: 0;
+  right: 8px;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: solid 8px transparent;
+  border-left: solid 8px transparent;
+  border-right: solid 8px black;
+}
+.responsive-list ul.content > li .content-progress,
+.responsive-list ul.content-with-image > li .content-progress {
+  padding-right: 60px;
+  padding-left: 70px;
+  position: relative;
+}
+.responsive-list ul.content > li .content-progress > label,
+.responsive-list ul.content-with-image > li .content-progress > label {
+  font-weight: normal;
+  position: absolute;
+  left: 5px;
+  top: -4px;
+  color: #aaa;
+  font-size: 8px;
+}
+.responsive-list ul.content > li .content-progress > label.inset,
+.responsive-list ul.content-with-image > li .content-progress > label.inset {
+  left: 18px;
+}
+.responsive-list ul.content > li .content-progress > div,
+.responsive-list ul.content-with-image > li .content-progress > div {
+  float: left;
+  height: 7px;
+  width: 10%;
+  opacity: 0.2;
+  background-color: #999999;
+  border-right: 1px solid white;
+}
+.responsive-list ul.content > li .content-progress > div.active,
+.responsive-list ul.content-with-image > li .content-progress > div.active {
+  opacity: 1;
+}
+.responsive-list ul.content > li .content-progress > div:hover,
+.responsive-list ul.content-with-image > li .content-progress > div:hover {
+  opacity: 1;
+  border-right-color: transparent;
+}
+.responsive-list ul.content > li .content-progress.content-progress-thin > div,
+.responsive-list ul.content-with-image > li .content-progress.content-progress-thin > div {
+  height: 5px;
+}
+.responsive-list .icon-toggle-row {
+  position: absolute;
+  top: 6px;
+  z-index: 100;
+  font-size: 20px;
+  cursor: pointer;
+}
+.responsive-list ul.content-with-image > li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 39px;
+  height: 39px;
+}
+.responsive-list ul.content-with-image > li > div > div:first-child {
+  padding-left: 43px;
+}
+.responsive-list ul.content-with-image > li > a > div > div:first-child {
+  padding-left: 43px;
+}
+.responsive-list ul.content-with-dragging {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  box-shadow: 0 0 3px #dddddd;
+}
+.responsive-list ul.content-with-dragging > li {
+  padding: 10px 50px 10px 10px;
+  margin: 0;
+  margin-bottom: 1px;
+  border-bottom: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  min-height: 40px;
+  position: relative;
+}
+.responsive-list ul.content-with-dragging > li.empty {
+  padding: 0;
+}
+.responsive-list ul.content-with-dragging > li.empty .well {
+  margin: 0;
+}
+.responsive-list ul.content-with-dragging > li.empty .well p {
+  margin: 0;
+}
+.responsive-list ul.content-with-dragging > li.empty .well a {
+  color: #27b4b9;
+}
+.responsive-list ul.content-with-dragging > li.empty .well a:hover {
+  text-decoration: underline;
+  color: #0062a2;
+}
+.responsive-list ul.content-with-dragging > li .handle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 39px;
+  /*background-color: gray;
+                padding: 11px;
+                color: white;*/
+  cursor: move;
+}
+.responsive-list ul.content-with-dragging > li > div > div:first-child {
+  padding-left: 43px;
+}
+.responsive-list ul.content-with-dragging > li > a > .row {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.responsive-list ul.content-with-dragging > li a {
+  color: #333333;
+}
+.responsive-list ul.content-with-dragging > li a.sublink {
+  color: #27b4b9;
+}
+.responsive-list ul.content-with-dragging > li a > input {
+  position: absolute;
+  top: 8px;
+  left: -30px;
+}
+.responsive-list ul.content-with-dragging > li > a > div > div:first-child {
+  /*padding-left: 43px;*/
+}
+.responsive-list ul.content-with-dragging > li .text-muted {
+  font-size: 10px;
+  margin-top: 3px;
+  color: #777777;
+}
+.responsive-list ul.content-with-dragging > li:nth-child(odd) {
+  background: #ffffff;
+}
+.responsive-list ul.content-with-dragging > li:nth-child(odd).primary {
+  background: #d2fbfc;
+}
+.responsive-list ul.content-with-dragging > li:nth-child(odd).info {
+  background: #ccf1fe;
+}
+.responsive-list ul.content-with-dragging > li:nth-child(odd).success {
+  background: #56ff8f;
+}
+.responsive-list ul.content-with-dragging > li:nth-child(odd).warning {
+  background: #ffd36e;
+}
+.responsive-list ul.content-with-dragging > li:nth-child(odd).danger {
+  background: #ffa18f;
+}
+.responsive-list ul.content-with-dragging > li:nth-child(odd):hover {
+  background-color: #5ebaf2;
+  color: white;
+}
+.responsive-list ul.content-with-dragging > li:nth-child(odd):hover > a,
+.responsive-list ul.content-with-dragging > li:nth-child(odd):hover .text-muted {
+  color: white;
+}
+.responsive-list ul.content-with-dragging > li:nth-child(odd):hover a.sublink {
+  color: white;
+}
+.responsive-list ul.content-with-dragging > li:nth-child(even) {
+  background: #f0eff4;
+}
+.responsive-list ul.content-with-dragging > li:nth-child(even).primary {
+  background: #aefafc;
+}
+.responsive-list ul.content-with-dragging > li:nth-child(even).info {
+  background: #b5e8fe;
+}
+.responsive-list ul.content-with-dragging > li:nth-child(even).success {
+  background: #45f17f;
+}
+.responsive-list ul.content-with-dragging > li:nth-child(even).warning {
+  background: #ffc14d;
+}
+.responsive-list ul.content-with-dragging > li:nth-child(even).danger {
+  background: #ff8c75;
+}
+.responsive-list ul.content-with-dragging > li:nth-child(even):hover {
+  background-color: #3192d4;
+  color: white;
+}
+.responsive-list ul.content-with-dragging > li:nth-child(even):hover > a,
+.responsive-list ul.content-with-dragging > li:nth-child(even):hover .text-muted {
+  color: white;
+}
+.responsive-list ul.content-with-dragging > li:nth-child(even):hover a.sublink {
+  color: white;
+}
+.responsive-list ul.content-with-dragging > li.primary {
+  background-color: #d2fbfc;
+}
+.responsive-list ul.content-with-dragging > li.form-row {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.responsive-list ul.content-with-dragging > li.form-row .form-control,
+.responsive-list ul.content-with-dragging > li.form-row label {
+  height: 32px;
+}
+.responsive-list ul.content-with-dragging > li.form-row .form-control {
+  padding: 0;
+  padding-left: 5px;
+  height: 32px;
+}
+.responsive-list ul.content-with-dragging > li.form-row div[class^="col-"] label {
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+  font-weight: normal;
+}
+.responsive-list ul.content-with-dragging > li.form-row:hover {
+  color: #555555;
+}
+.responsive-list ul.content-with-dragging > li.form-row:hover:nth-child(odd) {
+  background: #ffffff;
+}
+.responsive-list ul.content-with-dragging > li.form-row:hover:nth-child(even) {
+  background: #f0eff4;
+}
+.responsive-list ul.content-with-dragging > li .tools {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.responsive-list ul.content-with-dragging > li .tools a.btn {
+  color: white;
+}
+.responsive-list ul.content-with-dragging > li .tools div.btn.btn-default {
+  background-color: transparent;
+  border: none;
+  color: #999999;
+}
+.responsive-list ul.content-with-dragging > li .title {
+  font-weight: bold;
+}
+.responsive-list ul.content-with-dragging > li .not-active {
+  text-decoration: line-through;
+  color: #888888;
+}
+.responsive-list ul.content-with-dragging > li .row {
+  position: relative;
+  margin-left: 20px;
+}
+.responsive-list ul.content-with-dragging > li .row div[class^="col-"] {
+  overflow-x: hidden;
+  overflow: hidden;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: block;
+}
+.responsive-list ul.content-with-dragging > li .row div[class^="col-"] input[type="checkbox"] {
+  padding-top: 2px;
+  margin: 0;
+}
+.responsive-list ul.content-with-dragging > li .row div[class^="col-"].row-only {
+  display: block;
+}
+.responsive-list ul.content-with-dragging > li .row div[class^="col-"].card-only {
+  display: none;
+}
+.responsive-list ul.content-with-dragging > li .text-small {
+  font-size: 11px;
+  margin-top: 5px;
+}
+.responsive-list ul.content-with-dragging > li .card-title {
+  display: none;
+}
+.responsive-list.group-select ul.content-with-image,
+.responsive-list.group-select ul.content-with-dragging,
+.responsive-list.group-select ul.content,
+.responsive-list.group-select ul.header,
+.responsive-list.group-select ul.footer,
+.responsive-list.group-select ul.totals {
+  margin-left: 40px;
+}
+.responsive-list.group-select ul.content .tag-column {
+  margin: 4px 0;
+  padding-bottom: 0;
+  height: 31px;
+}
+.pagination-wrap {
+  width: 100%;
+  text-align: center;
+}
+.pagination-wrap:after {
+  content: "";
+  clear: both;
+}
+.pagination-wrap .pagination > li {
+  float: left;
+}
+.pagination-wrap .pagination > li > a {
+  font-size: 12px;
+  width: 44px;
+  text-align: center;
+  padding: 12px 10px 8px 10px;
+  margin: 0 2px;
+  background-color: #ffffff;
+  color: #333333;
+  border: none;
+  border-bottom: 3px solid #ffffff;
+}
+.pagination-wrap .pagination > li > a:hover,
+.pagination-wrap .pagination > li > a:active {
+  color: white;
+  background-color: #0062a2;
+  border-color: #024977;
+}
+.pagination-wrap .pagination > li > a.spacer {
+  background: #f0eff4;
+  font-weight: bold;
+  border-bottom: 3px solid #f0eff4;
+  padding-left: 3px;
+  padding-right: 3px;
+  width: 16px;
+}
+.pagination-wrap .pagination > li > a.spacer:hover,
+.pagination-wrap .pagination > li > a.spacer:active {
+  color: black;
+  background-color: #f0eff4;
+  border-color: #f0eff4;
+}
+.pagination-wrap .pagination > li > a.spacer-mobile {
+  background: #f0eff4;
+  font-weight: bold;
+  border-bottom: 3px solid #f0eff4;
+  padding-left: 0;
+  padding-right: 0;
+  width: 5px;
+}
+.pagination-wrap .pagination > li > a.spacer-mobile:hover,
+.pagination-wrap .pagination > li > a.spacer-mobile:active {
+  color: black;
+  background-color: #f0eff4;
+  border-color: #f0eff4;
+}
+.pagination-wrap .pagination > li.active > a {
+  color: white;
+  background-color: #27b4b9;
+  border-color: #27b4b9;
+}
+.pagination-wrap .pagination > li:first-child > a,
+.pagination-wrap .pagination > li:last-child > a {
+  color: white;
+  background-color: #999999;
+  border-color: #777777;
+}
+.pagination-wrap .pagination > li:first-child > a:hover,
+.pagination-wrap .pagination > li:last-child > a:hover,
+.pagination-wrap .pagination > li:first-child > a:active,
+.pagination-wrap .pagination > li:last-child > a:active {
+  color: white;
+  background-color: #0062a2;
+  border-color: #024977;
+}
+.pagination-wrap .pagination > li:first-child > a.disabled,
+.pagination-wrap .pagination > li:last-child > a.disabled {
+  background-color: #cccccc;
+  border-bottom: 3px solid #bbbbbb;
+}
+@media (max-width: 1599px) {
+  .responsive-list ul.content > li .content-progress {
+    padding-right: 100px;
+  }
+}
+.child-list {
+  border-top: 1px solid lightgray;
+  list-style: none;
+  padding-right: -8px;
+  margin: 0;
+  padding: 10px 0 13px 30px;
+  text-align: justify;
+  /*.wrap-text {
+        white-space: normal !important;
+        display: block;
+        position: relative;
+    }*/
+}
+.child-list li {
+  cursor: pointer !important;
+}
+@media (max-width: 991px) {
+  .responsive-list {
+    /*&.group-select {
+            ul.content-with-image, ul.content-with-dragging, ul.content, ul.header, ul.footer {
+                margin-left: 0;
+            }
+        }*/
+  }
+  .responsive-list ul.header {
+    display: none;
+  }
+  .responsive-list ul.header.always {
+    display: block;
+  }
+  .responsive-list ul.content > li {
+    /*input[type="checkbox"].right-checkbox {
+                    position: absolute;
+                    margin: 0;
+                    top: 10px;
+                     left: unset;
+                    right: 2px !important;
+                }*/
+  }
+  .responsive-list ul.content > li .card-title {
+    display: block;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  .responsive-list ul.content > li .row div[class^="col-"].row-only {
+    display: none;
+  }
+  .responsive-list ul.content > li .row div[class^="col-"].card-only {
+    display: block;
+  }
+  .responsive-list ul.content > li .content-progress {
+    padding-right: 300px;
+  }
+  .responsive-list ul.content-with-image > li .card-title {
+    display: block;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  .responsive-list ul.content-with-image > li .row div[class^="col-"].row-only {
+    display: none;
+  }
+  .responsive-list ul.content-with-image > li .row div[class^="col-"].card-only {
+    display: block;
+  }
+  .responsive-list ul.content-with-dragging > li .card-title {
+    display: block;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  .responsive-list ul.content-with-dragging > li .row div[class^="col-"].row-only {
+    display: none;
+  }
+  .responsive-list ul.content-with-dragging > li .row div[class^="col-"].card-only {
+    display: block;
+  }
+  .pagination-wrap .pagination > li > a {
+    width: 36px;
+  }
+  .text-normal {
+    white-space: normal;
+    text-align: justify;
+  }
+}
+@media (max-width: 767px) {
+  .responsive-list ul.content > li input[type="checkbox"].right-checkbox {
+    position: absolute;
+    margin: 0;
+    top: 10px;
+    left: unset;
+    right: 2px !important;
+  }
+  .responsive-list ul.content > li .content-progress {
+    padding-right: 150px;
+  }
+  .responsive-list.group-select ul.content-with-image,
+  .responsive-list.group-select ul.content-with-dragging,
+  .responsive-list.group-select ul.content,
+  .responsive-list.group-select ul.header,
+  .responsive-list.group-select ul.footer,
+  .responsive-list.group-select ul.totals {
+    margin-left: 0;
+  }
+}

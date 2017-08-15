@@ -1,0 +1,25 @@
+﻿.communication .list-group-item {
+  margin-bottom: 5px;
+}
+@media (max-width: 767px) {
+  .communication .communication-title {
+    font-weight: bold;
+  }
+  .communication .communication-type {
+    position: relative;
+    top: 1px;
+    padding-left: 5px;
+  }
+  .communication .tab {
+    position: relative;
+    height: 120px;
+    left: 1px;
+    top: -10px;
+    color: white;
+  }
+  .communication .box-rotate {
+    position: relative;
+    top: 10px;
+  }
+}
+/*# sourceMappingURL=synergy.tmp.communication.css.map */

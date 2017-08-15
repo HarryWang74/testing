@@ -1,0 +1,163 @@
+﻿@import "synergy.colors.less";
+@import "../bootstrap/variables.less";
+
+
+.folder-selector-input {
+
+    > input {
+        padding-right: 35px;
+        /* text-overflow: ellipsis; */
+        overflow: hidden;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+    }
+
+    .selector-input-icon {
+        position: absolute;
+        right: 0;
+        padding-right: 14px;
+        font-size: 17px;
+        top: 0;
+        padding-top: 11px;
+        color: black !important;
+    }
+}
+
+.folder-selector-dropdown {
+    top: 37px !important;
+    left: -1px !important;
+    width: 101%;
+}
+
+.folder-selector {
+    padding: 0;
+    top: -1px;
+    position: relative;
+
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        background-color: white;
+
+        a {
+            padding: 10.0px 5px;
+            border-top: 0;
+        }
+
+        > li[id="root"] a {
+            color: #333333;
+            padding-left: 5px;
+            border: 0;
+            width: 40px;
+
+            &.selected {
+                color: white;
+            }
+        }
+
+        li a {
+            color: #333333;
+            padding-left: 40px;
+        }
+
+        > li.selected {
+            background-color: @color-gray-light;
+            color: white;
+        }
+    }
+
+    .btn.btn-default.dropdown-toggle.toggle {
+        color: #999999;
+        background-color: transparent;
+        border: 0;
+    }
+
+
+
+
+    .folder-name {
+        padding-left: 20px;
+        color: @color-gray-light !important;
+        font-size: 12px;
+        width: 90%;
+        white-space: nowrap;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-align: left;
+
+
+
+
+
+        &.selected {
+            color: white !important;
+        }
+    }
+
+
+
+    .angular-ui-tree {
+        background-color: white !important;
+        position: relative;
+        left: -10px;
+        width: 106%;
+        /*.tree-node .fileDetails {
+            position: relative;
+            top: -29px;
+            padding-right: 50px;
+        }*/
+        .tree-node {
+            border: 1px solid white;
+            background-color: white;
+            height: 35px;
+
+            &.selected {
+                background-color: @color-gray-light;
+                color: white;
+            }
+        }
+
+        .tree-node-content {
+            /*margin: 10px;*/
+            margin: 6px;
+            margin-left: 0;
+
+            .selected {
+                color: white;
+            }
+        }
+
+        .expandCollapse {
+            font-size: 20px;
+            top: 9px;
+            position: absolute;
+            /*left: 5px;*/
+            padding-left: 5px;
+            padding-right: 10px;
+        }
+    }
+    /*.angular-ui-tree-nodes{
+        padding-left: 0 !important;
+    }*/
+    .angular-ui-tree-handle {
+        height: 40px;
+    }
+
+    .dropdown-menu > li > a {
+        padding: 7px 20px;
+    }
+
+    .expand {
+        padding: 2px 10px;
+        top: 10px;
+        position: absolute;
+        color: black !important;
+    }
+}

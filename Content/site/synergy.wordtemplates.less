@@ -1,0 +1,265 @@
+﻿@import "synergy.colors.less";
+@import "mixin.less";
+
+.templateBuilder {
+    margin: auto 0;
+    width: 100%;
+
+    .table-responsive {
+        min-height: .01%;
+    }
+
+    ul[dnd-list],
+    ul[dnd-list] > li {
+        position: relative;
+    }
+    /**
+ * The dnd-list should always have a min-height,
+ * otherwise you can't drop to it once it's empty
+ */
+    ul[dnd-list] {
+        min-height: 42px;
+        padding-left: 0px;
+    }
+    /**
+ * The dndDraggingSource class will be applied to
+ * the source element of a drag operation. It makes
+ * sense to hide it to give the user the feeling
+ * that he's actually moving it.
+ */
+    ul[dnd-list] .dndDraggingSource {
+        display: none;
+    }
+    /**
+ * An element with .dndPlaceholder class will be
+ * added to the dnd-list while the user is dragging
+ * over it.
+ */
+    ul[dnd-list] .dndPlaceholder {
+        display: block;
+        background-color: #ddd;
+        min-height: 42px;
+    }
+    /**
+ * The dnd-lists's child elements currently MUST have
+ * position: relative. Otherwise we can not determine
+ * whether the mouse pointer is in the upper or lower
+ * half of the element we are dragging over. In other
+ * browsers we can use event.offsetY for this.
+ */
+    ul[dnd-list] li {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+        display: block;
+        padding: 10px 15px;
+        margin-bottom: -1px;
+    }
+    /**
+ * Show selected elements in green
+ */
+    ul[dnd-list] li.selected {
+        background-color: #dff0d8;
+        color: #3c763d;
+    }
+
+    .responsive {
+        overflow-x: hidden;
+    }
+
+    .closed > .panel-heading {
+        background-color: rgb(255, 165, 165) !important;
+        background-repeat: no-repeat;
+        background-image: none;
+    }
+
+
+    a {
+        .btn {
+            .btn-block {
+                .add-row-btn {
+                    width: 50px;
+                }
+            }
+        }
+    }
+
+    .btn-block + .btn-block {
+        margin-top: 0;
+    }
+
+
+    .list-group-item {
+        position: relative;
+        display: inline-table;
+        padding: 10px 15px;
+        margin-bottom: -1px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+    }
+
+
+    .list-group {
+        border: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+        background: repeating-linear-gradient(13deg, transparent, rgba(48, 113, 199, 0) 5px, #cccccc 9px, #2393D8 16px), /* on "bottom" */ linear-gradient(to bottom, #A39C9C, #C2C2C2);
+    }
+
+
+
+    nav {
+        .navbar-brand {
+            float: left;
+            height: 50px;
+            padding: 15px 15px;
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+
+    div {
+        .ngGrid {
+            background-color: #fdfdfd;
+            margin: 4% auto;
+            width: 100%;
+        }
+
+        .add-row-btn {
+            margin: 10px;
+            /*border: 2px dotted #C3B6B6;
+            background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
+            background-image: -o-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e8e8e8));
+            background-image: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+            background-repeat: repeat-x;*/
+        }
+
+        .gridStyle {
+            border: 1px solid #d4d4d4;
+            padding: 20px;
+            border-radius: 10px;
+
+
+            .green {
+                background-color: green;
+                color: white;
+            }
+        }
+
+
+
+        .panel-body {
+            padding: 15px;
+            background-color: #EDEDED;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 0;
+
+            .table {
+                margin-bottom: 0 !important;
+            }
+
+            td {
+                .section-name {
+                    font-weight: bold;
+                    font-style: normal;
+                }
+
+                input {
+                    height: 30px;
+                }
+            }
+
+            tbody {
+                padding: 10px;
+                margin: 20px;
+            }
+        }
+
+
+        .grid-container {
+            padding: 20px;
+
+            .table-responsive {
+            }
+        }
+    }
+
+    .section-row {
+        padding-bottom: 1px;
+    }
+
+    .btn {
+        .btn-primary {
+            margin: 10px 0 10px 0;
+        }
+    }
+
+    .col-lg-12 {
+        width: auto;
+    }
+    /**
+ * For the correct positioning of the placeholder element, the dnd-list and
+ * it's children must have position: relative
+ */
+}
+
+
+.select-bookmarks-page{
+  #accordion .panel-title > a.accordion-toggle::before, #accordion a[data-toggle="collapse"]::before {
+    content: none !important;
+  }
+  
+  #accordion{
+    .panel-heading {
+        background-color : #fff;
+        border-bottom : 1px solid @color-gray;
+        padding : 0px 20px 8px 12px;
+    }
+
+    .panel-title{
+      a{
+        text-decoration: none;
+        display: block;
+      }
+    }
+    .panel{
+      background-color: transparent;
+    }
+    .bookmark-wrapper{
+      margin-top: -1px;
+      padding-left: 30px;
+    }
+    .collapsed{
+      .icon-font-caret-right{
+        position: relative;
+        top: 2px;
+        font-size: 20px;
+        color: @color-text;
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 10px;
+        .synergy-transform(rotate(0deg))
+      }
+
+    }
+    .icon-font-caret-right{
+      .synergy-transition(transform, 0.2s, ease-out);
+      .synergy-transform(rotate(90deg));
+      position: relative;
+      top: 2px;
+      font-size: 20px;
+      color: @color-text;
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}

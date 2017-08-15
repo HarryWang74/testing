@@ -1,0 +1,214 @@
+﻿@import "variables";
+@import "mixin";
+
+.summary-container {
+    margin-top: 15px;
+}
+
+.creditCardRetry {
+    text-decoration: underline;
+    color: white;
+}
+
+.panel.grid {
+    box-shadow: none;
+
+    .form-control {
+        border-color: @gray-lighter;
+    }
+
+    &.no-background {
+        background-color: transparent;
+
+        .panel-heading {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .panel-body {
+            padding: 0;
+        }
+    }
+
+    h4, .h4 {
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+    span.text-muted {
+        white-space: nowrap;
+    }
+
+    span.cell {
+        display: inline-block;
+        padding-top: 8px;
+        font-size: 13px;
+        white-space: nowrap;
+
+        &.link {
+            cursor: pointer;
+        }
+    }
+
+    .hidden-xs hr {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .panel-heading {
+        .form-inline {
+            margin-right: -5px;
+        }
+    }
+
+    .panel-heading, .panel-body {
+        padding: 8px;
+    }
+
+    .panel-footer {
+        background-color: #ffffff;
+    }
+
+    .in-grid {
+        margin-bottom: 5px;
+        background-color: #ffffff;
+
+        .row {
+            &.title {
+                border-top: none;
+            }
+
+            border-bottom: 1px solid @gray-lightest;
+            margin-right: 0;
+            margin-left: 0;
+
+            > div[class^="col-"] {
+                padding: 8px;
+            }
+        }
+
+        .checkbox-inline {
+            padding-top: 0;
+        }
+    }
+
+    .inner-grid {
+        margin: 5px 0 5px 16px;
+        border: 1px solid #ecf0f1;
+        padding: 5px;
+        padding-right: 0;
+        border-radius: 3px;
+
+        &.success {
+            border-left: 3px solid #0088cc;
+        }
+
+        &.warning {
+            border-left: 3px solid #E76163;
+        }
+    }
+
+    .panel-title {
+        padding: 5px;
+        padding-left: 0;
+        display: inline-block;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .form-control {
+            margin-top: -8px;
+            margin-bottom: -8px;
+        }
+    }
+}
+
+.tree-list {
+
+    .list-group {
+        margin-top: 5px;
+    }
+
+    .list-group-item {
+        padding: 2px 0 2px 15px;
+
+        a.title {
+            text-decoration: none;
+            float: left;
+            color: @text-color;
+
+            .form-control {
+                display: inline-block;
+                width: auto;
+                border-color: @gray-light;
+                cursor: auto;
+
+                &[disabled] {
+                    background-color: transparent;
+                    opacity: 1;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .tools {
+            float: right;
+            padding-right: 15px;
+        }
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    .panel.grid {
+        .panel-heading {
+            padding: 0;
+
+            .form-inline {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.tree {
+    margin-top: 10px;
+    position: relative;
+    border: 1px solid @gray-lighter;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #ffffff;
+
+    .form-control {
+        border-color: @gray-light;
+    }
+
+    .header {
+    }
+
+    hr {
+        margin: 5px 0;
+    }
+
+    .tree-item {
+        margin-top: 5px;
+        margin-bottom: 1px;
+    }
+
+    .tab1 {
+        margin-left: 10px;
+    }
+
+    .tab2 {
+        margin-left: 30px;
+    }
+
+    .tab3 {
+        margin-left: 50px;
+    }
+
+    .tab4 {
+        margin-left: 70px;
+    }
+}

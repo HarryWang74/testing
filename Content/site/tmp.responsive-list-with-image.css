@@ -1,0 +1,239 @@
+﻿/*
+.modal-md-contact .modal-dialog .modal-body {
+  background-color: #f0eff4;
+  min-height:600px;
+}
+@media (min-width: 650px) {
+  .modal-md-contact .modal-dialog {
+    width: 45%;
+  }
+}
+    */
+
+/*with image*/
+/*
+.responsive-list ul.content-with-image {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  box-shadow: 0 0 3px #dddddd;
+}
+.responsive-list ul.content-with-image > li {
+  padding: 10px 50px 10px 10px;
+  margin: 0;
+  margin-bottom: 1px;
+  border-bottom: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  min-height: 40px;
+  position: relative;
+}
+.responsive-list ul.content-with-image > li.empty {
+  padding: 0;
+}
+
+.responsive-list ul.content-with-image > li.empty .well {
+  margin: 0;
+}
+.responsive-list ul.content-with-image > li.empty .well p {
+  margin: 0;
+}
+.responsive-list ul.content-with-image > li.empty .well a {
+  color: #27b4b9;
+}
+.responsive-list ul.content-with-image > li.empty .well a:hover {
+  text-decoration: underline;
+  color: #0062a2;
+}
+.responsive-list ul.content-with-image > li > a > .row {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.responsive-list ul.content-with-image > li a {
+  color: #333333;
+}
+.responsive-list ul.content-with-image > li a.sublink {
+  color: #27b4b9;
+}
+.responsive-list ul.content-with-image > li .text-muted {
+  font-size: 10px;
+  margin-top: 3px;
+  color: #777777;
+}
+
+    .responsive-list ul.content-with-image > li img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 39px;
+        height: 39px;
+    }
+
+    .responsive-list ul.content-with-image > li > a > div > div:first-child {
+        padding-left:43px;
+    }
+    .responsive-list ul.content-with-image > li > div > div:first-child {
+        padding-left:43px;
+    }
+
+.responsive-list ul.content-with-image > li:nth-child(odd) {
+  background: #ffffff;
+}
+.responsive-list ul.content-with-image > li:nth-child(odd).primary {
+  background: #d2fbfc;
+}
+.responsive-list ul.content-with-image > li:nth-child(odd).info {
+  background: #ccf1fe;
+}
+.responsive-list ul.content-with-image > li:nth-child(odd).success {
+  background: #56ff8f;
+}
+.responsive-list ul.content-with-image > li:nth-child(odd).warning {
+  background: #ffd36e;
+}
+.responsive-list ul.content-with-image > li:nth-child(odd).danger {
+  background: #ffa18f;
+}
+.responsive-list ul.content-with-image > li:nth-child(odd):hover {
+  background-color: #5ebaf2;
+  color: white;
+}
+.responsive-list ul.content-with-image > li:nth-child(odd):hover > a,
+.responsive-list ul.content-with-image > li:nth-child(odd):hover .text-muted {
+  color: white;
+}
+.responsive-list ul.content-with-image > li:nth-child(odd):hover a.sublink {
+  color: white;
+}
+.responsive-list ul.content-with-image > li:nth-child(even) {
+  background: #f0eff4;
+}
+.responsive-list ul.content-with-image > li:nth-child(even).primary {
+  background: #aefafc;
+}
+.responsive-list ul.content-with-image > li:nth-child(even).info {
+  background: #b5e8fe;
+}
+.responsive-list ul.content-with-image > li:nth-child(even).success {
+  background: #45f17f;
+}
+.responsive-list ul.content-with-image > li:nth-child(even).warning {
+  background: #ffc14d;
+}
+.responsive-list ul.content-with-image > li:nth-child(even).danger {
+  background: #ff8c75;
+}
+.responsive-list ul.content-with-image > li:nth-child(even):hover {
+  background-color: #3192d4;
+  color: white;
+}
+.responsive-list ul.content-with-image > li:nth-child(even):hover > a,
+.responsive-list ul.content-with-image > li:nth-child(even):hover .text-muted {
+  color: white;
+}
+.responsive-list ul.content-with-image > li:nth-child(even):hover a.sublink {
+  color: white;
+}
+.responsive-list ul.content-with-image > li.primary {
+  background-color: #d2fbfc;
+}
+.responsive-list ul.content-with-image > li.form-row {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.responsive-list ul.content-with-image > li.form-row .form-control,
+.responsive-list ul.content-with-image > li.form-row label {
+  height: 32px;
+}
+.responsive-list ul.content-with-image > li.form-row .form-control {
+  padding: 0;
+  padding-left: 5px;
+  height: 32px;
+}
+.responsive-list ul.content-with-image > li.form-row div[class^="col-"] label {
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+  font-weight: normal;
+}
+.responsive-list ul.content-with-image > li.form-row:hover {
+  color: #555555;
+}
+.responsive-list ul.content-with-image > li.form-row:hover:nth-child(odd) {
+  background: #ffffff;
+}
+.responsive-list ul.content-with-image > li.form-row:hover:nth-child(even) {
+  background: #f0eff4;
+}
+.responsive-list ul.content-with-image > li .tools {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.responsive-list ul.content-with-image > li .tools a.btn {
+  color: white;
+}
+.responsive-list ul.content-with-image > li .title {
+  font-weight: bold;
+}
+.responsive-list ul.content-with-image > li .not-active {
+  text-decoration: line-through;
+  color: #888888;
+}
+.responsive-list ul.content-with-image > li .row {
+  position: relative;
+}
+.responsive-list ul.content-with-image > li .row div[class^="col-"] {
+  overflow-x: hidden;
+  overflow: hidden;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: block;
+}
+.responsive-list ul.content-with-image > li .row div[class^="col-"] input[type="checkbox"] {
+  padding-top: 2px;
+  margin: 0;
+}
+.responsive-list ul.content-with-image > li .row div[class^="col-"].row-only {
+  display: block;
+}
+.responsive-list ul.content-with-image > li .row div[class^="col-"].card-only {
+  display: none;
+}
+.responsive-list ul.content-with-image > li .text-small {
+  font-size: 11px;
+  margin-top: 5px;
+}
+.responsive-list ul.content-with-image > li .card-title {
+  display: none;
+}
+
+*/
+
+/*
+@media (max-width: 991px) {
+  .responsive-list ul.header {
+    display: none;
+  }
+  .responsive-list ul.content-with-image > li .card-title {
+    display: block;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  .responsive-list ul.content-with-image > li .row div[class^="col-"].row-only {
+    display: none;
+  }
+  .responsive-list ul.content-with-image > li .row div[class^="col-"].card-only {
+    display: block;
+  }
+  .pagination-wrap .pagination > li > a {
+    width: 36px;
+  }
+}
+    */
+/*# sourceMappingURL=synergy.responsive-list.css.map */

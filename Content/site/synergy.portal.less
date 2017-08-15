@@ -1,0 +1,634 @@
+﻿@import "synergy.colors.less";
+@import "../bootstrap/variables.less";
+@import "mixin";
+
+.portal-header-lhs-ioncs {
+    display: inline-block;
+    margin-right: -8px;
+
+    a.icon-font-icons_Portal_Documents, a.icon-font-icons_Portal_Comments {
+        font-size: 20px;
+    }
+
+    .lhs-icon, .lhs-ico:hover {
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+        width: 39px;
+        height: 39px;
+        line-height: 39px;
+        text-align: center;
+        vertical-align: middle;
+        max-width: 100%;
+        color: #fff;
+        margin-right: -2px;
+        font-size: 16px;
+        border: 0;
+    }
+
+    .lhs-icon {
+        background: @color-dark-blue;
+    }
+
+    .lhs-icon:hover {
+        background: @color-dark-blue-dark;
+    }
+
+    .lhs-icon.notice {
+        background: @color-red;
+    }
+
+    .lhs-icon.notice:hover {
+        background: @color-red-dark;
+    }
+}
+
+.top-header-wrapper {
+    background: @color-light-blue;
+}
+
+.project-header-wrapper {
+    padding: 0px;
+}
+
+.portal-header-banner {
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+
+    h2 {
+        font-size: 16px;
+        color: #fff;
+        line-height: 150%;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .btn-primary {
+        margin-top: 40px;
+        border-bottom: none;
+        background: #fff;
+        color: @color-light-blue;
+
+        &:hover {
+            color: @color-light-blue-darker;
+        }
+    }
+
+    @media(max-width: 1100px) {
+        padding-top: 40px;
+
+        .btn-primary {
+            margin-top: 20px;
+        }
+    }
+
+    @media(max-width: 900px) {
+        padding: 20px;
+
+        h2 {
+            font-size: 14px;
+        }
+    }
+
+    @media(max-width: 767px) {
+        h2 {
+            float: left;
+            text-align: left;
+            font-size: 18px;
+            margin: 20px 0px;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            float: right;
+            margin-bottom: 16px;
+        }
+    }
+
+    @media(max-width: 460px) {
+        h2 {
+            font-size: 16px;
+            line-height: 120%;
+            margin-bottom: 10px;
+        }
+
+        .btn-primary {
+            margin-top: 0px;
+        }
+    }
+}
+
+.project-header {
+    float: left;
+    width: 100%;
+    padding: 60px 0px;
+    background: @color-dark-blue-darkest;
+    color: #fff;
+    text-shadow: 2px 2px black;
+
+
+    .project-settings {
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        padding: 0;
+        font-size: 25px;
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+        text-shadow: 2px 2px black;
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    #org-image-mask {
+        width: 100%;
+        max-width: 150px;
+        max-height: 150px;
+        overflow: hidden;
+
+        .logo {
+            width: 100%;
+            max-width: 150px;
+            display: inline-block;
+        }
+    }
+
+
+    .copy-wrapper {
+        padding-top: 40px;
+    }
+
+    @media (max-width: 767px) {
+        padding: 20px 0px;
+
+        .copy-wrapper {
+            padding-top: 0px;
+        }
+
+        .tagline {
+            margin-bottom: 5px;
+            text-shadow: 2px 2px black;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+    }
+}
+
+.delete-comment {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.panel-body.comments-body.image-viewer {
+    height: 150px;
+    max-height: 150px;
+}
+
+.portal-content-section {
+    .child-panel {
+        margin-bottom: 20px;
+        height: 400px;
+    }
+
+    .panel.panel-widget .panel-body {
+        height: 290px !important;
+    }
+
+    .panel.panel-widget .panel-body.comments-body {
+        height: 250px !important;
+    }
+	.dashboard{
+		margin-top: 0px;
+	}
+
+
+
+
+    .upload-access-btn {
+        display: inline-block;
+        width: 28px;
+        font-size: 22px;
+        height: 40px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 40px;
+        display: inline-block;
+        color: @color-gray-light;
+    }
+
+    .comment-form-wrapper {
+        background: #fff;
+        padding: 0px;
+
+        .comment-btn {
+            display: inline-block;
+            width: 30%;
+        }
+
+        input {
+            display: inline-block;
+            border: none;
+            box-shadow: none;
+        }
+    }
+
+    .comment-item {
+        .comment-title {
+            margin-bottom: 2px;
+        }
+
+        .commenter {
+            font-weight: bold;
+        }
+
+        .comment-time {
+            color: @color-gray-lighter;
+        }
+
+        .extend-link.collapsed {
+            &:before {
+                content: "Expand";
+            }
+
+            color: @color-teal;
+        }
+
+        .extend-link {
+            &:before {
+                content: "Hide";
+            }
+
+            color: @color-red;
+        }
+
+        .replay {
+            padding-left: 15px;
+        }
+    }
+
+    .panel-body {
+        border: none !important;
+        box-shadow: none !important;
+        overflow-x: hidden;
+
+        .list-group {
+            .media.list-group-item {
+                margin-top: 0px;
+                padding: 5px;
+
+                &:nth-child(odd) {
+                    // background: #F0EFF4;
+                }
+
+                &:hover {
+                    background: @color-page;
+
+                    a, p {
+                        // color: #fff;
+                    }
+                }
+
+                .contact-name {
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+
+    .panel.panel-widget .panel-body .list-group .invoice-item {
+        padding: 10px;
+
+        &:hover {
+            color: #fff;
+        }
+
+        p {
+            margin: 0px;
+        }
+
+        .price {
+            text-align: right;
+        }
+
+        .notice {
+            color: @color-yellow-darkest;
+        }
+
+        .warning {
+            color: @color-orange;
+        }
+
+        .danger {
+            color: @color-red;
+        }
+
+        @media (max-width:767px) {
+            .number {
+                padding: 5px 8px;
+            }
+        }
+    }
+
+    .list-group li:hover {
+        background: @color-light-blue-dark !important;
+
+        p {
+            color: #fff;
+        }
+
+        a {
+            color: #fff;
+        }
+    }
+
+    h2 {
+        a {
+            color: @color-text;
+            text-decoration: none;
+        }
+
+        .icon-font-icons_Portal_Documents {
+            font-size: 30px;
+            position: relative;
+            top: 5px;
+        }
+
+        .icon-font-icons_Portal_Comments {
+            font-size: 32px;
+            position: relative;
+            top: 2px;
+        }
+
+        .icon-font-book {
+            position: relative;
+            top: 2px;
+        }
+
+        span {
+            margin-right: 10px;
+        }
+    }
+
+    .section-heading {
+        min-height: 40px;
+        margin-bottom: 15px;
+    }
+
+    .content-wrapper {
+        padding-right: 15px;
+
+        .file-name {
+            margin: 5px 0px;
+        }
+    }
+
+    .contact-info-wrapper {
+        .contact-name {
+            margin: 5px 0px;
+        }
+    }
+
+    .contact-icons-wrapper {
+        margin-top: 12px;
+        padding-right: 10px;
+
+        .icon-cell {
+            font-size: 22px;
+            padding: 5px;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+    .download-btn-wrapper {
+        text-align: right;
+
+        .icon-font-document-download {
+            font-size: 30px;
+            display: inline-block;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .panel-footer {
+        border-top: 1px solid @color-gray-lighter;
+        padding: 10px;
+        background: #fff;
+    }
+
+    .portal-document-panel {
+        border: 1px solid @color-gray-highlight;
+    }
+
+    .comment {
+        float: right !important;
+        position: absolute;
+        right: 0;
+        padding-right: 10px;
+    }
+
+    @media (max-width:991px) {
+        .panel-body {
+            height: 400px !important;
+        }
+    }
+}
+
+
+.protal-index {
+    .header-section {
+        .search-wrapper {
+            padding-left: 0px;
+            max-width: 400px;
+
+            .btn {
+                background: @color-gray-lighter;
+                padding: 4px 0px;
+                border-bottom: 3px solid @color-gray-dark;
+            }
+
+            @media (max-width:767px) {
+                padding-left: 0px;
+                margin-top: 10px;
+                max-width: 100%;
+            }
+        }
+
+        img.btn-image {
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    .content-section {
+        margin-top: 20px;
+
+        .icons-container {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .circle-icon {
+            .synergy-circle(35px);
+            background: @color-dark-blue;
+            color: #fff;
+            font-size: 18px;
+            margin: 3px;
+        }
+
+        .circle-icon.red {
+            background: @color-red;
+        }
+
+        .description {
+            font-size: 18px;
+            display: block;
+            height: 40px;
+            // white-space:nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .logo {
+            margin-top: 10px;
+        }
+
+        .card-holder {
+            // clear:left;
+        }
+
+        .card {
+        }
+
+        .sign-up-banner {
+            padding: 20px;
+            background: url("/content/img/organisation/getting-start/onboarding-header.jpg");
+            background-size: cover;
+
+            .sign-up {
+                display: block;
+            }
+
+            h3 {
+                color: #fff;
+                font-weight: bold;
+                margin-bottom: 20px;
+                font-size: 22px;
+                line-height: 1;
+            }
+
+            p {
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.portal-card {
+    padding: 10px;
+    border: 1px solid @color-gray-highlight;
+    box-shadow: 0 0 3px @color-gray-highlight;
+    background: #fff;
+    height: 150px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    .synergy-transition(transform, 0.5s, ease-out);
+
+    .description {
+        font-size: 12px !important;
+    }
+
+    img.logo-of-row {
+        width: 40px;
+        height: 40px;
+        border: none;
+        .synergy-round-corners(0px);
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        height: 34px;
+        overflow: hidden;
+    }
+
+    .icon-wrapper {
+        float: right;
+
+        .icon-font-icons_Portal_Documents, .icon-font-icons_Portal_Comments {
+            font-size: 28px;
+        }
+
+        .icon-font-book {
+            position: relative;
+            top: -3px;
+        }
+
+        .icon-cell {
+            display: inline-block;
+            width: 30px;
+        }
+
+        span {
+            color: @color-text;
+            font-size: 20px;
+        }
+    }
+
+    .bottom-content-wrapper {
+        a {
+            color: @color-text;
+
+            &:hover {
+                color: @color-teal;
+            }
+        }
+    }
+}
+
+.portal-invoice {
+    .invoice-item-wrapper {
+        padding: 0px 10px !important;
+
+        &:Hover {
+            .invocie-number a {
+                color: #fff !important;
+            }
+        }
+
+        .invocie-number {
+            padding: 0px 10px !important;
+
+            a {
+                color: @color-green-darkest !important;
+            }
+        }
+    }
+
+    .header {
+        .header-inner {
+            padding: 10px;
+        }
+    }
+}

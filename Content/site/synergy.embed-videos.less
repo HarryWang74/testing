@@ -1,0 +1,48 @@
+﻿.js-video {
+    height: 0;
+    padding-top: 25px;
+    padding-bottom: 67.5%;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.js-video.vimeo {
+    padding-top: 0;
+}
+
+.js-video.widescreen {
+    padding-bottom: 56.34%;
+}
+
+.js-video.powerbi {
+    padding-bottom: 62%;
+}
+
+.js-video.odata {
+    padding-bottom: 59%;
+}
+
+.js-video embed,
+.js-video iframe,
+.js-video object,
+.js-video video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.dismissable-video {
+    position: relative;
+
+    .js-video {
+    }
+
+    .dismiss-button {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+}

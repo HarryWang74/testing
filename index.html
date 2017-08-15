@@ -1,0 +1,1118 @@
+<!doctype html>
+<html ng-app="synergyApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Synergy5 - Dashboard</title>
+	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="#F0EFF4">
+	<meta name="application-name" content="Synergy" />
+	<meta name="msapplication-TileColor" content="#0bafb5">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="msapplication-config" content="/browserconfig.xml" />
+
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="160" />
+	<meta property="og:image:height" content="98" />
+
+	<!-- theme css star-->
+	<link href="/content/icons/style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="/Content/icons/ie7/ie7.css">
+	<link href="/Content/bootstrap/bootstrap.css" rel="stylesheet" />
+	<link href="/Content/vendor/angular-ui-tree.css" rel="stylesheet" />
+	<link href="/Content/vendor/ng-tags-input.css" rel="stylesheet" />
+	<link href="/Content/vendor/ng-tags-input.bootstrap.css" rel="stylesheet" />
+	<link href="/Content/vendor/colorpicker.css" rel="stylesheet" />
+	<link href="/Content/vendor/bootstrap-switch.css" rel="stylesheet" />
+	<link href="/Content/vendor/chosen.css" rel="stylesheet" />
+	<link href="/Content/vendor/bootstrap-toggle.css" rel="stylesheet" />
+	<link href="/Content/vendor/evol.colorpicker.css" rel="stylesheet" />
+	<link href="/Content/vendor/angular-motion.css" rel="stylesheet" />
+	<link href="/Content/vendor/ngNotificationsBar.css" rel="stylesheet" />
+	<link href="/Content/app.css" rel="stylesheet" />
+	<!-- theme css finish-->
+	<!-- 20170815v3 -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400' rel='stylesheet' type='text/css'>
+
+			<script type="text/javascript">  var appInsights = window.appInsights || function (config) { function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f; for (s.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) r("track" + i.pop()); return r("setAuthenticatedUserContext"), r("clearAuthenticatedUserContext"), config.disableExceptionTracking || (i = "onerror", r("_" + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t["_" + i](config, r, u, e, o), s }), t }({ instrumentationKey: "368b41b7-381a-4159-9b14-c76f559ebcfe" }); window.appInsights = appInsights; appInsights.trackPageView();</script>
+
+	<script src="/bundles/modernizr?v=pzF2z7K1EQQVTl26dKkieEyp5FGs9NLSaFSv_br7l0k1"></script>
+
+
+
+
+
+
+
+
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+
+	<!-- Start of totalsynergy Zendesk Widget script -->
+	<script>/*<![CDATA[*/window.zEmbed || function (e, t) { var n, o, d, i, s, a = [], r = document.createElement("iframe"); window.zEmbed = function () { a.push(arguments) }, window.zE = window.zE || window.zEmbed, r.src = "javascript:false", r.title = "", r.role = "presentation", (r.frameElement || r).style.cssText = "display: none", d = document.getElementsByTagName("script"), d = d[d.length - 1], d.parentNode.insertBefore(r, d), i = r.contentWindow, s = i.document; try { o = s } catch (c) { n = document.domain, r.src = 'javascript:var d=document.open();d.domain="' + n + '";void(0);', o = s } o.open()._l = function () { var o = this.createElement("script"); n && (this.domain = n), o.id = "js-iframe-async", o.src = e, this.t = +new Date, this.zendeskHost = t, this.zEQueue = a, this.body.appendChild(o) }, o.write('<body onload="document._l();">'), o.close() }("https://assets.zendesk.com/embeddable_framework/main.js", "totalsynergy.zendesk.com");/*]]>*/</script>
+	<script>
+		zE(function () {
+
+
+
+			var userName = "gang wang";
+			var email = "gang.wang@totalsynergy.com";
+			var organisationName = "gangs organisation business";
+			zE.identify({
+				name: userName,
+				email: email,
+				organization: organisationName
+			});
+			zE.hide();
+		});
+	</script>
+	<!-- End of totalsynergy Zendesk Widget script -->
+	<!--<![endif]-->
+</head>
+<body ng-controller=synergyController>
+	<synergy-user key="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6Imdhbmcud2FuZ0B0b3RhbHN5bmVyZ3kuY29tIiwiYXBwbGljYXRpb25pZCI6MCwidXNlcm5hbWUiOiJnYW5nd2FuZyIsInRlbmFudCI6IiIsImNvZGVfZXhwaXJlcyI6NjM2Njk4OTU2ODcyNDAzODYwfQ.tmdMYBGtu9GvNs45LzJQqXq-fHhLOp-u56LpfSduTe4"></synergy-user>
+	<script>
+		var userID, loginStatus, useType
+       userID = "076e1eee-2717-479f-a0d5-5106557f702e"; loginStatus = true;
+        useType = "Paid";
+		dataLayer = [];
+		dataLayer.push({
+			'userId': userID,
+			'userType': useType,
+			'loggedInStatus': loginStatus
+		});
+	</script>
+
+	<!-- Google Tag Manager -->
+	<noscript>
+		<iframe src="//www.googletagmanager.com/ns.html?id=GTM-K9HW3M"
+				height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<script>
+		(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-K9HW3M');</script>
+	<!-- End Google Tag Manager -->
+
+	<div id="pageContainer" class="page-container">
+		<div class="page-container-header">
+			<notifications-bar class="notifications"></notifications-bar>
+
+
+
+
+
+
+
+
+        <div class="wizard-email-nonverified">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-10 text-left">
+                        <p>
+                            ⚠ Confirm your email by clicking the link in the email you have received or click <a href="/Profile">Edit Profile</a> to resend the confirmation email
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+	<div class="navbar navbar-default" role="navigation">
+		<div class="container navbar-container navigation">
+
+			<a href="/" class="navbar-home hidden-xs">
+				<img class="navbar-logo" src="/content/img/synergy-header-40px-logo.png" />
+			</a>
+			<a href="/" class="navbar-home visible-xs-inline">
+				<img class="navbar-logo" src="/content/img/synergy-header-40px-logo-small.png" />
+			</a>
+
+				<div style="display:none;">
+<form action="/Account/LogOff" class="navbar-form" id="logoutForm" method="post"></form>				</div>
+				<div class="navbar-header pull-right">
+					<ul class="nav buttons">
+						<li class="hidden-xs">
+							<form action="/Search" method="get" data-loading="true">
+								<div class="input-group">
+									<input type="text" name="query" class="form-control search-text" placeholder="Search everything">
+                                    <input type="hidden" name="type" value="All" />
+                                    <input type="hidden" name="slug" value="{{currentSlug()}}" />
+									<div class="input-group-btn">
+										<button type="submit" class="btn btn-default search-button" data-loading-button-search="button">
+											<img src="/content/img/icon-40px-search.png" />
+										</button>
+									</div>
+								</div>
+							</form>
+						</li>
+						<li class="visible-xs">
+							<a href="/Search?type=All" class="button search cursor_wait">
+								<img src="/content/img/icon-40px-search.png" />
+							</a>
+						</li>
+						<li>
+							<a id="notifications-button" href="/Notifications" class="button cursor_wait notifications">
+								<img src="/content/img/icon-40px-notifications.png" />
+								<div class="notifications-count">
+									<span id="notifications-count">1</span>
+								</div>
+							</a>
+						</li>
+						<li class="timerWrapper">
+							<a class="button timers" ng-click="openTimers()">
+								<img id="stopped-timer-image" style="display:block;" src="/content/img/icon-40px-timer.png" />
+								<img id="running-timer-image" style="display:none;" src="/content/img/icon-40px-timeranimation.gif" />
+								<img id="running-timer-image-pulse" style="display:none;" src="/content/img/icon-40px-timer-pulse.gif" />
+							</a>
+							<timer-modal ng-show="timerOpened" close-modal="closeTimerModal()" class="timer-modal"></timer-modal>
+						</li>
+						<li class="timeSheetsWrapper">
+								<a href="/Timesheets/gangsorganisationbusiness/#/time/0" class="button timesheets">
+									<img src="/content/img/icon-40px-timesheet.png" />
+								</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="button profile" id="top-navbar-profile-image" data-toggle="dropdown" title="gangwang">
+								<img class="downloadIndicator" src="/Content/img/profile-dropdown-overlay.png" />
+								<img src="https://profileimages.azurewebsites.net/synergy/40/gw.jpg" />
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" role="menu">
+									<li><a href="/Profile">Edit profile</a></li>
+									<li class="divider"></li>
+                                                                    <li>
+                                        <a href="/Portals">
+                                            My portals
+                                        </a>
+                                    </li>
+                                    <li><a href="/Organisations">
+                                        All organisations
+                                    </a></li>
+                                    <li>
+                                        <a href="https://demo.totalsynergy.com">Sample organisation</a>
+                                    </li>
+                                    <li class="divider"></li>
+								<li><a target="_blank" href="https://totalsynergy.zendesk.com/hc/en-us">{{ 'KNOWLEDGEBASE' | translate }}</a></li>
+								<li>
+									<a target="_blank" id="header-help-topic" href="https://synergy5sandboxhelp.blob.core.windows.net/help/Content/Topics/Org/org-dashboard.htm">Help files</a>
+								</li>
+								<li><a target="_blank" href="https://totalsynergy.zendesk.com/hc/en-us/community/topics">{{ 'COMMUNITY' | translate }}</a></li>
+									<li><a href="#" onclick="zE.activate({ hideOnClose: true }); return false;">Support</a></li>
+								<li class="divider"></li>
+								<li><a href="#" onclick="document.getElementById('logoutForm').submit()">Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+
+
+
+
+
+				</div>
+			<div class="navbar-status-loading" ng-show="ajaxloading">
+				<img src="/Content/img/ajax-loader-2.gif" />
+			</div>
+
+		</div>
+	</div>
+
+
+				<div class="container-header container-hide-modal ">
+					<div class="container ng-cloak">
+						<div class="row">
+							<div class="col-xs-12 ">
+
+
+        <organisation-init slug="gangsorganisationbusiness" name="gangs organisation business" logo="https://profileimages.azurewebsites.net/synergy/80/gob.jpg"></organisation-init>
+            <breadcrumb-container>
+            <first-breadcrumb>
+                <div class="page-breadcrumb active dropdown" enable-second-level-menus>
+                    <button data-toggle="dropdown" class="btn btn-link btn-block logo">
+                        <img id="navbar-user-logo" src="https://profileimages.azurewebsites.net/synergy/30/gob.jpg" />
+                        <p class="page-breadcrumb-name">gangs organisation business</p>
+                        <p class="page-breadcrumb-area">Organisation</p>
+                        <span class="icon-font-chevron-circle-down"></span>
+                    </button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+							<li><a href="/Organisation/gangsorganisationbusiness/Home">Dashboard</a></li>
+
+
+							<li class="divider"></li>
+							        <li><a href="/Timesheets/gangsorganisationbusiness/#/time/0">Timesheets</a></li>
+
+							        <li><a href="/Organisation/gangsorganisationbusiness/Projects?IsBillableOption=0">Projects</a></li>
+
+
+							        <li><a href="/Organisation/gangsorganisationbusiness/Invoices">Invoices</a></li>
+
+							        <li><a href="/Organisation/gangsorganisationbusiness/Home/App/#/invoicepayments">Invoice payments</a></li>
+
+							        <li><a href="/Organisation/gangsorganisationbusiness/Expenses/#/officeexpenses/0">Office expenses</a></li>
+
+							        <li><a href="/Organisation/gangsorganisationbusiness/Home/App/#/bills">Bills</a></li>
+
+
+							        <li><a href="/Organisation/gangsorganisationbusiness/Contacts">Contacts</a></li>
+
+							        <li><a href="/Organisation/gangsorganisationbusiness/Staff">Staff</a></li>
+
+
+							        <li><a href="/Organisation/gangsorganisationbusiness/Notes">Notes</a></li>
+
+
+
+							        <li><a href="/Organisation/gangsorganisationbusiness/Home/App/#/reports">Reports</a></li>
+
+
+
+							<li>
+								<a href="/Portals">My portals</a>
+							</li>
+
+							<!-- setting -->
+								<li class="divider"></li>
+								<li class="dropdown dropdown-submenu">
+									<a tabindex="-1" href="#" class="dropdown-toggle" data-toggle="dropdown">Settings</a>
+									<ul class="dropdown-menu">
+										<!-- Organisation settings -->
+										<li class="dropdown dropdown-submenu">
+											<a tabindex="-1" href="#" class="dropdown-toggle" data-toggle="dropdown">Organisation</a>
+											<ul class="dropdown-menu">
+												        <li><a href="/Organisation/gangsorganisationbusiness/GettingStarted">Getting started</a></li>
+
+												<!-- Data imports -->
+													<li class="dropdown dropdown-submenu">
+														<a tabindex="-1" href="#" class="dropdown-toggle" data-toggle="dropdown">Data imports</a>
+														<ul class="dropdown-menu">
+															        <li><a href="/Organisation/gangsorganisationbusiness/Home/App/#/import">Excel import</a></li>
+
+
+        <li><a href="/Organisation/gangsorganisationbusiness/Home/App/#/importxero">Xero contact import</a></li>
+        <li><a href="/Organisation/gangsorganisationbusiness/Home/App/#/importmyob">MYOB ARL contact import</a></li>
+        <li><a href="/Organisation/gangsorganisationbusiness/Home/App/#/importqbo">QBO contact import</a></li>
+														</ul>
+													</li>
+												        <li><a href="/Organisation/gangsorganisationbusiness/Details">Details</a></li>
+
+												        <li><a href="/Organisation/gangsorganisationbusiness/Configuration">Configuration</a></li>
+
+												        <li><a href="/Organisation/gangsorganisationbusiness/Logos">Logos</a></li>
+
+												        <li><a href="/Organisation/gangsorganisationbusiness/ProjectNumbers">Project numbers</a></li>
+
+												        <li><a href="/Organisation/gangsorganisationbusiness/InvoiceNumbers">Invoice numbers</a></li>
+
+												        <li><a href="/Organisation/gangsorganisationbusiness/CreditNumbers">Credit numbers</a></li>
+
+												        <li><a href="/Organisation/gangsorganisationbusiness/Subscription">Subscription</a></li>
+
+												<li class="divider"></li>
+												        <li><a href="/Organisation/gangsorganisationbusiness/Integrations">Applications</a></li>
+
+												<li class="divider"></li>
+												        <li><a href="/Organisation/gangsorganisationbusiness/Security">Security matrix</a></li>
+
+											</ul>
+										</li>
+										<!-- Financial -->
+											<li class="dropdown dropdown-submenu">
+												<a tabindex="-1" href="#" class="dropdown-toggle" data-toggle="dropdown">Financial</a>
+												<ul class="dropdown-menu">
+													        <li><a href="/Organisation/gangsorganisationbusiness/Rates">Rates</a></li>
+
+													        <li><a href="/Organisation/gangsorganisationbusiness/Tax">Tax</a></li>
+
+													        <li><a href="/Organisation/gangsorganisationbusiness/FinancialControls">Financial controls</a></li>
+
+													        <li><a href="/Organisation/gangsorganisationbusiness/OvertimeRates">Overtime rates</a></li>
+
+
+												</ul>
+											</li>
+										<!-- Templates -->
+											<li class="dropdown dropdown-submenu">
+												<a tabindex="-1" href="#" class="dropdown-toggle" data-toggle="dropdown">Templates</a>
+												<ul class="dropdown-menu">
+													        <li><a href="/Organisation/gangsorganisationbusiness/workbreakdowntemplates">Work breakdown</a></li>
+
+													        <li><a href="/Organisation/gangsorganisationbusiness/DocumentTemplates">Documents</a></li>
+
+													        <li><a href="/Organisation/gangsorganisationbusiness/ProjectFolderTemplates">Project folder</a></li>
+
+													        <li><a href="/Organisation/gangsorganisationbusiness/ContactFolderTemplates">Contact folder</a></li>
+
+													        <li><a href="/Organisation/gangsorganisationbusiness/StaffFolderTemplates">Staff folder</a></li>
+
+												</ul>
+											</li>
+
+										<!-- Lists -->
+										<li class="dropdown dropdown-submenu">
+											<a tabindex="-1" href="#" class="dropdown-toggle" data-toggle="dropdown">Project Lists</a>
+											<ul class="dropdown-menu">
+
+												        <li><a href="/Organisation/gangsorganisationbusiness/CostCentres">Cost centres</a></li>
+
+												        <li><a href="/Organisation/gangsorganisationbusiness/Disciplines">Disciplines</a></li>
+
+												        <li><a href="/Organisation/gangsorganisationbusiness/ExpenseTypes">Expense types</a></li>
+
+												        <li><a href="/Organisation/gangsorganisationbusiness/ProjectTypes">Project types</a></li>
+
+												        <li><a href="/Organisation/gangsorganisationbusiness/invoiceterms">Payment terms</a></li>
+
+												        <li><a href="/Organisation/gangsorganisationbusiness/PaymentTypes">Payment types</a></li>
+
+
+												        <li><a href="/Organisation/gangsorganisationbusiness/ReasonCodes">Reason codes</a></li>
+
+												        <li><a href="/Organisation/gangsorganisationbusiness/ProjectStatus">Status</a></li>
+
+											</ul>
+										</li>
+                                        <li class="dropdown dropdown-submenu">
+                                            <a tabindex="-1" href="#" class="dropdown-toggle" data-toggle="dropdown">Timesheet Lists</a>
+                                            <ul class="dropdown-menu">
+                                                        <li><a href="/Organisation/gangsorganisationbusiness/OfficeGroups">Internal Stages</a></li>
+
+                                                        <li><a href="/Organisation/gangsorganisationbusiness/TimesheetTasks">Project Tasks</a></li>
+
+                                            </ul>
+                                        </li>
+
+										<li class="dropdown dropdown-submenu">
+											<a tabindex="-1" href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Lists</a>
+											<ul class="dropdown-menu">
+												        <li><a href="/Organisation/gangsorganisationbusiness/Roles">Roles</a></li>
+
+												        <li><a href="/Organisation/gangsorganisationbusiness/Salutations">Titles</a></li>
+
+												        <li><a href="/Organisation/gangsorganisationbusiness/ContactStatus">Contact status</a></li>
+
+											</ul>
+										</li>
+									</ul>
+								</li>
+							<!-- / setting -->
+
+
+
+							<!-- connect -->
+								<li class="divider"></li>
+								<li class="dropdown dropdown-submenu">
+									<a tabindex="-1" href="#" class="dropdown-toggle" data-toggle="dropdown">Connect to accounting</a>
+									<ul class="dropdown-menu">
+										<!-- Connect -->
+
+										        <li><a href="/Organisation/gangsorganisationbusiness/Home/App/#/xeroConnect">Xero Connect</a></li>
+
+										        <li><a href="/Organisation/gangsorganisationbusiness/Home/App/#/myobConnect">MYOB ARL Connect</a></li>
+
+										        <li><a href="/Organisation/gangsorganisationbusiness/Home/App/#/qboConnect">QuickBooks Online Connect</a></li>
+
+									</ul>
+								</li>
+							<!-- / connect -->
+
+							<li class="divider"></li>
+							        <li><a href="/Organisation/gangsorganisationbusiness/Subscription">Subscription</a></li>
+
+								<li>
+									<a href="/Organisations">Switch organisation</a>
+								</li>
+
+
+						</ul>
+
+                </div>
+            </first-breadcrumb>
+
+
+                <last-breadcrumb>
+                    <organisation-statistics></organisation-statistics>
+                </last-breadcrumb>
+        </breadcrumb-container>
+
+
+
+
+
+
+
+
+							</div>
+							<div class="col-xs-12">
+
+
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<div class="page-alerts">
+				<div class="container container-hide-modal">
+					<div class="row">
+
+
+
+
+
+
+
+
+
+
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-container-body">
+			<div class="container container-body container-hide-modal page-color">
+
+
+
+
+
+
+
+
+
+
+
+<span class="icon-font-chevron-circle-down" style="font-size: 40px;"></span>
+<organisation-dashboard
+						slug="gangsorganisationbusiness"
+						helpurl="https://synergy5sandboxhelp.blob.core.windows.net"
+						contact-id="5"
+						show-wizard="True"
+						environment-is-sandbox ="False"></organisation-dashboard>
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+			<div class="container text-center container-hide-modal container-body-footer">
+
+			<div class="footer">
+				<p>
+					&copy; 2017 <a href="http://www.totalsynergy.com">Total Synergy</a> Pty Ltd
+
+					<span class="hidden-xs-inline">&nbsp;|&nbsp;</span>
+					<span class="visible-xs-inline"><br /></span>
+					<a href="/About/PrivacyPolicy">Privacy policy</a>&nbsp;|&nbsp;
+					<span class="helpBtns">
+						<a class="btn btn-roundCorner" target="_blank" href="https://totalsynergy.zendesk.com/hc/en-us">Knowledge base</a>
+						<a class="btn btn-roundCorner" id="footer-help-topic" target="_blank" href="https://synergy5sandboxhelp.blob.core.windows.net/help/Content/Topics/Org/org-dashboard.htm">Help files</a>
+					</span>
+						<a href="#" onclick="zE.activate({ hideOnClose: true }); return false;">Support</a>
+				</p>
+			</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="/bundles/js?v=joYx0rLYUitfINZx1IpzZnxjJGZIW0LY1vNFxwBYMc81"></script>
+
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHwzLpEYQrwU_Vi8QFVec2NclEHPFF4Jo&libraries=places"></script>
+	<script src="/resources/en-au.js?version=5064363535"></script>
+
+	<script src="/bundles/angularjs?v=dV_7HxxtkzEkZqBpZHOMRx6ZfyOm6UaeLJ30u-6wjPE1"></script>
+
+	<script src="/scripts/i18n/angular-locale_en-au.js?version=5064363535"></script>
+<script src="/bundles/SynergyApp?ver=5064363535"></script>
+<script src="/bundles/synergyAppHtml?ver=5064363535"></script>
+	        <script type="text/javascript">
+            var _rvm = { useCent: false, useFtime: false };
+        </script>
+
+
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+
+	<script type="text/javascript">
+
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/sw.js').then(function (registration) {
+				// Registration was successful
+				console.log('ServiceWorker registration successful with scope: ', registration.scope);
+			}).catch(function (err) {
+				// registration failed :(
+				console.log('ServiceWorker registration failed: ', err);
+			});
+		}
+
+	</script>
+
+
+
+
+
+
+	<div id="site-menu-overlay">
+	</div>
+	<div id="site-menu-underlay" class="toggle-nav-left"></div>
+
+	<!-- angular templates -->
+<script type="text/ng-template" id="tsAutocompleteDropDown.html">
+	<div style="position:relative">
+		<input type="text" ng-model="dropdownitem.text"
+			   ng-focus="onFocus()" placeholder="{{placeholder}}"
+			   ng-blur="onBlur()"
+			   ng-keyup="onKeyUp($event)" ng-keydown="onKeyDown($event)"
+			   ng-model-options="{ debounce: 300 }"
+			   ng-click="onClick()"
+			   focus-on="newItemAdded" class="form-control form-control-selector"
+			   ng-disabled="disabled" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+		<span ng-show="dropdownitem.info" class="form-control-selector-info">{{ dropdownitem.info }}</span>
+		<div ng-show="loading">
+			<div class="form-control-selector-loading" style="">Loading...</div>
+		</div>
+		<ul class="dropdown-menu-autocomplete" role="menu" ng-show="showList()" ng-mouseover="onHover()" ng-disabled="disabled"
+			ng-mouseleave="onLeave()">
+			<div ng-show="loading">
+				<div class="dropdown-menu-autocomplete-group" style="">Loading...</div>
+			</div>
+			<div ng-show="groups.length === 0">
+				<div class="dropdown-menu-autocomplete-group" style="">
+					<span>Nothing available...</span>
+					<button class="left btn btn-link" ng-show="addNewRecord!==undefined" ng-click="onAddClick()">add [ctrl + a]</button>
+				</div>
+			</div>
+			<div ng-repeat="group in groups">
+				<div class="dropdown-menu-autocomplete-group" style="" ng-show="group.length > 0" data-ng-bind="group"></div>
+				<li ng-repeat="item in items | filter:groupMatcher(group) track by item.id" ng-click="itemClicked(item.id)" ng-class="{active: item.active}" style="position:relative"
+					scroll-item-if ng-hide="item.hidden">
+					<a class="dropdown-menu-autocomplete-item" role="menuitem" tabindex="-1">
+						<span data-ng-bind="item.name"></span><a>
+							<span ng-show="item.info" class="dropdown-menu-autocomplete-item-info" data-ng-bind="item.info"></span>
+				</li>
+			</div>
+			<div ng-show="hasMore">
+				<div class="dropdown-menu-autocomplete-group" style="">
+					<span>Showing {{items.length}} of {{originalItems.length}}...</span>
+				</div>
+			</div>
+		</ul>
+
+
+		<input type="hidden" id="dummy" name="dummy" class="change-target" />
+	</div>
+</script>
+
+<script type="text/ng-template" id="tsAutocompleteDropDownWithHiddenInput.html">
+	<div style="position:relative">
+		<input prevent-submit="prevent-submit"
+			   type="text"
+			   ng-model="dropdownitem.text"
+			   ng-focus="onFocus()"
+			   placeholder="{{placeholder}}"
+			   ng-blur="onBlur()"
+			   ng-keyup="onKeyUp($event)"
+			   ng-keydown="onKeyDown($event)"
+			   ng-keypress="onKeyPress($event)"
+			   ng-click="onClick()"
+			   focus-on="newItemAdded"
+			   class="form-control form-control-selector"
+			   ng-disabled="disabled"
+			   autocomplete="off"
+			   style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+		<span ng-show="dropdownitem.info" class="form-control-selector-info">{{ dropdownitem.info }}</span>
+		<div ng-show="loading">
+			<div class="form-control-selector-loading" style="">Loading...</div>
+		</div>
+		<ul class="dropdown-menu-autocomplete" role="menu" ng-show="showList()" ng-mouseover="onHover()"
+			ng-mouseleave="onLeave()">
+			<div ng-show="loading">
+				<div class="dropdown-menu-autocomplete-group" style="">Loading...</div>
+			</div>
+			<div ng-show="groups.length === 0">
+				<div class="dropdown-menu-autocomplete-group" style="">
+					<span>Nothing available...</span>
+					<button class="left btn btn-link" ng-show="addNewRecord!==undefined" ng-click="onAddClick()">add [ctrl + a]</button>
+				</div>
+			</div>
+			<div ng-repeat="group in groups">
+				<div class="dropdown-menu-autocomplete-group" style="" ng-show="group.length > 0" data-ng-bind="group"></div>
+				<li ng-repeat="item in items | filter:groupMatcher(group)" ng-click="itemClicked(item.id)" ng-class="{active: item.active}" scroll-item-if>
+					<a class="dropdown-menu-autocomplete-item" role="menuitem" tabindex="-1">
+						<span data-ng-bind="item.name"></span><a>
+							<span ng-show="item.info" class="dropdown-menu-autocomplete-item-info" data-ng-bind="item.info"></span>
+				</li>
+			</div>
+			<div ng-show="hasMore">
+				<div class="dropdown-menu-autocomplete-group" style="">
+					<span>Showing {{items.length}} of {{originalItems.length}}...</span>
+				</div>
+			</div>
+		</ul>
+		<input type="hidden" id="{{ hiddenId }}" name="{{ hiddenName }}" class="change-target" value="{{ id }}" />
+
+	</div>
+</script>
+
+<script type="text/ng-template" id="tsContactSelect.html">
+	<div class="contact-single-container">
+
+		<div class="form-group has-feedback" ng-show="!showCard()">
+			<input prevent-submit type="text" ng-model="dropdownitem.text" ng-focus="onFocus()" placeholder="{{placeholder}}"
+				   ng-blur="onBlur()" ng-keyup="onKeyUp($event)" ng-keydown="onKeyDown($event)" ng-keypress="onKeyPress($event)"
+				   ng-click="onClick()"
+				   focus-on="newItemAdded" class="form-control contact-select-input"
+				   autocomplete="off"
+				   ng-disabled="disabled != 'false'">
+		</div>
+		<i class="glyphicon {{IconClassSelected()}} form-control-feedback selector-input-icon"></i>
+		<div ng-show="loading">
+			<div class="form-control-selector-loading" style="">Loading...</div>
+		</div>
+
+		<div class="contacts-host" ng-show="showCard()">
+			<ul class="contacts-list">
+				<li class="contact-list-item" ng-repeat="contact in selectedcontacts">
+					<div class="contact-list-tag">
+						<span ng-bind="contact.Name" class="contact-name ng-binding ng-scope" ng-click="ShowContactDetails(contact.id, contact.Entity.contactTypeId)">
+						</span>
+					</div>
+					<a class="remove-button ng-scope" ng-click="RemoveContact($index)" tabindex="{{GetTabIndex($index)}}" ng-keydown="RemoveContactWithKeydown($index, $event)">
+						<span class="icon-font-remove"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div ng-include src="'tsContactSelectResultList.html'"></div>
+
+	</div>
+
+</script>
+
+<script type="text/ng-template" id="tsContactSelectInput.html">
+	<div class="contact-single-container">
+
+		<div class="form-group has-feedback" ng-show="!showCard()">
+			<input prevent-submit type="text" ng-model="dropdownitem.text" ng-focus="onFocus()" placeholder="{{placeholder}}"
+				   ng-blur="onBlur()" ng-keyup="onKeyUp($event)" ng-keydown="onKeyDown($event)" ng-keypress="onKeyPress($event)"
+				   ng-click="onClick()"
+				   focus-on="newItemAdded" class="form-control form-control-selector contact-select-input"
+				   ng-disabled="disabled != 'false'">
+		</div>
+		<i class="glyphicon {{IconClassSelected()}} form-control-feedback selector-input-icon"></i>
+		<div ng-show="loading">
+			<div class="form-control-selector-loading" style="">Loading...</div>
+		</div>
+
+		<div class="contacts-host" ng-show="showCard()">
+			<ul class="contacts-list">
+				<li class="contact-list-item" ng-repeat="contact in selectedcontacts">
+					<div class="contact-list-tag">
+						<span ng-bind="contact.Name" class="contact-name ng-binding ng-scope" ng-click="ShowContactDetails(contact.id, contact.Entity.contactTypeId)"></span>
+					</div>
+					<a class="remove-button ng-scope" ng-click="RemoveContact($index)" tabindex="{{GetTabIndex($index)}}" ng-keydown="RemoveContactWithKeydown($index, $event)">
+						<span class="icon-font-remove"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div ng-include src="'tsContactSelectResultList.html'"></div>
+
+	</div>
+
+	<div ng-if="Required">
+		<input type="text" id="{{ hiddenId }}" name="{{ hiddenName }}" class="change-target" value="{{ Value() }}" data-val="{{ Required }}" data-val-required="{{RequiredValidationMessage}}" style="display:none" />
+		<span class="field-validation-valid" data-valmsg-for="{{ hiddenName }}" data-valmsg-replace="true"></span>
+	</div>
+
+	<div ng-if="!Required">
+		<input type="text" id="{{ hiddenId }}" name="{{ hiddenName }}" class="change-target" value="{{ ContactId }}" style="display:none" />
+	</div>
+
+</script>
+
+<script type="text/ng-template" id="tsContactSelectMulti.html">
+	<div class="contacts-host form-group has-feedback">
+		<ul class="contacts-list">
+			<li class="contact-list-item" ng-repeat="contact in selectedcontacts">
+				<div class=" contact-list-tag">
+					<span ng-bind="contact.Name" class="ng-binding ng-scope" ng-click="ShowContactDetails(contact.id, ContactTypeId)">
+
+					</span>
+					<a class="remove-button ng-scope" ng-click="RemoveContact($index)" tabindex="{{GetTabIndex($index)}}" ng-keydown="RemoveContactWithKeydown($index, $event)">
+						<span class="icon-font-remove"></span>
+					</a>
+				</div>
+			</li>
+		</ul>
+
+		<contact-select slug="{{slug}}"
+						contactid="SearchContactId"
+						contactname="SearchContactName"
+						parentcontactid="ParentContactId"
+						contacttypeid="ContactTypeId"
+						showcompany="ShowCompany"
+						showpersonnel="ShowPersonnel"
+						showindividual="ShowIndividual"
+						showstaff="ShowStaff"
+						showaddportalcontacts={{showAddPortalContacts}}
+						tabindex="ChildSelectorTabIndex"
+						initialcontactids="InitialContactIds"
+						includeparent="IncludeParent"
+						projectid="ProjectId"
+						minportalaccesslevel="MinPortalAccessLevel"
+						multi="true"
+						showfooter ="{{showFooter}}"
+						isportal="{{isPortal}}">
+		</contact-select>
+		<i class="glyphicon icon-font-icons-contact-multi form-control-feedback selector-input-icon"></i>
+	</div>
+
+</script>
+
+<script type="text/ng-template" id="tsContactSelectResultList.html">
+	<div ng-show="showList()"
+		 role="menu"
+		 class="dropdown-menu-autocomplete-outer"
+		 ng-mouseover="onHover()"
+		 ng-mouseleave="onLeave()">
+		<div class="dropdown-menu-autocomplete-list">
+			<ul>
+				<div ng-show="loading">
+					<div class="dropdown-menu-autocomplete-group" style="">Loading...</div>
+				</div>
+				<div ng-show="items.length === 0">
+					<div class="dropdown-menu-autocomplete-group" style="">
+						<span>Nothing available...</span>
+						<button class="left btn btn-link" ng-show="addNewRecord!==undefined" ng-click="onAddClick()">add [ctrl + a]</button>
+					</div>
+				</div>
+				<li class="suggestion-item" ng-repeat="item in items" ng-hide="item.hidden">
+					<span ng-show="item.name != ''" ng-click="itemClicked(item.id)" class="dropdown-menu-autocomplete-item" role="menuitem" tabindex="-1">
+						<div class="autocomplete-result" ng-class="{active: item.active} ">
+							<span class="item-heading section" ng-bind="item.name"></span><span class="pull-right card-id" ng-show="item.entity != null && item.entity.cardId != ''">ID: <span ng-bind="item.entity.cardId"></span></span>
+							<div class="result-text" ng-show="item.entity != null && item.entity.parentContactName != ''">
+								<div class="sub">personnel of</div>
+								<span class="" ng-bind="item.entity.parentContactName"></span>
+							</div>
+							<div class="result-text" ng-show="item.entity.email != '' && item.entity.email != null">
+								<span class="" ng-bind="item.entity.email"></span>
+							</div>
+						</div>
+					</span>
+				</li>
+				<div ng-show="hasMore">
+					<div class="dropdown-menu-autocomplete-more" style="">
+						<span>Showing {{items.length}} of {{originalItems.length}}...</span>
+					</div>
+				</div>
+			</ul>
+		</div>
+
+		<div class="dropdown-menu-autocomplete-footer">
+			<button type="button" class="left btn btn-link" ng-show="addNewRecord!==undefined" ng-click="onAddClick()">Add new contact (ctrl + a)</button>
+		</div>
+
+	</div>
+</script>
+
+<script type="text/ng-template" id="tsReasonCode.html">
+	<div style="position:relative">
+		<input prevent-submit type="text" ng-model="dropdownitem.text" ng-focus="onFocus()" placeholder="{{placeholder}}"
+			   ng-blur="onBlur()" ng-keyup="onKeyUp($event)" ng-keydown="onKeyDown($event)"
+			   ng-click="onClick()"
+			   focus-on="newItemAdded" class="form-control form-control-selector"
+			   ng-disabled="disabled">
+		<ul class="dropdown-menu-autocomplete" role="menu" ng-show="showList()" ng-mouseover="onHover()" ng-disabled="disabled"
+			ng-mouseleave="onLeave()">
+			<div ng-if="loading">
+				<div class="dropdown-menu-autocomplete-group" style="">Loading...</div>
+			</div>
+			<div ng-if="groups.length === 0">
+				<div class="dropdown-menu-autocomplete-group" style="">
+					<span>Nothing available...</span>
+					<button class="left btn btn-link" ng-show="addNewRecord!==undefined" ng-click="onAddClick()">add [ctrl + a]</button>
+				</div>
+			</div>
+			<div ng-repeat="group in groups">
+				<div class="dropdown-menu-autocomplete-group" style="" ng-show="group.length > 0">{{ group }}</div>
+				<li ng-repeat="item in items | filter:groupMatcher(group)" ng-click="itemClicked(item.id)" ng-class="{active: item.active}">
+					<a class="dropdown-menu-autocomplete-item" role="menuitem" tabindex="-1">{{item.name}}<a>
+				</li>
+			</div>
+		</ul>
+	</div>
+</script>
+
+<script type="text/ng-template" id="tsReasonCodeInput.html">
+	<div style="position:relative">
+
+		<input prevent-submit type="text" ng-model="dropdownitem.text" ng-focus="onFocus()" placeholder="{{placeholder}}"
+			   ng-blur="onBlur()" ng-keyup="onKeyUp($event)" ng-keydown="onKeyDown($event)"
+			   ng-click="onClick()"
+			   focus-on="newItemAdded" class="form-control form-control-selector"
+			   ng-disabled="disabled">
+		<ul class="dropdown-menu-autocomplete" role="menu" ng-show="showList()" ng-mouseover="onHover()" ng-disabled="disabled"
+			ng-mouseleave="onLeave()">
+			<div ng-if="loading">
+				<div class="dropdown-menu-autocomplete-group" style="">Loading...</div>
+			</div>
+			<div ng-if="groups.length === 0">
+				<div class="dropdown-menu-autocomplete-group" style="">
+					<span>Nothing available...</span>
+					<button class="left btn btn-link" ng-show="addNewRecord!==undefined" ng-click="onAddClick()">add [ctrl + a]</button>
+				</div>
+			</div>
+			<div ng-repeat="group in groups">
+				<div class="dropdown-menu-autocomplete-group" style="" ng-show="group.length > 0">{{ group }}</div>
+				<li ng-repeat="item in items | filter:groupMatcher(group)" ng-click="itemClicked(item.id)" ng-class="{active: item.active}">
+					<a class="dropdown-menu-autocomplete-item" role="menuitem" tabindex="-1">{{item.name}}<a>
+				</li>
+			</div>
+		</ul>
+
+		<div ng-if="Required">
+			<input type="text" id="{{ hiddenId }}" name="{{ hiddenName }}" value="{{ Value() }}" data-val="{{ Required }}" data-val-required="{{RequiredValidationMessage}}" required="{{ Required }}" style="display:none;" />
+			<span class="field-validation-valid" data-valmsg-for="{{ hiddenName }}" data-valmsg-replace="true"></span>
+		</div>
+
+		<div ng-if="!Required">
+			<input type="text" id="{{ hiddenId }}" name="{{ hiddenName }}" value="{{ id }}" style= style="display:none;" />
+		</div>
+
+	</div>
+</script>
+
+<script type="text/ng-template" id="tsContactAddressSelector.html">
+	<div style="position:relative">
+		<input type="text" ng-model="dropdownitem.text" ng-focus="onFocus()" placeholder="{{placeholder}}"
+			   ng-blur="onBlur()" ng-keyup="onKeyUp($event)" ng-keydown="onKeyDown($event)"
+			   ng-click="onClick()"
+			   focus-on="newItemAdded" class="form-control form-control-selector"
+			   ng-disabled="disabled">
+		<ul class="dropdown-menu-autocomplete" role="menu" ng-show="showList()" ng-mouseover="onHover()" ng-disabled="disabled"
+			ng-mouseleave="onLeave()">
+			<div ng-if="loading">
+				<div class="dropdown-menu-autocomplete-group" style="">Loading...</div>
+			</div>
+			<div ng-if="groups.length === 0">
+				<div class="dropdown-menu-autocomplete-group" style="">
+					<span>Nothing available...</span>
+					<button class="left btn btn-link" ng-show="addNewRecord!==undefined" ng-click="onAddClick()">add [ctrl + a]</button>
+				</div>
+			</div>
+			<div ng-repeat="group in groups" class="select-address">
+
+				<div class="contact-header">
+					<h4>{{group}}</h4>
+				</div>
+				<li ng-repeat="item in items | filter:groupMatcher(group)" ng-click="itemClicked(item.id)" ng-class="{active: item.active}" class="contact-body" scroll-item-if>
+
+					<div class="address">
+						<label class="address-type">{{item.entity.contactAddressName}}</label>
+						<div class="address-body">
+							<span ng-if="item.entity.address1.length > 0">{{item.entity.address1}}<br></span>
+							<span ng-if="item.entity.address2.length > 0">{{item.entity.address2}}<br></span>
+							<span ng-if="item.entity.town.length > 0">{{item.entity.town}}<br></span>
+							<span ng-if="item.entity.state.length > 0">{{item.entity.state}}</span><span ng-if="item.entity.zipCode.length > 0">,&nbsp;{{item.entity.zipCode}}</span><span ng-if="item.entity.country.length > 0">,&nbsp;{{item.entity.country}}</span><br>
+						</div>
+					</div>
+
+				</li>
+			</div>
+		</ul>
+
+
+		<input type="hidden" id="dummy" name="dummy" class="change-target" />
+
+	</div>
+</script>
+
+<script type="text/ng-template" id="tsWordTemplateSelector.html">
+	<div style="position:relative">
+		<input prevent-submit type="text" ng-model="dropdownitem.text" ng-focus="onFocus()" placeholder="{{placeholder}}"
+			   ng-blur="onBlur()" ng-keyup="onKeyUp($event)" ng-keydown="onKeyDown($event)"
+			   ng-click="onClick()"
+			   focus-on="newItemAdded" class="form-control form-control-selector"
+			   ng-disabled="disabled">
+		<ul class="dropdown-menu-autocomplete" role="menu" ng-show="showList()" ng-mouseover="onHover()" ng-disabled="disabled"
+			ng-mouseleave="onLeave()">
+			<div ng-if="loading">
+				<div class="dropdown-menu-autocomplete-group" style="">Loading...</div>
+			</div>
+			<div ng-if="groups.length === 0">
+				<div class="dropdown-menu-autocomplete-group" style="">
+					<span>Nothing available...</span>
+					<button class="left btn btn-link" ng-show="addNewRecord!==undefined" ng-click="onAddClick()">add [ctrl + a]</button>
+				</div>
+			</div>
+			<div ng-repeat="group in groups">
+				<div class="dropdown-menu-autocomplete-group" style="" ng-show="group.length > 0">{{ group }}</div>
+				<li ng-repeat="item in items | filter:groupMatcher(group)" ng-click="itemClicked(item.id)" ng-class="{active: item.active}">
+					<a class="dropdown-menu-autocomplete-item" role="menuitem" tabindex="-1">{{item.name}}<a>
+				</li>
+			</div>
+		</ul>
+	</div>
+</script><script type="text/ng-template" id="autocompleteStaffDropDown.html">
+    <div style="position:relative">
+        <input type="text" ng-model="dropdownitem.text" ng-focus="onFocus()" placeholder="{{placeholder}}"
+               ng-blur="onBlur()" ng-keyup="onKeyUp($event)" ng-keydown="onKeyDown($event)"
+               ng-click="onClick()"
+               focus-on="newItemAdded" class="form-control form-control-selector">
+        <ul class="dropdown-menu-autocomplete" role="menu" ng-show="showList()" ng-mouseover="onHover()"
+            ng-mouseleave="onLeave()">
+            <div ng-if="loading">
+                <div class="dropdown-menu-autocomplete-group" style="">Loading...</div>
+            </div>
+            <div ng-if="groups.length === 0">
+                <div class="dropdown-menu-autocomplete-group" style="">
+                    <span>Nothing available...</span>
+                    <button class="left btn btn-link" ng-show="addNewRecord!==undefined" ng-click="onAddClick()">add [ctrl + a]</button>
+                </div>
+            </div>
+            <div ng-repeat="group in groups">
+                <div class="dropdown-menu-autocomplete-group" style="" ng-show="group.length > 0">{{ group }}</div>
+                <li ng-repeat="item in items | filter:groupMatcher(group)" ng-click="itemClicked(item.id)" ng-class="{active: item.active}">
+                    <a class="dropdown-menu-autocomplete-item" role="menuitem" tabindex="-1">{{item.name}}<a>
+                </li>
+            </div>
+        </ul>
+    </div>
+</script>
+
+<script type="text/ng-template" id="autocompleteStaffDropDownWithHiddenInput.html">
+    <div style="position:relative">
+        <input type="text" ng-model="dropdownitem.text" ng-focus="onFocus()" placeholder="{{placeholder}}"
+               ng-blur="onBlur()" ng-keyup="onKeyUp($event)" ng-keydown="onKeyDown($event)"
+               ng-click="onClick()"
+               focus-on="newItemAdded" class="form-control form-control-selector">
+        <ul class="dropdown-menu-autocomplete" role="menu" ng-show="showList()" ng-mouseover="onHover()"
+            ng-mouseleave="onLeave()">
+            <div ng-if="loading">
+                <div class="dropdown-menu-autocomplete-group" style="">Loading...</div>
+            </div>
+            <div ng-if="groups.length === 0">
+                <div class="dropdown-menu-autocomplete-group" style="">
+                    <span>Nothing available...</span>
+                    <button class="left btn btn-link" ng-show="addNewRecord!==undefined" ng-click="onAddClick()">add [ctrl + a]</button>
+                </div>
+            </div>
+            <div ng-repeat="group in groups">
+                <div class="dropdown-menu-autocomplete-group" style="" ng-show="group.length > 0">{{ group }}</div>
+                <li ng-repeat="item in items | filter:groupMatcher(group)" ng-click="itemClicked(item.id)" ng-class="{active: item.active}">
+                    <a class="dropdown-menu-autocomplete-item" role="menuitem" tabindex="-1">{{item.name}}<a>
+                </li>
+            </div>
+        </ul>
+        <input type="hidden" id="{{ hiddenId }}" name="{{ hiddenName }}" value="{{ id }}" />
+    </div>
+</script>
+
+
+
+	<div ng-cloak>
+
+
+    <note-modal slug="gangsorganisationbusiness"></note-modal>
+    <task-note-display slug="gangsorganisationbusiness"></task-note-display>
+
+    <document-sharing-modal></document-sharing-modal>
+    <contact-address-edit-modal></contact-address-edit-modal>
+    <confirm-delete></confirm-delete>
+    <confirm-action></confirm-action>
+
+	</div>
+
+
+<div ng-controller="contactViewModalController" class="ng-cloak">
+    <div ng-show="showContactDetails" class="see?">
+        <div class="modal fade in" style="display: block;">
+            <div class="modal-backdrop fade in" style="bottom: 0; z-index: 0;" ng-click="dismiss()"></div>
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" ng-click="dismiss()" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="previewContainer">
+                            <span class="icon-font-spinner icon-spin" style="font-size: 5em; margin-left: 50%; margin-right: 100%"></span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a ng-if="(IsPortal == 'False' || IsPortal == 'false')" ng-href="{{fullDetailsUrl}}" class="pull-left">Full details</a>
+                        <button type="button" class="btn btn-danger btn-link" ng-click="dismiss()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <alert-modal></alert-modal>
+
+
+
+
+
+
+			<script>
+				var now = new Date();
+				var year = now.getFullYear();
+				var month = now.getMonth() + 1;
+				var day = now.getDate();
+
+				if (month.toString().length == 1) {
+					var month = '0' + month;
+				}
+				if (day.toString().length == 1) {
+					var day = '0' + day;
+				}
+				var dateTime = day + "-" + month + "-" + year;
+				dataLayer.push({
+					'event': 'login',
+					'createDate': dateTime,
+					'loginMethod': 'loginMethod'
+				});
+			</script>
+
+</body>
+</html>

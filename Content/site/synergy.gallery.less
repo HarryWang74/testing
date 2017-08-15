@@ -1,0 +1,240 @@
+﻿@import "synergy.colors.less";
+@import "../bootstrap/variables.less";
+
+
+.gridButton {
+    background-color: @color-gray-lighter;
+    color: white;
+    border-bottom: 2px solid @color-gray-darker;
+
+     &:hover {
+        background-color: @color-gray !important;
+        color: white;
+         border-bottom: 2px solid @color-gray-darker;
+    }
+
+    &:active, &:focus {
+        background-color: @color-teal !important;
+        border-bottom: 2px solid @color-teal-darker;
+    }
+
+}
+
+.current {
+    background-color:@color-teal;
+    border-bottom: 2px solid @color-teal-darker;
+
+    &:hover {
+        background-color: @color-teal-dark !important;
+        color: white;
+        border-bottom: 2px solid @color-teal-darker;
+    }
+}
+
+.sortButton {
+    background-color: transparent;
+    border: 1px solid;
+    width: 40px;
+    height: 40px;
+}
+
+.galleryCheckBox {
+    position: relative;
+    top: 24px;
+    z-index: 10;
+    left: 1px;
+    width: 17px;
+    height: 15px;
+    font-size: 21px;
+}
+
+.galleryFlags {
+    position: relative;
+    top: -5px;
+    left: 10px;
+    border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    border: 0px solid #800000;
+    background-color: #3192d4;
+}
+
+
+
+.meter {
+    position: relative;
+    text-align: right;
+    display: inline-block;
+    top: 30px;
+    z-index: 10;
+    float: right;
+    right: 4px;
+}
+
+.galleryComments {
+    position: absolute;
+    display: inline-block;
+    z-index: 10;
+    right: 5px;
+    bottom: -20px;
+}
+
+#over {
+    /*position:absolute;*/
+    width: 100%;
+    height: 100%;
+    /*text-align: center;*/
+    max-height: 300px;
+    background-color: white;
+}
+
+.imgHeight {
+    max-width: 100%;
+    /*max-width:550px;*/
+    margin: auto;
+}
+
+.Centerer {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.Centered {
+    display: inline-block;
+    vertical-align: middle;
+    /*width: 100%;
+    height: auto;
+    max-height: 575px;
+    max-width: 575px;*/
+    margin: auto;
+    position: absolute;
+    top: 8px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.btn-rotate {
+    font-size: 27px;
+    padding-left: 6px;
+    padding-right: 7px;
+    padding-top: 2px;
+    padding-bottom: 0;
+}
+
+.responsive-container {
+    position: relative;
+    width: 100%;
+    /*border: 1px solid black;*/
+}
+
+.dummy {
+    padding-top: 101%; /* forces 1:1 aspect ratio */
+}
+
+
+.img-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center; /* Align center inline elements */
+    font: 0/0 a;
+    background-color: white;
+}
+
+/*.img-container:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}*/
+
+.img-container img {
+    /*vertical-align: middle;
+    display: inline-block;
+    height: auto;
+    width: 100%;*/
+    //DD changed so that small images are not stretched
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.galleryTags {
+    .list-inline {
+        padding-left: 0;
+        list-style: none;
+        margin-left: -5px;
+
+        .TagButtonLink {
+            color: #27b4b9;
+            text-decoration: none;
+            background-color: transparent;
+            margin-left: 5px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: @screen-xs-max) {
+
+    .imgHeight {
+        max-width: 100%;
+        max-height: 250px;
+    }
+
+    #over {
+        max-width: 100%;
+        min-height: 250px;
+        max-height: 250px;
+    }
+}
+
+@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+    .imgHeight {
+        max-width: 100%;
+        max-height: 300px;
+    }
+
+    #over {
+        max-width: 100%;
+        min-height: 300px;
+        max-height: 300px;
+    }
+}
+
+@media screen and (min-width: @screen-sm-max) and (max-width: @screen-md-max) {
+
+    .imgHeight {
+        max-width: 100%;
+        max-height: 300px;
+    }
+
+    #over {
+        max-width: 100%;
+        min-height: 300px;
+        max-height: 300px;
+    }
+}
+
+@media screen and (min-width: @screen-sm-max) {
+
+    .imgHeight {
+        max-width: 100%;
+        max-height: 300px;
+    }
+
+    #over {
+        max-width: 100%;
+        min-height: 300px;
+        max-height: 300px;
+    }
+}

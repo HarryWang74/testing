@@ -1,0 +1,100 @@
+﻿@import "variables";
+@import "mixin";
+
+.invoice-page {
+
+
+
+    .invoice-number {
+        position: relative;
+        top: -15px;
+        width: 180px;
+    }
+
+    .status {
+        height: 70px;
+        width: 140px;
+
+        hr {
+            margin: 1px;
+            position: relative;
+            top: 5px;
+        }
+
+        .status-label {
+            color: white;
+            position: relative;
+            top: 2px;
+            margin-left: 5px;
+        }
+
+        .status-text {
+            color: white;
+            margin-left: 5px;
+            position: relative;
+            top: 2px;
+        }
+
+        .status-desc {
+            color: white;
+            margin-left: 5px;
+            position: relative;
+            top: 10px;
+        }
+    }
+
+
+
+
+    .invoice-amount {
+        position: relative;
+        left: -10px;
+        float: left;
+        width: 100px;
+
+        .invoice-foreign-label {
+            position: relative;
+            top: -0px;
+        }
+
+        .invoice-foreign-amount {
+            position: relative;
+            top: -2px;
+        }
+
+        .invoice-total-label {
+            position: relative;
+            top: 1px;
+        }
+
+        .invoice-total-amount {
+            font-size: 23px;
+            position: relative;
+            top: -6px;
+        }
+
+        .invoice-currency {
+            font-size: 11px;
+        }
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    .invoice-page {
+        .status {
+            hr {
+            }
+        }
+
+        .list-group-item {
+            margin-bottom: 10px;
+        }
+
+        .invoice-label {
+            position:relative;
+            top:23px;
+            font-size:20px;
+
+        }
+    }
+}

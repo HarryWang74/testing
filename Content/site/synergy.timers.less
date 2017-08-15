@@ -1,0 +1,985 @@
+﻿@import "synergy.colors.less";
+@import "../bootstrap/variables.less";
+
+timesheet-timer-history {
+    > div {
+        margin-bottom: 10px;
+    }
+
+    h3.section {
+        span {
+            margin-left: 13px;
+            margin-right: 17px;
+        }
+    }
+
+}
+
+.timer-modal-holder{
+    .page-list-views{
+        display: inline-block;
+        float: right;
+        margin-right:10px;
+    }
+    .dropdown-menu{
+        min-width:80px;
+    }
+}
+
+.user-timer {
+    position: relative;
+
+    .col-timer-text {
+        padding-right: 0 !important;
+    }
+
+    .col-timer-project {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .col-timer-minutes {
+        //padding-right: 0 !important;
+        padding-left: 0 !important;
+        input[type="text"]{
+            text-align:right;
+        }
+    }
+
+    .col-timer-start {
+        display: block; 
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100px;
+    }
+
+    .row-new-timer {
+        padding-right: 100px;
+    }
+
+    .btn {
+        text-align: right;
+        padding-left: 0;
+        padding-right: 10px;
+    }
+
+    > div {
+        padding-top: 15px;
+    }
+
+    .h4 {
+        font-weight: bold;
+    }
+
+    .dark {
+        opacity: 0.4;
+    }
+
+    .header {
+        .h4 {
+            margin-top: 14px;
+        }
+
+        .cancel {
+            cursor: pointer;
+            font-size: 48px;
+            line-height: 1;
+        }
+    }
+
+    .form-group {
+        .col-sm-10 {
+            padding-right: 0;
+        }
+
+        .btn, .form-control {
+            height: 34px;
+        }
+
+        .btn {
+            font-size: 16px;
+        }
+    }
+
+    .list-container {
+        font-size: 12px;
+        margin-bottom: 30px;
+
+        hr {
+            margin: 7px 0;
+            opacity: 0.3;
+        }
+
+        > .row {
+        }
+
+        .btn-xs {
+            width: 65px;
+        }
+    }
+
+    .spinner-container {
+        background-color: @color-gray-dark;
+
+        > span {
+            margin-top: 70px;
+        }
+    }
+
+    ul.timers-header {
+        margin: 0 0 0 30px;
+        padding: 0;
+        background: @color-page;
+        font-weight: bold;
+        list-style: none;
+
+        > li {
+            padding: 10px 50px 10px 10px;
+            margin: 0;
+
+            > .row {
+                position: relative;
+
+                input[type="checkbox"] {
+                    float: left;
+                    position: absolute;
+                    top: 2px;
+                    left: -20px;
+                    margin-top: 0;
+                }
+
+                label {
+                    display: inline;
+                }
+
+                button {
+                    border: none;
+                    background-color: @color-page;
+                    color: @color-teal;
+                    font-weight: normal;
+                    margin: 0;
+
+                    &:hover {
+                        color: @color-dark-blue;
+                    }
+                }
+            }
+        }
+    }
+
+    ul.timers-content {
+        margin: 0 0 0 30px;
+        padding: 0;
+        list-style: none;
+        position: relative;
+
+        > li {
+            padding: 10px;
+            margin: 0;
+            margin-bottom: 1px;
+            border-bottom: 1px solid @color-gray-lighter;
+            min-height: 40px;
+            position: relative;
+
+            a {
+                color: @color-text;
+
+
+                &.sublink {
+                    color: @color-teal;
+                }
+            }
+
+            > .row {
+                position: relative;
+                padding-right: 100px;
+
+
+                input[type="checkbox"] {
+                    float: left;
+                    position: absolute;
+                    top: 2px;
+                    left: -20px;
+                    margin-top: 0;
+                }
+
+                div[class^="col-"] {
+                    overflow-x: hidden;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    -ms-text-overflow: ellipsis;
+                    -o-text-overflow: ellipsis;
+                    text-overflow: ellipsis;
+                    display: block;
+
+                    input[type="checkbox"] {
+                        padding-top: 2px;
+                        margin: 0;
+                    }
+
+                    &.row-only {
+                        display: block;
+                    }
+
+                    &.card-only {
+                        display: none;
+                    }
+                }
+            }
+
+            .timer-controls {
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100px;
+
+                .pause {
+                    text-align: right;
+                    background: @color-page;
+                    color: @color-gray;
+                    border: none;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 14px;
+                    padding-top: 9px;
+                    padding-bottom: 9px;
+                    &:hover{
+                        color: @color-dark-blue;
+                    }
+                    &:active{
+                        color: @color-text;
+                    }
+                }
+
+                .resume {
+                    text-align: right;
+                    background: @color-page;
+                    color: @color-red;
+                    border: none;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 14px;
+                    padding-top: 9px;
+                    padding-bottom: 9px;
+                    &:hover{
+                        color: @color-dark-blue;
+                    }
+                    &:active{
+                        color: @color-text;
+                    }
+                }
+            }
+
+            .col-timer-project{
+
+                button {
+                    border: none;
+                    float: right;
+                    background-color: @color-page;
+                    color: @color-text;
+                    font-weight: normal;
+                    margin: 0;
+
+                    &:hover {
+                        color: @color-dark-blue;
+                    }
+                }
+            }
+
+            .text-muted {
+                font-size: 10px;
+                margin-top: 3px;
+                color: @color-gray;
+            }
+
+            .text-small {
+                font-size: 11px;
+                margin-top: 5px;
+            }
+
+            .card-title {
+                display: none;
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 520px){
+    .timer-playback-holder{
+        .running-timer-pause{
+            margin-right:5px !important;
+        }
+    }
+    .running-timer-time, .paused-timer-play{
+        margin-right:5px !important;
+    }
+}
+@media (max-width: @screen-sm-max) {
+
+
+    .user-timer {
+
+        .col-timer-start {
+            width: 40px;
+        }
+
+        .row-new-timer {
+            padding-right: 40px;
+        }
+
+        .btn {
+            text-align: center;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+
+        ul.timers-content {
+
+            > li {
+
+
+                > .row {
+                    padding-right: 40px;
+                }
+
+                .timer-controls {
+                    width: 40px;
+
+                    .resume, .pause {
+                        text-align: center;
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+
+                .text-muted {
+                    font-size: 10px;
+                    margin-top: 3px;
+                    color: @color-gray;
+                }
+
+                .text-small {
+                    font-size: 11px;
+                    margin-top: 5px;
+                }
+
+                .card-title {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    .user-timer {
+        .form-group {
+            .col-sm-10 {
+                padding-right: 15px;
+            }
+        }
+    }
+}
+
+.timer-modal-holder, .timer-modal-backgorund{
+
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.timer-modal-holder{
+    z-index: 999;
+            
+    select{
+        display:inline;
+    }
+
+    .dropdown-menu-autocomplete{
+        max-height:250px !important;
+    }
+}
+
+.timer-modal-backgorund{
+    background: rgba(0, 0, 0, 0.5);
+    z-index:99;
+}
+
+.inner-timer-modal-holder{
+    margin-top:50px;
+    padding: 0 20px;
+    height: 100%;
+    //overflow-y: visible;
+    margin-right: 10px;
+    z-index:100;
+}
+
+.timer-exit-button{
+    position:absolute;
+    top: 20px;
+    right: 10px;
+
+    font-size:20px;
+    color:@color-red-dark;
+
+    &:hover{
+        cursor: pointer;
+        color: @color-red-darker
+    }
+}
+
+.starter-holder{
+
+    .no-padding-left{
+        padding-left: 0;
+    }
+
+    .sm-padding-right{
+        padding-right:5px;
+    }
+
+}
+
+.timer-start-button{
+    font-size: 15px;
+    height: 40px;
+    padding: 0;
+    line-height: 40px; 
+
+    .timer-start-button-text{
+        position: relative;
+        top: -2px;
+    }
+
+    .timer-start-button-icon{
+        font-size: 25px;
+        padding-top: 6px;
+    }
+}
+
+.running-timers-header{
+    padding: 20px 0 20px 20px;
+}
+
+.recent-timers-header{
+    padding:20px;
+
+    .dropdown-menu{
+        top: -107px;
+        left: -8px;
+        box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.175);
+    }
+}
+
+/*So dropdown does not overflow modal*/
+.running-timer:last-child, .paused-timer:nth-last-child(-n + 2){
+    .dropdown-menu{
+        top:-125px !important;
+        box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.175) !important;
+    }
+}
+/*So project selector does not overflow modal*/
+.running-timer:nth-last-child(-n + 2), .paused-timer:nth-last-child(-n + 4){
+    .dropdown-menu-autocomplete{
+        top:-250px !important;
+    }
+}
+
+.running-timer:nth-child(odd), .paused-timer:nth-child(odd){
+    background: white;
+}
+
+
+
+.running-timer, .paused-timer{
+    border-top:1px solid black;
+    box-shadow: 0 0 3px #cccccc;
+    width:100%;
+    position:relative;
+    min-height: 70px; 
+    overflow: visible;
+
+    .project-name{
+        position:relative;
+        top:-3px; 
+    }
+
+    .auto-stop{
+        position: absolute;
+        bottom: 2px;
+        color: #555555;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 10px;
+    }
+}
+
+.running-timer:last-child, .paused-timer:last-child{
+        border-bottom:1px solid black;
+}
+
+.running-timer-info, .running-timer-edit{
+    min-height:60px;
+    margin-top:10px;
+
+    h5{
+        line-height:15px;
+    }
+
+    h4{
+        line-height:25px;
+    }
+
+}
+
+
+.running-timer-text{
+    float: left;
+    padding-left: 10px;
+
+    width: 90%;
+
+}
+
+.running-timer-stopstart-holder{
+    height:70px;
+    padding:0;
+    display:table;
+    overflow:hidden;
+
+    border-left:1px dotted black;
+
+    div{
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+.running-timer-edit-holder{
+    float: right;
+    text-align: right;
+    width: 10%;
+    font-size: 13px;
+    color: #808080;
+    position:relative;
+
+    span{
+        cursor: pointer;
+        display:block;
+    }
+}
+
+.running-timer-time{
+    position: relative;
+    font-size: 15px;
+    float: right;
+    line-height:30px;
+    margin-right: 10%;
+    top:0 !important;
+}
+
+.timer-edit-minutes{
+     width:50% !important;
+
+}
+
+.running-timers-holder{
+    margin-bottom:20px;
+}
+
+.time-paused{
+    top:-6px;
+}
+
+.timer-minutes-input{
+    padding-right: 0 !important;
+    width:auto !important;
+    margin: 5px 5px 0 5px;
+}
+
+.timer-close-input{
+    padding-right: 0 !important;
+
+}
+
+
+.running-timer-pause{
+    font-size: 30px;
+    color:@color-red;
+    float:right;
+    margin-right:10%;
+
+    &:hover{
+        color:@color-red-darker;
+        cursor:pointer;
+    }
+}
+
+
+.paused-timer-play{
+    font-size: 30px;
+    color:@color-teal;
+    float:right;
+    margin-right:10%;
+    
+    &:hover{
+        cursor: pointer;
+        color: @color-teal-darker;
+    }
+}
+
+.recent-times-header{
+    color: @color-teal;
+    cursor: pointer;
+}
+
+.timer-remove{
+    margin-top: 13px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.timer-edit-label{
+    padding-top:5px;
+}
+
+.timer-error{
+    font-size: 16px;
+    color: @color-red;
+    line-height: 54px;
+        padding-left: 18px;
+    font-weight: bold;
+}
+
+#timer-modal-triangle{
+	width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #F0EFF4;
+    position: fixed;
+    top: 43px;
+    right: 118px; 
+
+    @media screen and (max-width:768px){
+        right:69px;
+    }
+}
+
+#timer-overflow-holder{
+    background: #F0EFF4;
+    overflow-y: auto;
+    max-height: 90%;
+    box-shadow: 0 0 7px #292929;
+    padding: 0 10px;
+    min-height: 400px;
+}
+
+.hundred-height{
+    height:100%;
+}
+
+.timer-modal-organisation-limit{ 
+    max-width: 150px;
+}
+
+.timer-modal-stage-limit{ 
+    /*max-width: 25%;*/
+}
+
+.timer-project-details{
+    width: 100%;
+    overflow: hidden;
+    height: 30px;
+    position: relative;
+    top: -5px;
+    line-height: 14px;
+
+    span{
+        display:inline;
+    }
+}
+
+.timer-day{
+    span{
+        margin-right: 0.5%;
+    }
+}
+
+.timer-number-input::-webkit-inner-spin-button, 
+.timer-number-input::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+/* webkit solution */
+.timer-number-input::-webkit-input-placeholder { text-align:left; }
+/* mozilla solution */
+.timer-number-input:-moz-placeholder { text-align:left; }
+
+ .timer-number-input{
+     text-align:left !important; 
+ }
+
+ #recent-timers-chevron.icon-font-chevron-right{
+    position: relative;
+    top: 1.5px;
+}
+
+.timer-playback-holder{
+        display: table-cell; 
+    vertical-align: middle;
+    width: 100%;
+    float: right;
+
+}
+
+.timer-timesheets-link{
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+}
+
+.timers-history{
+
+    .timers-day{
+        width:100%;
+
+        span{
+            width: 12.9%; 
+            display: inline-block !important;
+            text-align: center;
+        }
+
+    }
+
+    .hint-text{
+        color: @color-gray;
+        font-style: italic;
+    }
+
+    .timer-applied{
+        position: absolute;
+        background: #ffffff;
+        /* width: 100%; */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        opacity: 0.6;
+    }
+
+    /*Make drop up*/
+    .dropdown-menu{
+        top: -107px !important;
+    }
+
+}
+
+.timesheet-timer-select{
+    background-color: white;
+    padding: 10px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+#timer-count-alert{
+    width: 200px;
+    height: 50px;
+    background: @color-teal;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    line-height: 50px;
+    color: white;
+    right: 0;
+    cursor:pointer;
+    display:none;
+
+    label{
+        cursor:pointer;
+    }
+
+    &:hover{
+        background:@color-teal-dark;
+    }
+}
+
+.hover-list{
+    cursor:pointer;
+}
+
+.no-hover-list{
+    background:#F0EFF4 !important;
+}
+
+.no-hover-list:hover{
+    color:inherit !important;
+}
+
+/*Time selector*/
+
+.time-selector{
+    display: table;
+    width: 100%;
+}
+
+.time-selector-input-group{
+
+    width:100%;
+    background:red;
+    overflow:hidden;
+    display: table-cell;
+    position:relative;
+
+    .colon{
+        position: absolute;
+        top: 11px;
+        z-index:99; 
+    }
+
+    .time-input{
+        width:50%;
+        float:left;
+
+        input{
+            box-shadow: none;
+            outline:none;
+            text-align:center;
+            padding:0;
+        }
+        
+    }
+
+    .time-input:focus{
+        box-shadow:none;
+        outline:none;
+    }
+
+    .time-input:last-child{
+        input{
+            border-left:none;
+        }
+    }
+
+    .time-input:first-child{
+        input{
+            border-right:none;
+        }
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+.time-selector-meridiem{
+    margin-left:10px;
+    width:80px;
+    height:40px;
+    box-shadow: 0 0 3px #cccccc;
+    background:white;
+    cursor:pointer;
+    float: right;
+    display:table-cell;
+    border-radius: 3px;
+}
+
+.post-meridiem-border{
+    border:@color-teal 1px solid;
+}
+
+.ante-meridiem-border{
+    border:@color-gray-lighter 1px solid;
+}
+
+.post-meridiem{
+    background: @color-teal;
+    height:100%;
+    width:40px;
+    float:right;
+    color:white;
+    cursor:default;
+
+    span{
+        line-height: 40px;
+        padding-left: 9px;
+        padding-right: 9px;
+
+    }
+}
+
+.ante-meridiem{
+    border:@color-gray-lighter 1px solid;
+    background: @color-gray-lighter;
+    height:100%;
+    width:40px;
+    color:white;
+    cursor:default;
+
+    span{
+        line-height: 40px;
+        padding-left: 9px;
+        /* float: right; */
+        padding-right: 9px;
+    }
+}
+
+.timer-stop-time-loader{
+    font-size: 22px !important;
+    color: #27b4b9;
+    position: relative;
+    top: 1px;
+}
+
+.timer-edit-time-group{
+    .input-group{
+        width:100%;
+    }
+}
+
+.time-edit-close{
+    position:absolute;
+    top:0;
+    right:5px;
+    color:gray;
+    cursor: pointer; 
+}
+.timer-inline-row-play, .timer-inline-row-pause, .timer-play-spin{
+    position: absolute;
+    right: 45px;
+    top: 7px;
+    font-size: 25px;
+    cursor:pointer;
+}
+
+.timer-inline-row-play, .timer-play-spin{
+    color:@color-green;
+
+    &:hover{
+        color:@color-green-darkest;
+    }
+} 
+
+.timer-inline-row-pause{
+    color:@color-red;
+
+    &:hover{
+        color:@color-red-darkest;
+    }
+}

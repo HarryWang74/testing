@@ -1,0 +1,518 @@
+﻿.warning {
+  color: #ff9933;
+}
+.success {
+  color: #33cc66;
+}
+.danger {
+  color: #ea6149;
+}
+.teal {
+  color: #27b4b9 !important;
+}
+.owner-email-change-text {
+  position: relative;
+  right: 10px;
+  top: -26px;
+  float: right;
+}
+.portal-personnel-contact {
+  /*margin-top: 0px;
+    padding-left: 40px;
+    padding-top: 2px !important;*/
+  font-size: 13px;
+  padding-left: 40px;
+  top: 0;
+  position: absolute;
+}
+.portal-contact {
+  padding-left: 40px;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+  margin: 0;
+}
+.project-contact-invitation {
+  padding: 0;
+  padding-top: 10px;
+  margin: 0 1px 10px 0;
+  background-color: #dddddd;
+}
+.contact-merge .merge-contact-header {
+  border-radius: 2px;
+  color: white;
+  font-size: 2em;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 490px) {
+  .contact-merge .merge-contact-header {
+    font-size: 1em;
+  }
+}
+.contact-merge .swap-icon {
+  position: absolute;
+  font-size: 5em;
+  right: -42px;
+  top: 85px;
+  z-index: 1000;
+  background-color: #F0EFF4;
+  cursor: pointer;
+}
+.contact-merge .swap-icon-text {
+  position: absolute;
+  font-size: 1.1em;
+  right: -29.5px;
+  top: 104px;
+  font-weight: bold;
+  z-index: 1000;
+  cursor: pointer;
+}
+.contact-merge .outer-container {
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center;
+  /*height: 30vh;*/
+  position: relative;
+}
+.contact-merge .inner-container {
+  /*width: 400px;*/
+  margin: 0 auto;
+}
+@media only screen and (max-width: 490px) {
+  .contact-merge .inner-container h3 {
+    margin-left: 5px;
+    width: 100%;
+  }
+}
+.contact-merge .inner-container .control-label {
+  font-size: 1.2em;
+}
+@media only screen and (max-width: 370px) {
+  .contact-merge .inner-container .control-label {
+    font-size: 1em;
+  }
+}
+.contact-merge .item {
+  border-radius: 3px;
+  width: 47%;
+  height: 250px;
+  padding: 35px;
+  position: relative;
+}
+@media only screen and (max-width: 490px) {
+  .contact-merge .item {
+    height: 300px;
+    padding: 5px;
+  }
+}
+.contact-merge .item-left {
+  border: 1px solid gray;
+  margin-right: 10px;
+}
+.contact-merge .item-right {
+  border: 1px solid red;
+  margin-left: 10px;
+}
+.contact-merge .item-text {
+  position: absolute;
+  width: 75%;
+  max-width: 500px;
+}
+@media only screen and (max-width: 370px) {
+  .contact-merge .item-text h3 {
+    font-size: 12px;
+  }
+}
+.contact-edit.btn-contact-edit {
+  border: 1px solid grey;
+  background-color: transparent;
+  margin: 3px;
+}
+.contact-edit.section-close {
+  color: #ea6149;
+  font-size: 1.3em;
+  width: 5%;
+  padding-right: 0;
+  padding-left: 8px;
+  padding-top: 13px;
+}
+.contact-edit.section-close.address {
+  padding-top: 0;
+}
+.contact-edit.address-header {
+  color: #27b4b9;
+  font-weight: bold;
+  font-size: 15px;
+}
+.contact-edit.text-closable {
+  width: 95%;
+  display: inline;
+}
+.contact-edit.extras-button-section {
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+.select-address .address-header {
+  margin-left: 10px;
+}
+.select-address .address-body {
+  margin-left: 20px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.select-address .address {
+  margin-left: 10px;
+  border-bottom: solid gray 1px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+.select-address .address-type {
+  cursor: pointer;
+}
+.select-address .address-body-empty {
+  margin-left: 20px;
+  padding-bottom: 5px;
+}
+.select-address .contact-header {
+  /*color: green;*/
+  margin-bottom: 7px;
+  margin-left: 5px;
+}
+.select-address .contact-body {
+  margin-bottom: 10px;
+  margin: 10px;
+}
+.select-address li.contact-body:hover,
+.select-address li.contact-body.active {
+  color: #fff;
+  background-color: #337ab7;
+}
+.select-address li.contact-body:hover .item-heading,
+.select-address li.contact-body.active .item-heading {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.select-address li.contact-body:hover .sub,
+.select-address li.contact-body.active .sub {
+  color: #fff;
+}
+.select-address .dropdown-menu {
+  min-width: 250px;
+  left: initial;
+  max-height: 500px;
+  overflow: auto;
+}
+/*div[select-contact-address] .address-header {
+    margin-left: 10px;
+}
+
+div[select-contact-address] .address-body {
+    margin-left: 20px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+div[select-contact-address] .address {
+    margin-left: 10px;
+    border-bottom: solid gray 1px;
+    cursor: pointer;
+}
+
+div[select-contact-address] address {
+    margin-bottom: 12px;
+}
+
+div[select-contact-address] .address-type {
+    cursor: pointer;
+}
+
+div[select-contact-address] .address-body-empty {
+    margin-left: 20px;
+    padding-bottom: 5px;
+}
+
+&div[select-contact-address] .contact-header {
+    color: green;
+    margin-bottom: 7px;
+}
+
+div[select-contact-address] .contact-body {
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+div[select-contact-address] .dropdown-menu {
+    min-width: 250px;
+    left: initial;
+    max-height: 500px;
+    overflow: auto;
+}*/
+#selectAddressInput {
+  width: 100%;
+  /*min-width: 250px;*/
+  height: 40px;
+  /*padding-left: 10px;*/
+}
+.select-address .dropdown {
+  height: 100%;
+}
+.contact-details address,
+.item-details address {
+  white-space: normal;
+}
+.contact-icon-holder {
+  display: table;
+  margin-left: 0;
+  margin-right: auto;
+}
+.contact-icon-holder a {
+  margin: 0 3px;
+  width: 25px;
+}
+@media only screen and (max-width: 767px) {
+  .contact-icon-holder {
+    display: block !important;
+    margin-right: -40px;
+  }
+  .contact-icon-holder a {
+    margin: 0 1px !important;
+  }
+}
+.overflow-visible {
+  overflow: visible !important;
+}
+.potal-project-contact-holder {
+  position: absolute;
+  font-size: 20px;
+  top: 4px;
+  z-index: 100;
+  right: 0;
+}
+@media only screen and (max-width: 767px) {
+  .left-offset {
+    padding-top: 0px !important;
+    padding-left: 65px !important;
+  }
+  .left-offset a {
+    display: inline-block;
+  }
+  .contact-title {
+    margin-top: 5px;
+  }
+  .contact-role {
+    left: 34px;
+    top: 16px;
+    display: block !important;
+    position: absolute !important;
+  }
+  .float-over-list {
+    display: inline-block !important;
+    float: right;
+  }
+  .potal-project-contact-holder {
+    margin-bottom: 10px;
+  }
+  .content-with-image .avator-wrapper img {
+    margin: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-icon-holder {
+    margin-top: 20px;
+  }
+  .float-over-list {
+    float: right;
+    display: inline-block;
+    margin-right: -40px;
+  }
+}
+#blue1-background,
+#blue2-background,
+#blue3-background,
+#blue4-background {
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+  padding-top: 5px;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 10px;
+  margin: 0px;
+}
+#blue1-background:hover,
+#blue2-background:hover,
+#blue3-background:hover,
+#blue4-background:hover {
+  text-decoration: none;
+}
+#blue1-background span,
+#blue2-background span,
+#blue3-background span,
+#blue4-background span {
+  position: relative;
+  bottom: 5px;
+}
+#blue1-background {
+  background: #00aeef;
+  margin-right: 1px !important;
+}
+#blue2-background {
+  background: #005790;
+  margin-right: 1px !important;
+}
+#blue2-background span {
+  font-size: 20px;
+  bottom: 7px;
+}
+#blue3-background {
+  background: #005790;
+  margin-right: 1px !important;
+}
+#blue3-background span {
+  bottom: 7px;
+}
+#blue4-background {
+  background: #003c63;
+}
+#blue4-background span {
+  font-size: 19px;
+  bottom: 7px;
+}
+.left-offset {
+  padding-top: 10px;
+}
+.left-offset a {
+  display: inline-block;
+}
+ul.content-with-image li:hover a.icon-cell {
+  color: #fff !important;
+}
+@media (max-width: 991px) {
+  .project-contact-page .address-wrapper {
+    padding-left: 45px;
+  }
+}
+.project-contact-page .social-medias .place-holder {
+  display: inline-block;
+  width: 25px;
+}
+.project-contact-page .social-medias span {
+  color: #27b4b9;
+  font-size: 18px;
+}
+@media (max-width: 991px) {
+  .project-contact-page .social-medias {
+    padding-left: 45px;
+  }
+}
+.project-contact-page li:hover .social-medias a span {
+  color: #fff;
+}
+.project-contact-page .flagsicon-wrapper {
+  margin-bottom: 10px;
+}
+.project-contact-page .flagsicon-wrapper .empty-place-holder {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-right: 1px !important;
+  margin-left: 0px;
+}
+@media (max-width: 767px) {
+  .project-contact-page .contact-method-wrapper {
+    margin-left: 54px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .project-contact-page .contact-method-wrapper {
+    margin-left: 33px;
+  }
+}
+.icon-font-spinner-holder {
+  width: 15px;
+  height: 17px;
+}
+.icon-font-spinner-holder .icon-spin {
+  font-size: 30px !important;
+  position: relative !important;
+  left: -3px !important;
+  top: -5px;
+}
+.postcode-dropdown {
+  position: relative;
+}
+.postcode-dropdown ul {
+  width: 100% !important;
+}
+.postcode-dropdown a {
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+}
+.postcode-show-more {
+  position: absolute;
+  right: 10px;
+  top: -21px;
+}
+.lblTown .postcode-show-more {
+  z-index: 99;
+  right: 50px !important;
+}
+#contact-editor-postcode-show {
+  top: 3px !important;
+}
+.postcode-auto-load {
+  font-size: 25px;
+  position: absolute;
+  top: 27px;
+  right: 12px;
+  color: #27b4b9;
+}
+#office-project-add {
+  /*Hide these fields for modal when adding office project contact*/
+}
+#office-project-add #chk_isCareOf,
+#office-project-add #chk_isCareOf + label,
+#office-project-add #chk_isInvoiceContact,
+#office-project-add #chk_isInvoiceContact + label {
+  display: none;
+}
+.contactIndex .contactListing .row-only {
+  display: block !important;
+}
+.contactDetailEdit #homeaddress-group .icon-font-remove,
+.contactDetailEdit #workaddress-group .icon-font-remove,
+.contactDetailEdit #postaladdress-group .icon-font-remove,
+.contactDetailEdit #otheraddress-group .icon-font-remove {
+  padding-top: 5px;
+  padding-right: 20px;
+}
+@media (max-width: 992px) {
+  .contactInvoice .text-right {
+    text-align: left;
+  }
+}
+@media (max-width: 991px) {
+  .contactInvoice .totals.content .col-md-7.col-xs-9 {
+    width: 100%;
+  }
+  .contactInvoice .totals.content .col-md-1.col-xs-3.text-right {
+    width: 100%;
+    text-align: left;
+  }
+}
+.contactInvoice .mainTable .col-md-1.col-sm-6.text-right {
+  text-align: left;
+}
+.contactAudit .fullText {
+  white-space: normal !important;
+}
+@media (max-width: 992px) {
+  .contactProjects ul.content > span {
+    padding: 5px 0px !important;
+  }
+  .contactProjects .workBreakDownMobileHeading {
+    margin-bottom: 0px;
+  }
+}

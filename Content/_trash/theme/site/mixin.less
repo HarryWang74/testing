@@ -1,0 +1,28 @@
+﻿@import "variables";
+//
+//Mixin
+//
+.CapitalizeSentense(){
+    text-transform:lowercase;
+    &:first-letter{
+        text-transform:capitalize;
+    }
+}
+
+.Font-header() {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.BorderControl(){
+        border-color: @brand-default;
+        &:focus {
+            border-color: @brand-accent;
+        }
+}
+
+.BorderedControl(){
+    .form-control, textarea.form-control, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="file"], input[type="color"], .uneditable-input {
+        .BorderControl()
+    }
+}

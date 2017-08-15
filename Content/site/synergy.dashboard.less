@@ -1,0 +1,591 @@
+﻿@import "synergy.colors.less";
+@import "../bootstrap/variables.less";
+@import "mixin";
+
+.dashboard {
+    margin-top: -20px;
+
+    h2 {
+        span {
+            font-weight: 300;
+            color: @color-teal;
+        }
+    }
+
+    h3 {
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 7px;
+        margin-top: 30px;
+
+        .red {
+            color: #ed5f5d;
+        }
+
+        .blue {
+            color: #28a9e0;
+        }
+    }
+
+    .panel-body {
+        border: 1px solid @color-gray-highlight;
+        box-shadow: 0 0 3px@color-gray-highlight;
+        padding: 0px 5px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 250px;
+        background: #fff;
+    }
+
+    .empty-header {
+        line-height: 229px;
+        text-align: center;
+    }
+
+    .filters {
+        display: inline-block;
+        margin-top: 25px;
+
+        button {
+            color: @color-text;
+            outline: none;
+            background: #fff;
+            .synergy-round-corners(15px;);
+            padding: 2px 10px;
+            font-size: 10px;
+            margin-bottom: 5px;
+        }
+    }
+
+    .listing-item {
+        border-bottom: 1px solid @color-gray-highlight;
+        height: 50px;
+        padding: 0px 5px;
+
+        .title {
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .lhs {
+            float: left;
+            vertical-align: middle;
+        }
+
+        .rhs {
+            float: left;
+            text-align: right;
+            vertical-align: middle;
+
+            .btn, .btn-default {
+                background-color: transparent;
+                border: none;
+                padding: 0px;
+                outline: none;
+                box-shadow: none;
+            }
+        }
+
+        .icon-btn {
+            cursor: pointer;
+        }
+
+        .icon-font-ok, .icon-font-alarm, .icon-font-remove {
+            font-size: 17px;
+            padding: 8px;
+        }
+
+        .icon-font-pause2, .icon-font-play2 {
+            font-size: 25px;
+            padding: 5px;
+        }
+
+        .display-time {
+            position: relative;
+            bottom: 5px;
+        }
+
+        .contact-avator {
+            width: 50px;
+            height: 50px;
+        }
+
+        .contact-icon {
+            text-decoration: none;
+
+            span {
+                font-size: 20px;
+            }
+        }
+
+        .place-holder {
+            width: 20px;
+            height: 20px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .run-report-btn {
+            width: 50px;
+            position: relative;
+            height: 50px;
+            display: inline-block;
+            cursor: pointer;
+
+            .icon-font-icons_Portal_Documents {
+                font-size: 30px;
+                position: absolute;
+                top: 10px;
+                left: 11px;
+            }
+
+            .icon-font-play-circle {
+                font-size: 16px;
+                position: absolute;
+                top: 25px;
+                left: 29px;
+            }
+        }
+
+        .stitle {
+            font-weight: bold;
+
+            .grey-copy {
+                font-weight: normal;
+            }
+        }
+    }
+
+    .icon-font-ellipsis-h {
+        color: @color-text;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .grey-copy {
+        color: @color-gray-lightest;
+    }
+
+    .recent-contacts {
+        padding: 0px;
+
+        .listing-item {
+            padding: 0px;
+            margin-top: 0px;
+        }
+
+        .content-wrapper {
+            //float: left;
+            //width: 70%;
+            padding-left: 60px;
+            //vertical-align: middle;
+            background: top left;
+            background-repeat: no-repeat;
+            height: 50px;
+
+            .contact-name {
+                font-weight: bold;
+            }
+
+            .contact-role, .contact-org {
+                font-size: 10.5px;
+                line-height: 1.3;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .avator-wrapper {
+            float: left;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .icons-wrapper {
+            min-width: 110px;
+            //float: left;
+            //width: 30%;
+            vertical-align: middle;
+            padding: 5px;
+            text-align: right;
+        }
+        /*@media (min-width: 991px) and (max-width: 1235px) { 
+      .content-wrapper{
+        width: 60%;
+      }
+      .icons-wrapper{
+        width: 40%;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 830px) { 
+      .content-wrapper{
+        width: 60%;
+      }
+      .icons-wrapper{
+        width: 40%;
+      }
+    }*/
+    }
+
+    .pinned-reports {
+        .lhs {
+            width: 80%;
+
+            .title {
+                margin-top: 15px;
+            }
+        }
+
+        .rhs {
+            width: 20%;
+            padding: 0xp;
+            padding: 0px;
+            margin: 0px;
+            line-height: 0;
+        }
+    }
+
+    .reminders-tasks {
+        .bottom-loading {
+            padding-top: 10px;
+        }
+
+        .listing-item.completed, .listing-item.canceled {
+            display: none;
+        }
+
+        .listing-item {
+            margin-top: 0px;
+        }
+
+        .media {
+            .media-body {
+                width: 10000px;
+            }
+        }
+
+        .lhs {
+            float: none;
+
+            .title {
+                margin-top: 7px;
+            }
+        }
+
+        .rhs {
+            float: none;
+
+            .btn-group {
+                margin-top: 17px;
+            }
+
+            .timer {
+                margin-top: 13px;
+                min-width: 150px;
+                white-space: nowrap;
+            }
+
+            .snooze {
+                margin-top: 0px;
+
+                .dropdown-menu {
+                    padding: 10px;
+
+                    input {
+                        width: 200px;
+                    }
+
+                    .confirm {
+                        background-color: @color-teal;
+                        padding: 10px;
+                    }
+
+                    .btn-primary {
+                        background-color: @color-teal;
+                        padding: 10px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .recent-projects {
+        .lhs {
+            width: 70%;
+
+            .title {
+                margin-top: 15px;
+
+                a {
+                    color: @color-text;
+                }
+            }
+        }
+
+        .rhs {
+            width: 30%;
+            text-align: right;
+
+            .grey-copy {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .recent-chats, .recent-documents {
+        .content-wrapper {
+            float: left;
+            width: 100%;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .lhs {
+            width: 70%;
+
+            a {
+                color: @color-text;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            .stitle {
+                margin-top: 8px;
+            }
+        }
+
+        .rhs {
+            width: 30%;
+
+            .grey-copy {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .notes {
+        .lhs {
+            width: 60%;
+
+            .title {
+                margin-top: 15px;
+                cursor: default;
+            }
+
+            .clickable {
+                cursor: pointer;
+            }
+        }
+
+        .rhs {
+            width: 40%;
+            margin-top: 15px;
+        }
+    }
+
+    .missing-timesheets {
+        padding: 0px;
+
+        .calendar-nav {
+            height: 40px;
+            background: @color-light-blue;
+
+            h3 {
+                font-size: 16px;
+                color: #fff;
+                margin-top: 12px;
+                font-weight: 300;
+            }
+
+            .btn {
+                padding: 2px 10px;
+                background-color: transparent;
+                border: none;
+                font-size: 25px;
+            }
+        }
+
+        table {
+            margin-bottom: 0px;
+
+            .day {
+                cursor: pointer;
+            }
+
+            thead {
+                background: @color-page;
+            }
+
+            th {
+                padding: 5px;
+                border-bottom: none;
+            }
+
+            td {
+                padding: 6px 2px 0px 2px;
+                border-right: 1px solid @color-gray-highlight;
+                border-top: 1px solid @color-gray-highlight;
+
+                .progress {
+                    margin-top: 2px;
+                    margin-bottom: 2px;
+                    height: 2px;
+                    background: @color-gray-lighter;
+                }
+
+                .progress-bar {
+                    background-color: @color-green;
+                }
+
+                .progress-bar-marked-complete {
+                    background-color: @color-orange;
+                }
+
+                .expenses {
+                    position: absolute;
+                    margin-left: -22px;
+                    margin-top: -3px;
+                }
+
+                &.weekday {
+                    background: #fff;
+                }
+
+                &.weekend {
+                    color: @color-text;
+                    background: #f9f9fb;
+
+                    .progress {
+                        background: @color-gray-lighter;
+                    }
+                }
+
+                &.today {
+                    color: #fff !important;
+                    background: @color-light-blue-dark;
+                }
+
+                &.missing {
+                    color: @color-red;
+
+                    .progress {
+                        background: @color-red;
+                    }
+                }
+
+                &.completed {
+                    color: @color-green;
+                }
+
+                &.markedcomplete {
+                    color: @color-orange;
+                }
+
+                &.nodata {
+                    color: @color-text;
+
+                    .progress {
+                        background: @color-gray-lowlight !important;
+                    }
+                }
+            }
+
+            th, td {
+                text-align: center;
+            }
+
+            th.weekend {
+                font-weight: 300;
+            }
+        }
+    }
+
+    .project-hours {
+        overflow: hidden;
+    }
+
+    .forward-loading {
+        text-align: center;
+
+        .content-wrapper {
+            display: table;
+            width: 100%;
+        }
+
+        .cell {
+            width: 100%;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            height: 245px;
+
+            p {
+                color: #4abb6b;
+                font-weight: bold;
+                margin-bottom: 0px;
+                line-height: 1.1;
+            }
+
+            .number {
+                font-size: 70px;
+            }
+
+            .month {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .stuff-member {
+        padding: 0px;
+        /*Ensure 404 errors still fill 25% width*/
+        .staff-wrapper:before {
+            content: "";
+            display: block;
+            padding-top: 100%; /* initial ratio of 1:1*/
+        }
+
+        .staff-wrapper {
+            width: 25%;
+            float: left;
+            cursor: pointer;
+            border-left: 1px solid @color-page;
+            border-bottom: 1px solid @color-page;
+            position: relative;
+
+            img {
+                display: block;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+            }
+
+            &:hover {
+                border-left: 1px solid @color-page;
+                border-bottom: 1px solid @color-page;
+
+                img {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+
+.icon-font-circle.danger {
+    font-size: 10px;
+    margin-right: 5px;
+}

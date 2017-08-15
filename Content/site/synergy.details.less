@@ -1,0 +1,278 @@
+﻿form.item-details {
+
+    .has-error {
+        border: 1px solid #ea6149 !important;
+    }
+
+
+    dl {
+        margin-bottom: 10px;
+    }
+
+    dt label {
+        margin-bottom: 0;
+    }
+
+    .btn.btn-tag {
+        padding-right: 20px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+
+    h3 {
+        color: #555555;
+    }
+
+    hr {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        border: 0;
+        border-top: 1px solid #333333;
+    }
+
+    .list-inline {
+        padding-left: 0;
+        list-style: none;
+        margin-left: 0;
+    }
+
+    .media-heading {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    [class^="icon-font-"], [class*=" icon-font-"] {
+        font-size: 0.7em;
+    }
+
+    .selector-input-icon {
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: 4px;
+        color: #AAAFAF;
+        z-index: 0;
+    }
+
+    .clickable {
+        cursor: pointer;
+        color: #27b4b9;
+
+        &.color-gray {
+            color: #333333;
+        }
+    }
+
+    .no-link-decoration {
+        text-decoration: none;
+        color: gray;
+    }
+
+    .media-heading-contact {
+        margin-bottom: 2px !important;
+    }
+
+    .contact-name {
+        height: 30px;
+        padding-top: 7px;
+    }
+
+    .project-status-change-icon {
+        margin-right: 7px;
+        font-size: 1.4em;
+    }
+
+    .project-billable-icon {
+        margin-right: 7px;
+        font-size: 1.4em;
+        color: #0062a2;
+    }
+
+    pre {
+        background-color: #F0EFF4;
+        border: none;
+    }
+
+    .workbreakdown-section {
+
+        /*hr {
+            margin-top:3px;
+        }*/
+
+        .add-stages-section{
+            padding-right:25px;
+			@media (max-width: @screen-sm-max){
+				padding-right:0px;
+			}
+        }
+
+        .popover-help {
+            padding: 0px;
+            height: 18px;
+            height: 17px;
+        }
+
+        .fee-type-dropdown {
+            height: 20px;
+        }
+
+        div.item {
+            display: block;
+            padding-bottom: 3px;
+
+            span {
+                color: #333333;
+            }
+        }
+
+        .wbs-link {
+            display: inline-block;
+        }
+
+        .btn.btn-link {
+            a {
+                text-decoration: none;
+            }
+
+            float: right;
+            padding-right: 0;
+        }
+
+        margin-bottom: 20px;
+
+        button-popover {
+            .dropdown-toggle {
+                padding: 0;
+            }
+        }
+
+        .my-tasks-empty-placeholder{
+            margin-left: 5px;
+        }
+    }
+    /*.reminders-tasks {
+        .bottom-loading {
+            padding-top: 10px;
+        }
+
+        .listing-item.completed, .listing-item.canceled {
+            display: none;
+        }
+
+        .listing-item {
+            margin-top: 0px;
+        }
+
+        .media {
+            .media-body {
+                width: 10000px;
+            }
+        }
+
+        .lhs {
+            float: none;
+
+            .title {
+                margin-top: 7px;
+            }
+        }
+
+        .rhs {
+            float: none;
+
+            .btn-group {
+                margin-top: 17px;
+            }
+
+            .timer {
+                margin-top: 13px;
+                min-width: 150px;
+                white-space: nowrap;
+            }
+
+            .snooze {
+                margin-top: 0px;
+
+                .dropdown-menu {
+                    padding: 10px;
+
+                    input {
+                        width: 200px;
+                    }
+
+                    .confirm {
+                        background-color: @color-teal;
+                        padding: 10px;
+                    }
+
+                    .btn-primary {
+                        background-color: @color-teal;
+                        padding: 10px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }*/
+    /*.my-tasks{
+        div {
+            display: inline;
+        }
+
+        div.item {
+            display: block;
+            padding-bottom: 3px;
+
+            span {
+                color: #333333;
+            }
+        }
+
+        .wbs-link{
+            display:inline-block;
+        }
+
+        .btn.btn-link {
+            a {
+                text-decoration: none;
+            }
+
+            float:right;
+            padding-right: 0;
+        }
+    }*/
+    .contacts {
+        button-popover {
+            position: absolute;
+            top: 0;
+            right: 11px;
+            padding-right: 0;
+
+            auto-close-content {
+                .comment-dropdown {
+                    list-style: none;
+                    text-align: left;
+                    padding: 0;
+
+                    > li > a {
+                        display: block;
+                        padding: 3px 5px;
+                        clear: both;
+                        font-weight: normal;
+                        line-height: @line-height-base;
+                        color: @dropdown-link-color;
+                        white-space: nowrap; // prevent links from randomly breaking onto new lines
+                        font-size: 12px;
+
+                        &:hover,
+                        &:focus {
+                            color: @dropdown-link-active-color;
+                            text-decoration: none;
+                            outline: 0;
+                            background-color: @dropdown-link-active-bg;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

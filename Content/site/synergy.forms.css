@@ -1,0 +1,326 @@
+﻿form h3,
+.form h3 {
+  color: #27b4b9;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.validation-summary-errors {
+  padding: 0;
+  margin-bottom: 10px;
+  color: white;
+}
+.validation-summary-errors ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.validation-summary-errors ul li {
+  background-color: #ea6149;
+  padding: 10px;
+}
+.form-control-editable[readonly] {
+  background-color: white !important;
+}
+.has-error .input-group {
+  border: 1px solid #ea6149;
+}
+.has-error .input-group > .form-control {
+  border-color: #cccccc !important;
+}
+.has-error .control-label {
+  color: #ea6149;
+}
+.has-error .field-validation-error {
+  display: block;
+  padding: 3px;
+  background-color: #ea6149;
+  color: #ffffff;
+  text-align: center;
+}
+.has-error .field-validation-valid-message {
+  display: none;
+}
+.has-valid .form-control,
+.has-valid .form-control:focus {
+  border: 1px solid #0062a2;
+}
+.has-valid .field-validation-valid-message {
+  display: block;
+  padding: 3px;
+  background-color: #33cc66;
+  color: #ffffff;
+  text-align: center;
+}
+.checkbox input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-left: 0;
+  margin-top: 1px \9;
+  line-height: normal;
+}
+.checkbox.with-label {
+  top: 2px;
+  position: absolute;
+  left: 11px;
+}
+/*.label-and-checkbox {
+    input[type="checkbox"] {
+        margin: 0;
+        left: 10px !important;
+        position: absolute !important;
+        padding-left: 13px !important;
+        top: 2px !important;
+    }
+}*/
+.input-group-btn .btn {
+  min-width: 40px;
+}
+.input-group-addon .btn {
+  min-width: 40px;
+}
+label.control-label {
+  font-weight: bold;
+}
+label.form-control {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+label.checkboxLabel {
+  cursor: pointer !important;
+}
+input.form-control {
+  border: 1px solid #cccccc;
+  box-shadow: 0 0 3px #cccccc;
+}
+select.form-control {
+  border: 1px solid #cccccc !important;
+  box-shadow: 0 0 3px #cccccc;
+  appearance: none;
+  -webkit-appearance: none;
+  /*Removes default chrome and safari style*/
+  -moz-appearance: none;
+  /*Removes default style Firefox*/
+  background: white url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6N0JDQzJEMDFFNThGMTFFNEFCOTBFRkMzRDEzQjEzRkEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6N0JDQzJEMDJFNThGMTFFNEFCOTBFRkMzRDEzQjEzRkEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3QkNDMkNGRkU1OEYxMUU0QUI5MEVGQzNEMTNCMTNGQSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3QkNDMkQwMEU1OEYxMUU0QUI5MEVGQzNEMTNCMTNGQSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Ps4AcHYAAAFJSURBVHja7JWxSgNBEIZdNRKSNxJ8GRUPUqSwSGFh4VvcGySQIgpRe0E77ewsU9rZJuf3wxys5ynZiwcRZuDP3GV2Mt/M3m1CURQ722zBAR3QAR3QAR3QAR3QAbcGMMuyI9wjWlZj+p0Qwq/32B7fHeZ5/rBuzd3Ehk7RGHW+dQpM2Wxd08Q7aEzsJKVgKuAx+kATCh38BBlPzkxrJ8ol1iqgtlYF3ik0XQfS1kyVo1zul20CylboDC2AmOG7Aoq3NZpg19YsiCtnVTPdvwU0EH0M0BuaUbRXU7inmNaQMyBeNDkxkgEjEFUbold0Y0BlA7q+tthQcJXcVrf4yySxc/wzukV9IPr4OXqx2EYHbWPAchr2Uox0PuLv8XfoCY3KF6b6jKbY/qYnfVT4AqAru76sNtIU0v+LHdABHdABHdABHfB/A34KMACUtOZc8Q2howAAAABJRU5ErkJggg==') no-repeat right;
+}
+select.form-control::-ms-expand {
+  display: none;
+}
+/* as of firefox 31 this does not work, they now get the standard look */
+@-moz-document url-prefix() {
+  /* If you use a background image */
+  select.form-control {
+    background-image: none;
+  }
+}
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control,
+.form-control.select[disabled],
+.form-control.uneditable-input {
+  box-shadow: none;
+}
+.form-control[disabled].white,
+.form-control[readonly].white,
+fieldset[disabled] .form-control.white,
+.form-control.select[disabled].white,
+.form-control.uneditable-input.white {
+  opacity: 1;
+  background-color: #ffffff;
+}
+.borderless .form-control,
+.borderless textarea.form-control,
+.borderless input[type="text"],
+.borderless input[type="password"],
+.borderless input[type="datetime"],
+.borderless input[type="datetime-local"],
+.borderless input[type="date"],
+.borderless input[type="month"],
+.borderless input[type="time"],
+.borderless input[type="week"],
+.borderless input[type="number"],
+.borderless input[type="email"],
+.borderless input[type="url"],
+.borderless input[type="search"],
+.borderless input[type="tel"],
+.borderless input[type="color"],
+.borderless .uneditable-input {
+  border: 0;
+}
+textarea.form-control {
+  resize: vertical;
+  min-height: 80px;
+}
+input[type="number"] {
+  text-align: right;
+}
+.has-error .form-control,
+.has-error .form-control:focus {
+  border: 1px solid #ea6149 !important;
+}
+.no-bottom-margin {
+  margin-bottom: 0 !important;
+}
+.form-group {
+  margin-bottom: 6px;
+}
+.form-group .form-control.readonly {
+  border: 1px solid #cccccc !important;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+.form-validation .form-title {
+  display: block;
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.form-validation .form-title > span.sub {
+  font-size: 13px;
+  font-weight: normal;
+}
+.form-validation div[class^="col-"] .input-validation-error {
+  border-color: #cf3d23;
+}
+.form-validation div[class^="col-"] .field-validation-error {
+  display: block;
+  margin-top: 1px;
+  padding: 2px;
+  padding-left: 10px;
+  background-color: #ea6149;
+  color: white;
+}
+.form-validation div[class^="col-"] .field-validation-error > span {
+  display: block;
+  color: #ffffff;
+}
+.form-validation div[class^="col-"] .validation-group .field-validation-error {
+  display: inline-block;
+  background-color: transparent;
+}
+.form-validation .control-label {
+  padding-right: 0;
+}
+.form-validation .form-group {
+  position: relative;
+}
+.form-validation .form-direction {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 32px;
+}
+.form-validation .form-direction > .buttons {
+  margin-top: 15px;
+}
+.form-validation .btn-strong {
+  font-size: 20px;
+  font-weight: bold;
+}
+.form-validation .btn-big {
+  font-size: 22px;
+  padding: 2px 6px;
+  margin-right: 2px;
+}
+.form-validation .validation-group {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  color: #ea6149;
+}
+.form-validation .validation-group .error .field-validation-error > span {
+  color: #ea6149;
+}
+.form-validation .validation-group > .field-validation-valid {
+  color: #33cc66;
+}
+.form-validation .validation-group.valid {
+  display: none;
+}
+.form-validation .validation-group > .btn {
+  cursor: none;
+  margin-left: 3px;
+}
+.form-validation .validation-toggle {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+.form-validation .validation-toggle > .valid > .field-validation-valid {
+  color: #27b4b9;
+}
+.form-validation .validation-toggle > .error > .field-validation-error {
+  background-color: transparent;
+  display: inline-block;
+}
+.form-validation .validation-toggle > .error > .field-validation-error > span {
+  color: #ea6149;
+}
+.form-validation .validation-toggle > .valid.hide,
+.form-validation .validation-toggle > .error.hide {
+  display: none;
+}
+.form-validation .validation-toggle > .valid > .btn,
+.form-validation .validation-toggle > .error > .btn {
+  cursor: none;
+  margin-left: 3px;
+}
+.form-validation .form-control.display {
+  font-size: 13px;
+}
+.form-validation .form-control.display.append {
+  width: auto;
+  margin-left: -29px;
+  padding-left: 4px;
+  opacity: 0.8;
+}
+.form-validation .form-control.display.transparent {
+  background-color: transparent;
+}
+.dropdown-menu.dropdown-success > .active > a {
+  background-color: #777777;
+  color: #ffffff;
+}
+.dropdown-menu.dropdown-success > .active > a:hover,
+.dropdown-menu.dropdown-success > .active > a:focus {
+  background-color: #666666;
+}
+.config-range {
+  padding: 11px 7px 11px 10px;
+  text-transform: lowercase;
+}
+@media (max-width: 520px) {
+  .config-range {
+    padding: 10px 5px 10px 0 !important;
+  }
+  .range-holder {
+    width: 50px !important;
+  }
+}
+@media (min-width: 520px) {
+  .range-holder {
+    width: 140px !important;
+  }
+}
+@media (min-width: 768px) {
+  .range-holder {
+    width: 84px !important;
+  }
+}
+.config-range + .form-group .form-control {
+  padding: 0;
+}
+.wip-color-holder {
+  float: left;
+}
+.wip-color-holder span {
+  width: 40px;
+  height: 40px;
+}
+.range-holder .field-validation-error {
+  padding-left: 5px !important;
+}

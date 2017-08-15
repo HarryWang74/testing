@@ -1,0 +1,162 @@
+﻿.notification-page-content .announcements .media {
+  margin-top: 0px;
+}
+.notification-page-content .announcements .media .media-left {
+  text-align: center;
+  font-size: 50px;
+  padding-left: 10px;
+}
+.notification-page-content .announcements .media .media-left span {
+  line-height: 100px;
+}
+.notification-page-content .announcements .media .media-left .media-object {
+  width: 100px;
+  height: 100px;
+}
+.notification-page-content .announcements .media .media-heading {
+  font-size: 16px;
+  font-weight: bold;
+}
+.notification-page-content .announcements .media .media-body {
+  padding: 15px;
+}
+.notification-page-content .announcements .media .media-body a.btn {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  background-color: #fff;
+  border-color: none;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  min-height: 45px;
+}
+.notification-page-content .announcements .alert {
+  padding: 0px;
+  border: none;
+  position: relative;
+}
+.notification-page-content .announcements .alert .announcement-close {
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  opacity: 1;
+  display: inline-block;
+  right: 15px;
+  top: 5px;
+}
+.notification-page-content .announcements .alert.alert-danger {
+  background-color: #ea6149;
+}
+.notification-page-content .announcements .alert.alert-danger .media-left {
+  background-color: #cf3d23;
+}
+.notification-page-content .announcements .alert.alert-info .media-left {
+  background-color: #007fad;
+}
+.notification-page-content .announcements .alert.alert-success {
+  background-color: #777777;
+  background-image: url('/Content/img/work-together-banner.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+.notification-page-content .announcements .alert.alert-success .media-left .work-together {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+}
+.notification-page-content .announcements .alert.alert-success .media-heading {
+  font-size: 25px;
+}
+.notification-page-content .announcements .alert.alert-success .media-body a.btn {
+  color: #fff;
+  background-color: #00aeef;
+}
+@media (max-width: 767px) {
+  .notification-page-content .announcements .alert.alert-success .media-left .work-together {
+    width: 40px !important;
+    height: 40px !important;
+    margin: 10px 0;
+  }
+}
+.notification-page-content .notifications .notice-group {
+  border: 1px solid #cccccc;
+  box-shadow: 0 0 3px #cccccc;
+  background: #fff;
+}
+.notification-page-content .notifications .notice-group p {
+  color: #555555;
+}
+.notification-page-content .notifications .notice-group p.time-stamp {
+  color: #aaaaaa;
+  font-size: 10px;
+}
+.notification-page-content .notifications .notice-group a:hover {
+  text-decoration: none;
+}
+.notification-page-content .notifications .notice-group a:hover p {
+  color: #0062a2;
+}
+.notification-page-content .notifications .notice-group a:hover p.time-stamp {
+  color: #3192d4;
+}
+.notification-page-content .notifications .notice-group .media {
+  padding: 5px;
+  border-top: 1px solid #777777;
+}
+.notification-page-content .notifications .notice-group .media .media-left {
+  position: relative;
+}
+.notification-page-content .notifications .notice-group .media .media-left .media-object {
+  width: 40px;
+  height: 40px;
+}
+.notification-page-content .notifications .notice-group .media .media-left .avator-new-badge {
+  position: absolute;
+  top: -3px;
+  right: 3px;
+}
+.notification-page-content .notifications .notice-group .media .media-body {
+  padding: 0px;
+}
+.notification-page-content .notifications .notice-group .media .media-body p {
+  margin-bottom: 3px;
+}
+.notification-page-content .notifications .notice-group .media .media-body p.no-margin {
+  margin: 0;
+}
+.notification-page-content .notifications .notice-group .media .media-body .content-wrapper {
+  display: table-cell;
+  vertical-align: top;
+}
+.notification-page-content .notifications .notice-group .media .media-body .content-wrapper .mesage {
+  color: #333333;
+}
+.notification-page-content .notifications .notice-group .media .media-body .content-wrapper .mesage span {
+  font-weight: bold;
+}
+.notification-page-content .notifications .notice-group .media .media-body .content-wrapper .time-stamp {
+  color: #aaaaaa;
+}
+.notification-page-content .notifications a.btn {
+  margin-top: 15px;
+  background-color: #fff;
+  border: solid 1px #cccccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  min-height: 45px;
+}
+/*# sourceMappingURL=synergy.notifications.css.map */

@@ -1,0 +1,122 @@
+﻿@import "variables";
+@import "mixin";
+
+//
+// btn-warning
+//
+.btn-warning {
+    color: #ffffff;
+    background-color: @brand-warning;
+    border-color: @brand-warning;
+
+    &:hover, &:focus, &:active {
+        color: #ffffff;
+        background-color: #E76163;
+        border-color: #E76163;
+    }
+}
+
+.btn-circle {
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    padding: 6px 0 ;
+    font-size: 6px;
+    line-height: 1.42;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+//
+// controls
+//
+.dropdown-menu {
+    > li {
+        > a {
+            &:hover, &:focus {
+                background-color: @gray-dark;
+            }
+        }
+    }
+}
+
+.typeahead .active > a,
+.typeahead .active > a:hover {
+    color: white;
+    /* Change the typeahead background color here if you'd like */
+    background-color: @gray-dark;
+    /* Turns off the default background gradients */
+    /*background-image: none;*/
+}
+
+//
+// forms
+//
+
+.form-group {
+    label {
+        font-weight: normal;
+        white-space: nowrap;
+    }
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control,
+.form-control.select[disabled],
+.form-control.uneditable-input {
+    background-color: @brand-default;
+    opacity: 0.7;
+    color: @text-color;
+
+    &.white {
+        opacity: 1;
+        background-color: #ffffff;
+    }
+}
+
+.form-control, textarea.form-control, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    border-width: 1px;
+    border-color: transparent;
+
+    &:focus {
+        border-width: 1px;
+    }
+
+    .borderless & {
+        border: 0;
+    }
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 80px;
+}
+
+
+.has-error {
+    .form-control, .form-control:focus {
+        border: 1px solid @brand-danger !important;
+    }
+}
+
+//
+// modal
+//
+
+
+
+//
+//@media screen and (min-width: @screen-xs-max) {
+//    .modal-content {
+//    }
+
+//    .modal-header {
+//    }
+
+//    .modal-body {
+//    }
+
+//    .modal-footer {
+//    }
+//}

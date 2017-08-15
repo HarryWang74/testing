@@ -1,0 +1,149 @@
+﻿@import "synergy.colors.less";
+@import "../bootstrap/variables.less";
+
+.user-image-preview {
+    float: left;
+    margin: 0 5px 5px 0;
+    height: 54px;
+    width: 54px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    overflow:hidden;
+
+    &:hover{
+        cursor:pointer;
+        -webkit-box-shadow: 1px 1px 1px 0px rgba(200, 200, 200, 0.9);
+        -moz-box-shadow:    1px 1px 1px 0px rgba(200, 200, 200, 0.9);
+        box-shadow:         1px 1px 1px 0px rgba(200, 200, 200, 0.9);
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    a {
+        position: absolute;
+        bottom: 2px;
+        right: 2px;
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+
+.user-image-select {
+    float: left;
+    margin: 0 5px 5px 0;
+    height: 54px;
+    width: 54px;
+    padding-top: 18px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    background: @color-gray;
+}
+
+.my-project {
+    position: relative;
+
+    .list-default {
+        img {
+            &.thumb {
+                width: 60px;
+                height: 60px;
+                padding: 1px;
+                margin-right: 5px;
+                border: 1px solid @color-gray-light;
+            }
+        }
+
+        .shift {
+            margin-top: -61px;
+        }
+
+        .tool {
+            position: absolute;
+            right: 15px;
+            top: 0;
+        }
+
+        .btn-group a.dropdown-toggle {
+            img {
+                background-color: @color-gray-dark;
+            }
+
+            &:hover, &:active {
+                opacity: 0.7;
+            }
+        }
+
+        .log {
+            position: absolute;
+            left: 25%;
+            bottom: 0;
+            margin-left: 15px;
+        }
+
+        .aclog {
+            color: @color-gray;
+            font-style: italic;
+            position: absolute;
+            bottom: 0;
+            width: auto;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    .my-project {
+        .list-default {
+
+            img {
+                &.thumb {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            .header {
+                margin-bottom: 10px;
+
+                .text {
+                    font-size: 12px;
+                }
+            }
+
+            .shift {
+                margin-top: 0;
+            }
+
+            .scope {
+                padding-left: 0;
+                padding-right: 15px;
+
+                .text {
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .log {
+                left: 41.66666666666667%;
+                font-size: smaller;
+            }
+
+            .aclog {
+                position: inherit;
+                font-size: smaller;
+
+                .text {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}

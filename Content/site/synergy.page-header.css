@@ -1,0 +1,503 @@
+﻿.page-alerts {
+  padding: 0;
+}
+.page-alerts .alert {
+  margin: 0;
+}
+.login-alerts {
+  padding: 0;
+}
+.login-alerts .alert {
+  margin: 2px;
+}
+.header-statistics-container {
+  position: relative;
+}
+.header-statistics-container .row ul.header-statistics {
+  list-style-type: none;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -webkit-padding-start: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.header-statistics-container .row ul.header-statistics li {
+  display: inline-block;
+  width: 140px;
+  position: relative;
+}
+.header-statistics-container .row ul.header-statistics li h1 {
+  margin-top: 0;
+  display: block;
+  float: left;
+  font-size: 30px;
+  color: #999999;
+}
+.header-statistics-container .row ul.header-statistics li h2 {
+  text-align: left;
+  margin-top: 6px;
+  margin-left: 6px;
+  color: #777777;
+  display: block;
+  float: left;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.header-statistics-container .row ul.header-statistics li:hover h2 {
+  text-decoration: underline;
+}
+.header-statistics-container .row ul.header-statistics li.header-statistics-primary h1 {
+  color: #27b4b9;
+}
+.header-statistics-container .row ul.header-statistics li.header-statistics-primary h2 {
+  color: #777777;
+}
+.header-statistics-container .row ul.header-statistics li.header-statistics-info h1 {
+  color: #00aeef;
+}
+.header-statistics-container .row ul.header-statistics li.header-statistics-info h2 {
+  color: #777777;
+}
+.header-statistics-container .row ul.header-statistics li.header-statistics-danger h1 {
+  color: #ea6149;
+}
+.header-statistics-container .row ul.header-statistics li.header-statistics-danger h2 {
+  color: #777777;
+}
+.header-statistics-container .row ul.header-statistics li.header-statistics-warning h1 {
+  color: #ff9933;
+}
+.header-statistics-container .row ul.header-statistics li.header-statistics-warning h2 {
+  color: #777777;
+}
+.header-statistics-container .row ul.header-statistics li.header-statistics-success h1 {
+  color: #33cc66;
+}
+.header-statistics-container .row ul.header-statistics li.header-statistics-success h2 {
+  color: #777777;
+}
+.header-statistics-container .row ul.header-statistics li img.indicator {
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  bottom: -14px;
+}
+.header-statistics-container #header-statistics-expand,
+.header-statistics-container #header-statistics-collapse {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  display: inline-block;
+  background: white;
+  opacity: 0.8;
+  height: 35px;
+  font-size: 30px;
+  line-height: 30px;
+}
+.header-statistics-container #header-statistics-collapse {
+  display: none;
+}
+.header-statistics-container.expanded #header-statistics-expand {
+  display: none;
+}
+.header-statistics-container.expanded #header-statistics-collapse {
+  display: inline-block;
+}
+.header-statistics-container.expanded .row ul.header-statistics {
+  white-space: normal;
+  overflow-x: visible;
+}
+.header-statistics-container.expanded .row ul.header-statistics li {
+  display: inline-block;
+  width: 140px;
+  position: relative;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .header-statistics-container {
+    position: relative;
+  }
+  .header-statistics-container .row ul.header-statistics {
+    overflow-x: scroll;
+    /* the new scrollbar will have a flat appearance with the set background color */
+    /* this will style the thumb, ignoring the track */
+    /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+  }
+  .header-statistics-container .row ul.header-statistics::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+  }
+  .header-statistics-container .row ul.header-statistics::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  .header-statistics-container .row ul.header-statistics::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .header-statistics-container .row ul.header-statistics::-webkit-scrollbar-button {
+    background-color: transparent;
+  }
+  .header-statistics-container .row ul.header-statistics::-webkit-scrollbar-corner {
+    background-color: white;
+  }
+  .header-statistics-container.expanded .row ul.header-statistics {
+    overflow-x: visible;
+  }
+}
+@supports (-ms-accelerator:true) {
+  .header-statistics-container .row ul.header-statistics {
+    overflow-x: hidden;
+  }
+}
+hr.header-seperator {
+  margin: 1px 0;
+  border-top: 1px solid #bbbbbb;
+}
+div.page-breadcrumb {
+  position: relative;
+  display: inline-block;
+  border-right: 1px dotted #777777;
+  padding-bottom: 3px;
+}
+div.page-breadcrumb.active {
+  border-right: none;
+}
+div.page-breadcrumb > .btn-link {
+  padding: 1px 25px 2px 5px;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  max-width: 200px;
+  min-height: 38px;
+}
+div.page-breadcrumb > .btn-link.logo {
+  padding-left: 35px;
+}
+div.page-breadcrumb > .btn-link.logo > img {
+  position: absolute;
+  left: 1px;
+  top: 5px;
+  max-width: 30px;
+  max-height: 30px;
+}
+div.page-breadcrumb > .btn-link > span[class^="icon-font-"] {
+  position: absolute;
+  font-size: 14px;
+  color: #888888;
+  font-weight: bold;
+  top: 2px;
+  right: -1px;
+  padding: 10px 5px 10px 5px;
+  background-color: white;
+  opacity: 0.8;
+}
+div.page-breadcrumb > .btn-link > .page-breadcrumb-name {
+  color: #333333;
+  font-size: 10px;
+  margin: 0;
+}
+div.page-breadcrumb > .btn-link > .page-breadcrumb-name:hover {
+  color: #024977;
+}
+div.page-breadcrumb > .btn-link > .page-breadcrumb-area {
+  color: #888888;
+  font-size: 14px;
+  margin: 0;
+}
+div.page-breadcrumb > .btn-link > .page-breadcrumb-area:hover {
+  color: #024977;
+}
+@media (max-width: 991px) {
+  div.page-breadcrumb.not-active > .btn-link.logo > .page-breadcrumb-name {
+    display: none;
+  }
+  div.page-breadcrumb.not-active > .btn-link.logo > .page-breadcrumb-area {
+    display: none;
+  }
+}
+ul.page-breadcrumb {
+  padding: 3px;
+  list-style: none;
+  background-color: none;
+  border-radius: 0;
+  margin: 0;
+}
+ul.page-breadcrumb li.page-breadcrumb {
+  display: inline-table;
+  padding: 0 6px 0 2px;
+  height: 36px;
+}
+ul.page-breadcrumb li.page-breadcrumb .btn-link {
+  text-align: left;
+  padding: 0;
+  padding-right: 40px;
+  position: relative;
+}
+ul.page-breadcrumb li.page-breadcrumb .btn-link > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-right: 1px dotted #777777;
+}
+ul.page-breadcrumb li.page-breadcrumb .btn-link:hover {
+  text-decoration: none;
+  border-bottom: 1px dotted #024977;
+  outline: 0;
+}
+ul.page-breadcrumb li.page-breadcrumb .btn-link:focus {
+  outline: 0;
+}
+ul.page-breadcrumb li.page-breadcrumb .page-breadcrumb-name {
+  color: #333333;
+  font-size: 10px;
+  margin: 0;
+}
+ul.page-breadcrumb li.page-breadcrumb .page-breadcrumb-name:hover {
+  color: #024977;
+}
+ul.page-breadcrumb li.page-breadcrumb .page-breadcrumb-area {
+  color: #888888;
+  font-size: 14px;
+  margin: 0;
+}
+ul.page-breadcrumb li.page-breadcrumb .page-breadcrumb-area:hover {
+  color: #024977;
+}
+ul.page-breadcrumb li.page-breadcrumb > a {
+  font-size: 12px;
+  color: #777777;
+  padding: 0;
+  font-weight: bold;
+}
+ul.page-breadcrumb li.page-breadcrumb > a .logo-container {
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  display: inline-table;
+  position: relative;
+}
+ul.page-breadcrumb li.page-breadcrumb > a .logo-container img {
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+}
+ul.page-breadcrumb li.page-breadcrumb > a h1 {
+  font-size: 10px;
+  color: #777777;
+  font-weight: normal;
+}
+ul.page-breadcrumb li.page-breadcrumb.active .btn-link > img {
+  border-right: none;
+}
+ul.page-breadcrumb li.page-breadcrumb.active > a {
+  color: black;
+  font-weight: bold;
+}
+ul.page-breadcrumb li.page-breadcrumb.active > a h1 {
+  color: #777777;
+}
+ul.page-breadcrumb li.page-breadcrumb .dropdown-menu li {
+  /*&.divider {
+                     padding: 0;
+                 }*/
+}
+ul.page-breadcrumb li.page-breadcrumb .dropdown-menu li a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+ul.page-breadcrumb.timesheets-breadcrumb {
+  background-color: none;
+}
+ul.page-breadcrumb.timesheets-breadcrumb li.page-breadcrumb {
+  border-right: 1px dotted white;
+}
+ul.page-breadcrumb.timesheets-breadcrumb li.page-breadcrumb .btn-link:hover,
+ul.page-breadcrumb.timesheets-breadcrumb li.page-breadcrumb .btn-link:focus {
+  background-color: #20a0a4;
+}
+ul.page-breadcrumb.timesheets-breadcrumb li.page-breadcrumb .page-breadcrumb-name {
+  color: white;
+}
+ul.page-breadcrumb.timesheets-breadcrumb li.page-breadcrumb .page-breadcrumb-area {
+  color: white;
+}
+ul.page-breadcrumb.timesheets-breadcrumb li.page-breadcrumb > a {
+  color: white;
+}
+ul.page-breadcrumb.timesheets-breadcrumb li.page-breadcrumb > a h1 {
+  color: white;
+}
+ul.page-breadcrumb.timesheets-breadcrumb li.page-breadcrumb.active > a {
+  color: white;
+}
+ul.page-breadcrumb.timesheets-breadcrumb li.page-breadcrumb.active > a h1 {
+  color: white;
+}
+ul.page-breadcrumb.timesheets-breadcrumb li.page-breadcrumb .dropdown-menu li a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.old-media {
+  margin: 10px 0 0 0;
+}
+.old-media .bd {
+  margin-top: 3px;
+}
+.old-media,
+.bd {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1;
+}
+.old-media .img {
+  float: left;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+.old-media .img.large {
+  width: 80px;
+  height: 80px;
+}
+.old-media .img.medium {
+  width: 40px;
+  height: 40px;
+}
+.old-media .img.small {
+  width: 20px;
+  height: 20px;
+}
+.old-media .img img {
+  display: block;
+}
+.btn-header-menu {
+  color: #666666;
+  background-color: white;
+}
+.btn-header-menu > img {
+  margin-top: -2px;
+  margin-left: 6px;
+}
+.btn-header-menu:hover {
+  color: #666666;
+  background-color: #999999;
+}
+.btn-header-menu:focus {
+  color: #666666;
+  background-color: #999999;
+}
+.container-page-menu {
+  position: relative;
+  display: none;
+}
+.container-page-menu .container {
+  position: relative;
+}
+.container-page-menu .container .container-menu {
+  background: #555555;
+  color: white;
+  padding: 10px;
+  width: 320px;
+  right: 15px;
+  top: 0;
+  position: absolute;
+  z-index: 1000;
+}
+.container-page-menu .container .container-menu hr {
+  border-color: #777777;
+  margin: 3px 0;
+}
+.container-page-menu .container .container-menu p {
+  color: #777777;
+  font-weight: bold;
+  font-size: 10px;
+}
+.container-page-menu .container .container-menu a {
+  display: block;
+  color: white;
+  padding: 2px 2px;
+}
+.container-page-menu .container .container-menu a.organisation {
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.container-page-menu .container .container-menu a.select-organisation {
+  display: inline;
+  float: right;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.container-page-menu .container .container-menu a:hover {
+  background: #777777;
+  text-decoration: none;
+}
+.container-page-menu .container .container-menu .nav.nav-tabs a {
+  padding: 5px 5px 0 5px;
+  color: #888888;
+}
+.container-page-menu .container .container-menu .nav.nav-tabs .active a {
+  background: #555555;
+  padding: 5px;
+  color: white;
+}
+.page-column-selectors {
+  padding-left: 20px;
+}
+.page-list-views {
+  margin-top: -10px;
+}
+.page-list-views.cost-selector {
+  left: 160px;
+  position: absolute;
+  bottom: -7px;
+}
+.page-list-views.profit-selector {
+  position: absolute;
+  left: 300px;
+  bottom: -7px;
+}
+.page-list-views .btn-group.btn-list-views {
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+.page-list-views .btn-group.btn-list-views .btn {
+  padding: 0;
+  color: #555555;
+}
+.page-list-views .btn-group.btn-list-views .btn:hover {
+  color: #27b4b9;
+}
+@media (max-width: 991px) {
+  .container-page-menu .container {
+    position: relative;
+  }
+  .container-page-menu .container .container-menu {
+    width: 100%;
+    right: 0;
+    top: 0;
+  }
+  .row-box-header ul.header-statistics li {
+    width: 60px;
+  }
+  .row-box-header ul.header-statistics li h2 {
+    display: none;
+  }
+  ul.header-statistics li.header-statistics-info {
+    width: 140px;
+  }
+  ul.header-statistics li.header-statistics-info h2 {
+    display: block;
+  }
+  ul.header-statistics li img.indicator {
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    bottom: -14px;
+  }
+}

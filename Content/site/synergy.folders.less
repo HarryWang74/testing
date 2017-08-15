@@ -1,0 +1,593 @@
+﻿@import "synergy.colors.less";
+@import "../bootstrap/variables.less";
+
+
+.angular-ui-tree-nodes {
+    padding-left: 10px !important;
+}
+
+.expand-text {
+    padding-right: 30px;
+}
+
+.document-drag-icon {
+}
+
+.handle {
+    cursor: move;
+    left: 0;
+    right: 0;
+    position: relative;
+    padding-left: 3px;
+    top: 12px !important;
+}
+
+.fix-height {
+    height: 40px;
+    top: -2px;
+}
+
+.document-info {
+    position: relative;
+    top: -5px;
+    right: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.comment-icon {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    font-size: 20px;
+    right: 90px;
+    width: 30px;
+    height: 40px;
+    > span {
+        position: absolute;
+        top: 6px;
+        left: 5px;
+    }
+}
+ 
+.downloaded {
+    position: absolute;
+    top: 0;
+    font-size: 20px;
+    right: 60px;
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    //background-color: orange;
+    > span {
+        position: absolute;
+        top: 6px;
+        left: 5px;
+    }
+}
+
+
+.dashboard-icon {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    font-size: 20px;
+    right: 30px;
+    width: 30px;
+    height: 40px;
+    //background-color: red;
+    > span {
+        position: absolute;
+        top: 6px;
+        left: 5px;
+    }
+}
+
+
+.document-icon-search {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 0;
+    display: inline-block;
+    font-size: 26px;
+    text-transform: uppercase;
+
+    > span {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .label {
+        position: absolute;
+        font-size: 25%;
+        margin: auto;
+        padding: 0;
+        vertical-align: middle;
+        top: 9px;
+        left: 6px;
+    }
+}
+
+.document-icon-no-dragging {
+    position: absolute;
+    top: 5px;
+    padding: 0;
+    display: inline-block;
+    font-size: 26px;
+    text-transform: uppercase;
+
+
+    > span {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .label {
+        position: absolute;
+        font-size: 25%;
+        margin: auto;
+        padding: 0;
+        vertical-align: middle;
+        top: 9px;
+        left: 6px;
+    }
+}
+
+
+
+.document-icon {
+    position: absolute;
+    top: 5px;
+    padding: 0;
+    display: inline-block;
+    font-size: 26px;
+    left: 20px;
+    text-transform: uppercase;
+
+
+    > span {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .label {
+        position: absolute;
+        font-size: 25%;
+        margin: auto;
+        padding: 0;
+        vertical-align: middle;
+        top: 9px;
+        left: 6px;
+    }
+}
+
+
+.document-status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    font-size: 29px;
+    width: 30px;
+    height: 40px;
+    //background-color: blueviolet;
+    > span {
+        position: absolute;
+        top: 6px;
+        left: 0;
+    }
+}
+
+.document-row-fix {
+    //left: 0;
+    //top: -10px;
+    padding-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    min-height: 40px;
+}
+
+.document-row {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    z-index: 100;
+}
+
+
+.image {
+    color: @color-green-light;
+}
+
+.doc {
+    color: @color-dark-blue;
+}
+
+.xls {
+    color: @color-green-darkest;
+}
+
+.txt {
+    color: @color-red;
+}
+
+.zip {
+    color: @color-white;
+}
+
+.pdf {
+    color: @color-red;
+}
+
+.white {
+    color: @color-white !important;
+}
+
+.wdg {
+    color: @color-dark-blue-lightest !important;
+}
+
+.ai {
+    color: @color-orange !important;
+}
+
+
+.document-name {
+    padding-left: 47px;
+    margin: 0;
+    position: relative;
+}
+
+.document-name-no-dragging {
+    padding-left: 37px;
+    margin: 0;
+    position: relative;
+}
+
+span.label.label-primary {
+    position: relative;
+    top: -18px;
+}
+
+.folder-expand {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    padding: 0px;
+    margin:0px;
+    display: inline-block;
+    width:25px;
+    height:25px;
+    line-height:27px;
+    color:#fff;
+    font-size: 18px;
+    background: @color-teal;
+    max-width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.share-area {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.share-folder-area {
+    background-color: @color-gray-dark;
+
+
+    .header {
+        margin: 0;
+        padding: 0 5px;
+        font-weight: bold;
+        line-height: 23px;
+        font-size: 15px;
+        color: white;
+
+        .title {
+            padding-top: 11px;
+            padding-left: 6px;
+            width: 100px;
+        }
+
+        .clear {
+            padding-right: 1px;
+            font-size: 11px;
+            position: absolute;
+            right: -1px;
+            top: 5px;
+        }
+    }
+
+    .smallHeader {
+        font-size: 12px;
+        color: white;
+        padding-right: 27px;
+
+        > div > span {
+            font-size: 14px;
+            position: absolute;
+            top: 12px;
+            right: 37px;
+        }
+    }
+
+    .selectedDocuments {
+        overflow-y: scroll;
+        height: 374px;
+        background-color: white;
+    }
+}
+
+.selectedFolders {
+    .header {
+        margin: 0;
+        padding: 0 5px;
+        font-weight: bold;
+        line-height: 35.5px;
+    }
+
+    .selectedDocuments {
+        overflow-y: scroll;
+        height: 247px;
+    }
+}
+
+.folders-nav {
+    padding: 0;
+    top: -1px;
+    position: relative;
+
+    #rootElement {
+        > #root {
+            -ms-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            -ms-word-wrap: break-word;
+            word-wrap: break-word;
+            white-space: nowrap;
+            width: 100%;
+            left: 0;
+            padding-left: 1px;
+            padding-right: 30px;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        > span {
+            display: inline;
+            position: relative;
+            float: right;
+            top: -35px;
+            right: 5px;
+            z-index: 100;
+        }
+    }
+
+
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        background-color: white;
+
+        a {
+            padding: 10.0px 5px;
+            border-top: 0;
+        }
+
+        > li[id="root"] a {
+            color: #333333;
+            padding-left: 5px;
+            border: 0;
+            width: 40px;
+
+            &.selected {
+                color: white;
+            }
+        }
+
+        li a {
+            color: @color-text;
+            padding-left: 40px;
+        }
+
+        > li .item .tools {
+            position: absolute;
+            right: 0;
+            top: 1px;
+        }
+
+
+
+
+        > li.selected {
+            background-color: @color-gray-light;
+            color: white;
+            .btn-link{
+              color:#fff;
+            }
+        }
+    }
+
+    .btn.btn-default.dropdown-toggle.toggle {
+        color: #999999;
+        background-color: transparent;
+        border: 0;
+    }
+
+
+
+    ul.header {
+        margin: 0;
+        padding: 0 5px;
+        background: #f0eff4;
+        font-weight: bold;
+        list-style: none;
+        line-height: 35.5px;
+
+        .files {
+            position: relative;
+            top: -19px;
+            padding-right: 98px;
+            line-height: 0;
+        }
+    }
+
+    .files {
+        position: relative;
+        top: -25px;
+        padding-right: 55px;
+    }
+
+    .folder {
+        color: @color-gray-light;
+        font-size: 20px;
+
+        &.selected {
+            color: white;
+        }
+    }
+
+    .folder-arrow {
+        font-size: 15px;
+        color: @color-gray-light;
+
+        &.selected {
+            color: white;
+        }
+    }
+
+    .folder-name {
+        color: @color-text !important;
+        width: 70%;
+        white-space: nowrap;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-align: left;
+        position: absolute;
+        /*padding-right:40px;*/
+        &.selected {
+            color: white !important;
+        }
+    }
+
+    .dndDragover {
+        background-color: darkgray !important;
+    }
+
+    .angular-ui-tree {
+        background-color: whitesmoke !important;
+
+        .tree-node .tools {
+            position: relative;
+            top: -40px;
+        }
+
+        .tree-node .fileDetails {
+            position: relative;
+            top: -29px;
+            padding-right: 50px;
+        }
+
+
+
+        .tree-node {
+            border: 1px solid #dddddd;
+            background-color: white;
+            height: 42px;
+
+            &.selected {
+                background-color: @color-gray-dark;
+                color: white;
+            }
+        }
+
+        .tree-node-content {
+            margin: 10px;
+
+            .selected {
+                color: white;
+            }
+        }
+    }
+
+    .range-1 {
+        color: white;
+    }
+
+    .range-2 {
+        color: yellow;
+    }
+
+    .range-3 {
+        color: orange;
+    }
+
+    .range-4 {
+        color: green;
+    }
+
+    .range-5 {
+        color: blue;
+    }
+
+    .range-6 {
+        color: red;
+    }
+
+
+
+
+
+
+
+    .angular-ui-tree-handle {
+        height: 40px;
+    }
+
+    .dropdown-menu > li > a {
+        padding: 7px 20px;
+    }
+
+    .expand {
+        padding: 2px 10px;
+        top: 10px;
+        position: absolute;
+        color: black !important;
+    }
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm) {
+    .comment-icon{
+        right:50px !important;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg) {
+      .comment-icon{
+        right:90px !important;
+    }
+}

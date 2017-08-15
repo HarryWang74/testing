@@ -1,0 +1,105 @@
+﻿.user-image-preview {
+  float: left;
+  margin: 0 5px 5px 0;
+  height: 54px;
+  width: 54px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+.user-image-preview img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.user-image-preview a {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+}
+.user-image-preview a:hover {
+  text-decoration: none;
+}
+.user-image-select {
+  float: left;
+  margin: 0 5px 5px 0;
+  height: 54px;
+  width: 54px;
+  padding-top: 18px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  background: #777777;
+}
+.my-project {
+  position: relative;
+}
+.my-project .list-default img.thumb {
+  width: 60px;
+  height: 60px;
+  padding: 1px;
+  margin-right: 5px;
+  border: 1px solid #888888;
+}
+.my-project .list-default .shift {
+  margin-top: -61px;
+}
+.my-project .list-default .tool {
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+.my-project .list-default .btn-group a.dropdown-toggle img {
+  background-color: #666666;
+}
+.my-project .list-default .btn-group a.dropdown-toggle:hover,
+.my-project .list-default .btn-group a.dropdown-toggle:active {
+  opacity: 0.7;
+}
+.my-project .list-default .log {
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  margin-left: 15px;
+}
+.my-project .list-default .aclog {
+  color: #777777;
+  font-style: italic;
+  position: absolute;
+  bottom: 0;
+  width: auto;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .my-project .list-default img.thumb {
+    width: 50px;
+    height: 50px;
+  }
+  .my-project .list-default .header {
+    margin-bottom: 10px;
+  }
+  .my-project .list-default .header .text {
+    font-size: 12px;
+  }
+  .my-project .list-default .shift {
+    margin-top: 0;
+  }
+  .my-project .list-default .scope {
+    padding-left: 0;
+    padding-right: 15px;
+  }
+  .my-project .list-default .scope .text {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .my-project .list-default .log {
+    left: 41.66666666666667%;
+    font-size: smaller;
+  }
+  .my-project .list-default .aclog {
+    position: inherit;
+    font-size: smaller;
+  }
+  .my-project .list-default .aclog .text {
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,83 @@
+﻿@import "variables";
+@import "mixin";
+
+.user-timer {
+    /*background-color: @gray-deepdark;*/
+    position: relative;
+    /*color: #ffffff;*/
+
+
+    >div {
+        padding-top: 15px;
+    }
+
+    .h4 {
+        font-weight: bold;
+    }
+
+    .dark {
+        opacity: 0.4;
+    }
+
+    .header {
+        .h4 {
+            margin-top: 14px;
+        }
+
+        .cancel {
+            cursor: pointer;
+            font-size: 48px;
+            line-height: 1;
+        }
+    }
+
+    .form-group {
+        .col-sm-10 {
+            padding-right: 0;
+        }
+
+        .btn, .form-control {
+            height: 34px;
+        }
+
+        .btn {
+            font-size: 16px;
+        }
+    }
+
+    .list-container {
+        font-size: 12px;
+        margin-bottom: 30px;
+
+        hr {
+            margin: 7px 0;
+            opacity: 0.3;
+        }
+
+        > .row {
+        }
+
+        .btn-xs {
+            width: 65px;
+        }
+    }
+
+    .spinner-container {
+        background-color: @gray-dark;
+
+        > span {
+            margin-top: 70px;
+        }
+    }
+}
+
+
+@media (max-width: @screen-xs-max) {
+    .user-timer {
+        .form-group {
+            .col-sm-10 {
+                padding-right: 15px;
+            }
+        }
+    }
+}

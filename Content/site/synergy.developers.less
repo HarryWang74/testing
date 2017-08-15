@@ -1,0 +1,152 @@
+﻿@import "synergy.colors.less";
+
+.application-image{
+    width:100%;
+} 
+.developer-nav{
+    width:250px; 
+    padding-top:100px;
+    float:left;
+
+    h4{
+        font-weight:bold;
+        margin-bottom:10px;
+    }
+
+
+    li{
+        position: relative;
+        display: block;
+        padding: 10px;
+        margin-bottom: -1px;
+        margin-left:20px;
+        border-left: 3px solid @color-teal;
+        font-weight:bold;
+        font-size:14px;
+        color:@color-gray-dark;
+    }
+
+    li:hover{
+        cursor: pointer;
+        background:@color-dark-blue-highlight !important;
+    }
+        
+    li:nth-child(even){
+        background:#EBEBEB;
+    }
+
+    li:nth-child(odd){
+        background:white;
+    }
+
+    @media screen and (max-width: 769px) {
+        width:100%;
+        padding-top:20px !important;
+    }
+
+    .accordion-toggle:after {
+        /* symbol for "opening" panels */
+        font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+        content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+        float: right;        /* adjust as needed */
+        color: @color-teal;         /* adjust as needed */
+    }
+
+    .accordion-toggle.collapsed:after {
+        /* symbol for "collapsed" panels */
+        content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+    }
+}
+
+.developer-content{
+    padding-top:40px;
+    margin-left:350px;
+
+    @media screen and (max-width: 769px) {
+        margin-left:0;
+    }
+}
+
+.developer-header{
+    color: @color-teal;
+    font-weight: bold;
+    font-size:36px;
+}
+
+.developer-content-section, .developer-api-section{
+    border-top:solid 1px #D6D3D3;
+    margin-top: 15px;
+    padding-top: 15px;
+    float:right;
+
+    h2{
+        color: @color-teal-light;
+        margin-bottom:10px;
+    }
+
+    p{
+        font-size:13px;
+    }
+
+    .block{
+        display:block;
+    margin-bottom: 5px;
+
+    }
+}
+
+.developer-api-section{
+    float:none;
+    display:inline-block;
+
+    span{
+        font-size:14px;
+    }
+
+    h1{
+        word-break:break-all;
+    }
+
+    code{
+        word-break:break-all;
+    }
+}
+
+.developer-content-header{
+
+    h1{
+        color: @color-gray-dark;
+        font-weight:bold;
+        font-size:24px;
+    }
+
+
+}
+
+.api-label{
+        display: inline-block;
+    font-weight: bold;
+    width: 100px;
+}
+
+#collapseApiDocs, #collapseAdvanced, #collapseGettingStarted{
+    li{
+        a{
+            color:inherit;
+            display:block;
+        }
+
+        a:active{
+            color:@color-teal;
+        }
+    }
+}
+
+/*Toggles chevrons on dropdown*/
+.api-dropdown[aria-expanded=true] .icon-font-chevron-right{
+    display:none;
+}
+
+.api-dropdown[aria-expanded=false] .icon-font-chevron-down{
+    display:none;
+}

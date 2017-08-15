@@ -1,0 +1,788 @@
+﻿.warning {
+  color: #ff9933;
+}
+.success {
+  color: #33cc66;
+}
+.danger {
+  color: #ea6149;
+}
+.teal {
+  color: #27b4b9 !important;
+}
+timesheet-timer-history > div {
+  margin-bottom: 10px;
+}
+timesheet-timer-history h3.section span {
+  margin-left: 13px;
+  margin-right: 17px;
+}
+.timer-modal-holder .page-list-views {
+  display: inline-block;
+  float: right;
+  margin-right: 10px;
+}
+.timer-modal-holder .dropdown-menu {
+  min-width: 80px;
+}
+.user-timer {
+  position: relative;
+}
+.user-timer .col-timer-text {
+  padding-right: 0 !important;
+}
+.user-timer .col-timer-project {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.user-timer .col-timer-minutes {
+  padding-left: 0 !important;
+}
+.user-timer .col-timer-minutes input[type="text"] {
+  text-align: right;
+}
+.user-timer .col-timer-start {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+}
+.user-timer .row-new-timer {
+  padding-right: 100px;
+}
+.user-timer .btn {
+  text-align: right;
+  padding-left: 0;
+  padding-right: 10px;
+}
+.user-timer > div {
+  padding-top: 15px;
+}
+.user-timer .h4 {
+  font-weight: bold;
+}
+.user-timer .dark {
+  opacity: 0.4;
+}
+.user-timer .header .h4 {
+  margin-top: 14px;
+}
+.user-timer .header .cancel {
+  cursor: pointer;
+  font-size: 48px;
+  line-height: 1;
+}
+.user-timer .form-group .col-sm-10 {
+  padding-right: 0;
+}
+.user-timer .form-group .btn,
+.user-timer .form-group .form-control {
+  height: 34px;
+}
+.user-timer .form-group .btn {
+  font-size: 16px;
+}
+.user-timer .list-container {
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.user-timer .list-container hr {
+  margin: 7px 0;
+  opacity: 0.3;
+}
+.user-timer .list-container .btn-xs {
+  width: 65px;
+}
+.user-timer .spinner-container {
+  background-color: #666666;
+}
+.user-timer .spinner-container > span {
+  margin-top: 70px;
+}
+.user-timer ul.timers-header {
+  margin: 0 0 0 30px;
+  padding: 0;
+  background: #F0EFF4;
+  font-weight: bold;
+  list-style: none;
+}
+.user-timer ul.timers-header > li {
+  padding: 10px 50px 10px 10px;
+  margin: 0;
+}
+.user-timer ul.timers-header > li > .row {
+  position: relative;
+}
+.user-timer ul.timers-header > li > .row input[type="checkbox"] {
+  float: left;
+  position: absolute;
+  top: 2px;
+  left: -20px;
+  margin-top: 0;
+}
+.user-timer ul.timers-header > li > .row label {
+  display: inline;
+}
+.user-timer ul.timers-header > li > .row button {
+  border: none;
+  background-color: #F0EFF4;
+  color: #27b4b9;
+  font-weight: normal;
+  margin: 0;
+}
+.user-timer ul.timers-header > li > .row button:hover {
+  color: #0062a2;
+}
+.user-timer ul.timers-content {
+  margin: 0 0 0 30px;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+.user-timer ul.timers-content > li {
+  padding: 10px;
+  margin: 0;
+  margin-bottom: 1px;
+  border-bottom: 1px solid #999999;
+  min-height: 40px;
+  position: relative;
+}
+.user-timer ul.timers-content > li a {
+  color: #333333;
+}
+.user-timer ul.timers-content > li a.sublink {
+  color: #27b4b9;
+}
+.user-timer ul.timers-content > li > .row {
+  position: relative;
+  padding-right: 100px;
+}
+.user-timer ul.timers-content > li > .row input[type="checkbox"] {
+  float: left;
+  position: absolute;
+  top: 2px;
+  left: -20px;
+  margin-top: 0;
+}
+.user-timer ul.timers-content > li > .row div[class^="col-"] {
+  overflow-x: hidden;
+  overflow: hidden;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: block;
+}
+.user-timer ul.timers-content > li > .row div[class^="col-"] input[type="checkbox"] {
+  padding-top: 2px;
+  margin: 0;
+}
+.user-timer ul.timers-content > li > .row div[class^="col-"].row-only {
+  display: block;
+}
+.user-timer ul.timers-content > li > .row div[class^="col-"].card-only {
+  display: none;
+}
+.user-timer ul.timers-content > li .timer-controls {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+}
+.user-timer ul.timers-content > li .timer-controls .pause {
+  text-align: right;
+  background: #F0EFF4;
+  color: #777777;
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.user-timer ul.timers-content > li .timer-controls .pause:hover {
+  color: #0062a2;
+}
+.user-timer ul.timers-content > li .timer-controls .pause:active {
+  color: #333333;
+}
+.user-timer ul.timers-content > li .timer-controls .resume {
+  text-align: right;
+  background: #F0EFF4;
+  color: #ea6149;
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.user-timer ul.timers-content > li .timer-controls .resume:hover {
+  color: #0062a2;
+}
+.user-timer ul.timers-content > li .timer-controls .resume:active {
+  color: #333333;
+}
+.user-timer ul.timers-content > li .col-timer-project button {
+  border: none;
+  float: right;
+  background-color: #F0EFF4;
+  color: #333333;
+  font-weight: normal;
+  margin: 0;
+}
+.user-timer ul.timers-content > li .col-timer-project button:hover {
+  color: #0062a2;
+}
+.user-timer ul.timers-content > li .text-muted {
+  font-size: 10px;
+  margin-top: 3px;
+  color: #777777;
+}
+.user-timer ul.timers-content > li .text-small {
+  font-size: 11px;
+  margin-top: 5px;
+}
+.user-timer ul.timers-content > li .card-title {
+  display: none;
+}
+@media (max-width: 520px) {
+  .timer-playback-holder .running-timer-pause {
+    margin-right: 5px !important;
+  }
+  .running-timer-time,
+  .paused-timer-play {
+    margin-right: 5px !important;
+  }
+}
+@media (max-width: 991px) {
+  .user-timer .col-timer-start {
+    width: 40px;
+  }
+  .user-timer .row-new-timer {
+    padding-right: 40px;
+  }
+  .user-timer .btn {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .user-timer ul.timers-content > li > .row {
+    padding-right: 40px;
+  }
+  .user-timer ul.timers-content > li .timer-controls {
+    width: 40px;
+  }
+  .user-timer ul.timers-content > li .timer-controls .resume,
+  .user-timer ul.timers-content > li .timer-controls .pause {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .user-timer ul.timers-content > li .text-muted {
+    font-size: 10px;
+    margin-top: 3px;
+    color: #777777;
+  }
+  .user-timer ul.timers-content > li .text-small {
+    font-size: 11px;
+    margin-top: 5px;
+  }
+  .user-timer ul.timers-content > li .card-title {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .user-timer .form-group .col-sm-10 {
+    padding-right: 15px;
+  }
+}
+.timer-modal-holder,
+.timer-modal-backgorund {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.timer-modal-holder {
+  z-index: 999;
+}
+.timer-modal-holder select {
+  display: inline;
+}
+.timer-modal-holder .dropdown-menu-autocomplete {
+  max-height: 250px !important;
+}
+.timer-modal-backgorund {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.inner-timer-modal-holder {
+  margin-top: 50px;
+  padding: 0 20px;
+  height: 100%;
+  margin-right: 10px;
+  z-index: 100;
+}
+.timer-exit-button {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  font-size: 20px;
+  color: #db4c32;
+}
+.timer-exit-button:hover {
+  cursor: pointer;
+  color: #cf3d23;
+}
+.starter-holder .no-padding-left {
+  padding-left: 0;
+}
+.starter-holder .sm-padding-right {
+  padding-right: 5px;
+}
+.timer-start-button {
+  font-size: 15px;
+  height: 40px;
+  padding: 0;
+  line-height: 40px;
+}
+.timer-start-button .timer-start-button-text {
+  position: relative;
+  top: -2px;
+}
+.timer-start-button .timer-start-button-icon {
+  font-size: 25px;
+  padding-top: 6px;
+}
+.running-timers-header {
+  padding: 20px 0 20px 20px;
+}
+.recent-timers-header {
+  padding: 20px;
+}
+.recent-timers-header .dropdown-menu {
+  top: -107px;
+  left: -8px;
+  box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.175);
+}
+/*So dropdown does not overflow modal*/
+.running-timer:last-child .dropdown-menu,
+.paused-timer:nth-last-child(-n + 2) .dropdown-menu {
+  top: -125px !important;
+  box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.175) !important;
+}
+/*So project selector does not overflow modal*/
+.running-timer:nth-last-child(-n + 2) .dropdown-menu-autocomplete,
+.paused-timer:nth-last-child(-n + 4) .dropdown-menu-autocomplete {
+  top: -250px !important;
+}
+.running-timer:nth-child(odd),
+.paused-timer:nth-child(odd) {
+  background: white;
+}
+.running-timer,
+.paused-timer {
+  border-top: 1px solid black;
+  box-shadow: 0 0 3px #cccccc;
+  width: 100%;
+  position: relative;
+  min-height: 70px;
+  overflow: visible;
+}
+.running-timer .project-name,
+.paused-timer .project-name {
+  position: relative;
+  top: -3px;
+}
+.running-timer .auto-stop,
+.paused-timer .auto-stop {
+  position: absolute;
+  bottom: 2px;
+  color: #555555;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 10px;
+}
+.running-timer:last-child,
+.paused-timer:last-child {
+  border-bottom: 1px solid black;
+}
+.running-timer-info,
+.running-timer-edit {
+  min-height: 60px;
+  margin-top: 10px;
+}
+.running-timer-info h5,
+.running-timer-edit h5 {
+  line-height: 15px;
+}
+.running-timer-info h4,
+.running-timer-edit h4 {
+  line-height: 25px;
+}
+.running-timer-text {
+  float: left;
+  padding-left: 10px;
+  width: 90%;
+}
+.running-timer-stopstart-holder {
+  height: 70px;
+  padding: 0;
+  display: table;
+  overflow: hidden;
+  border-left: 1px dotted black;
+}
+.running-timer-stopstart-holder div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.running-timer-edit-holder {
+  float: right;
+  text-align: right;
+  width: 10%;
+  font-size: 13px;
+  color: #808080;
+  position: relative;
+}
+.running-timer-edit-holder span {
+  cursor: pointer;
+  display: block;
+}
+.running-timer-time {
+  position: relative;
+  font-size: 15px;
+  float: right;
+  line-height: 30px;
+  margin-right: 10%;
+  top: 0 !important;
+}
+.timer-edit-minutes {
+  width: 50% !important;
+}
+.running-timers-holder {
+  margin-bottom: 20px;
+}
+.time-paused {
+  top: -6px;
+}
+.timer-minutes-input {
+  padding-right: 0 !important;
+  width: auto !important;
+  margin: 5px 5px 0 5px;
+}
+.timer-close-input {
+  padding-right: 0 !important;
+}
+.running-timer-pause {
+  font-size: 30px;
+  color: #ea6149;
+  float: right;
+  margin-right: 10%;
+}
+.running-timer-pause:hover {
+  color: #cf3d23;
+  cursor: pointer;
+}
+.paused-timer-play {
+  font-size: 30px;
+  color: #27b4b9;
+  float: right;
+  margin-right: 10%;
+}
+.paused-timer-play:hover {
+  cursor: pointer;
+  color: #1d8d91;
+}
+.recent-times-header {
+  color: #27b4b9;
+  cursor: pointer;
+}
+.timer-remove {
+  margin-top: 13px;
+  font-size: 17px;
+  cursor: pointer;
+}
+.timer-edit-label {
+  padding-top: 5px;
+}
+.timer-error {
+  font-size: 16px;
+  color: #ea6149;
+  line-height: 54px;
+  padding-left: 18px;
+  font-weight: bold;
+}
+#timer-modal-triangle {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #F0EFF4;
+  position: fixed;
+  top: 43px;
+  right: 118px;
+}
+@media screen and (max-width: 768px) {
+  #timer-modal-triangle {
+    right: 69px;
+  }
+}
+#timer-overflow-holder {
+  background: #F0EFF4;
+  overflow-y: auto;
+  max-height: 90%;
+  box-shadow: 0 0 7px #292929;
+  padding: 0 10px;
+  min-height: 400px;
+}
+.hundred-height {
+  height: 100%;
+}
+.timer-modal-organisation-limit {
+  max-width: 150px;
+}
+.timer-modal-stage-limit {
+  /*max-width: 25%;*/
+}
+.timer-project-details {
+  width: 100%;
+  overflow: hidden;
+  height: 30px;
+  position: relative;
+  top: -5px;
+  line-height: 14px;
+}
+.timer-project-details span {
+  display: inline;
+}
+.timer-day span {
+  margin-right: 0.5%;
+}
+.timer-number-input::-webkit-inner-spin-button,
+.timer-number-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+/* webkit solution */
+.timer-number-input::-webkit-input-placeholder {
+  text-align: left;
+}
+/* mozilla solution */
+.timer-number-input:-moz-placeholder {
+  text-align: left;
+}
+.timer-number-input {
+  text-align: left !important;
+}
+#recent-timers-chevron.icon-font-chevron-right {
+  position: relative;
+  top: 1.5px;
+}
+.timer-playback-holder {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  float: right;
+}
+.timer-timesheets-link {
+  position: absolute;
+  bottom: 3px;
+  width: 100%;
+}
+.timers-history {
+  /*Make drop up*/
+}
+.timers-history .timers-day {
+  width: 100%;
+}
+.timers-history .timers-day span {
+  width: 12.9%;
+  display: inline-block !important;
+  text-align: center;
+}
+.timers-history .hint-text {
+  color: #777777;
+  font-style: italic;
+}
+.timers-history .timer-applied {
+  position: absolute;
+  background: #ffffff;
+  /* width: 100%; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  opacity: 0.6;
+}
+.timers-history .dropdown-menu {
+  top: -107px !important;
+}
+.timesheet-timer-select {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid gray;
+  margin-bottom: 10px;
+}
+#timer-count-alert {
+  width: 200px;
+  height: 50px;
+  background: #27b4b9;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  line-height: 50px;
+  color: white;
+  right: 0;
+  cursor: pointer;
+  display: none;
+}
+#timer-count-alert label {
+  cursor: pointer;
+}
+#timer-count-alert:hover {
+  background: #20a0a4;
+}
+.hover-list {
+  cursor: pointer;
+}
+.no-hover-list {
+  background: #F0EFF4 !important;
+}
+.no-hover-list:hover {
+  color: inherit !important;
+}
+/*Time selector*/
+.time-selector {
+  display: table;
+  width: 100%;
+}
+.time-selector-input-group {
+  width: 100%;
+  background: red;
+  overflow: hidden;
+  display: table-cell;
+  position: relative;
+}
+.time-selector-input-group .colon {
+  position: absolute;
+  top: 11px;
+  z-index: 99;
+}
+.time-selector-input-group .time-input {
+  width: 50%;
+  float: left;
+}
+.time-selector-input-group .time-input input {
+  box-shadow: none;
+  outline: none;
+  text-align: center;
+  padding: 0;
+}
+.time-selector-input-group .time-input:focus {
+  box-shadow: none;
+  outline: none;
+}
+.time-selector-input-group .time-input:last-child input {
+  border-left: none;
+}
+.time-selector-input-group .time-input:first-child input {
+  border-right: none;
+}
+.time-selector-input-group input::-webkit-outer-spin-button,
+.time-selector-input-group input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.time-selector-meridiem {
+  margin-left: 10px;
+  width: 80px;
+  height: 40px;
+  box-shadow: 0 0 3px #cccccc;
+  background: white;
+  cursor: pointer;
+  float: right;
+  display: table-cell;
+  border-radius: 3px;
+}
+.post-meridiem-border {
+  border: #27b4b9 1px solid;
+}
+.ante-meridiem-border {
+  border: #999999 1px solid;
+}
+.post-meridiem {
+  background: #27b4b9;
+  height: 100%;
+  width: 40px;
+  float: right;
+  color: white;
+  cursor: default;
+}
+.post-meridiem span {
+  line-height: 40px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+.ante-meridiem {
+  border: #999999 1px solid;
+  background: #999999;
+  height: 100%;
+  width: 40px;
+  color: white;
+  cursor: default;
+}
+.ante-meridiem span {
+  line-height: 40px;
+  padding-left: 9px;
+  /* float: right; */
+  padding-right: 9px;
+}
+.timer-stop-time-loader {
+  font-size: 22px !important;
+  color: #27b4b9;
+  position: relative;
+  top: 1px;
+}
+.timer-edit-time-group .input-group {
+  width: 100%;
+}
+.time-edit-close {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  color: gray;
+  cursor: pointer;
+}
+.timer-inline-row-play,
+.timer-inline-row-pause,
+.timer-play-spin {
+  position: absolute;
+  right: 45px;
+  top: 7px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.timer-inline-row-play,
+.timer-play-spin {
+  color: #33cc66;
+}
+.timer-inline-row-play:hover,
+.timer-play-spin:hover {
+  color: #269d4e;
+}
+.timer-inline-row-pause {
+  color: #ea6149;
+}
+.timer-inline-row-pause:hover {
+  color: #bd3820;
+}

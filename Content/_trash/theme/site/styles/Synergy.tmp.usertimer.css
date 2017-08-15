@@ -1,0 +1,55 @@
+﻿.user-timer {
+  /*background-color: @gray-deepdark;*/
+  position: relative;
+  /*color: #ffffff;*/
+}
+.user-timer > div {
+  padding-top: 15px;
+}
+.user-timer .h4 {
+  font-weight: bold;
+}
+.user-timer .dark {
+  opacity: 0.4;
+}
+.user-timer .header .h4 {
+  margin-top: 14px;
+}
+.user-timer .header .cancel {
+  cursor: pointer;
+  font-size: 48px;
+  line-height: 1;
+}
+.user-timer .form-group .col-sm-10 {
+  padding-right: 0;
+}
+.user-timer .form-group .btn,
+.user-timer .form-group .form-control {
+  height: 34px;
+}
+.user-timer .form-group .btn {
+  font-size: 16px;
+}
+.user-timer .list-container {
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.user-timer .list-container hr {
+  margin: 7px 0;
+  opacity: 0.3;
+}
+.user-timer .list-container .btn-xs {
+  width: 65px;
+}
+.user-timer .spinner-container {
+  background-color: #666666;
+}
+.user-timer .spinner-container > span {
+  margin-top: 70px;
+}
+@media (max-width: 767px) {
+  .user-timer .form-group .col-sm-10 {
+    padding-right: 15px;
+  }
+}
+/*# sourceMappingURL=Synergy.tmp.usertimer.css.map */

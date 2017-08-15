@@ -1,0 +1,333 @@
+﻿.search-result-content{
+  .document-search-item{
+    .document-icon{
+      left: 10px;
+    }
+    .media-body{
+      padding-left: 40px !important;
+    }
+  }
+  .top-content-wrapper{
+    .icon-cell-inline{
+      display: inline-block;
+      width: 35px;
+    }
+    .icon-font-icons_Portal_Documents{
+      font-size: 28px;
+    }
+    .icon-font-icons_Portal_Conversations{
+      &:hover{
+        color: @color-teal;
+        span{
+          color: @color-teal;
+        }
+      }
+      span{
+        font-size: 30px;
+      }
+    }
+    .icon-font-icons_Portal_Comments{
+      font-size: 30px;
+    }
+    .icon-font-book{
+      position: relative;
+      top: -2px;
+      left: 5px;
+      font-size: 22px;
+    }
+  }
+
+  .contact-image{
+    width: 100px;
+    height: 100px;
+  }
+  
+  img.logo-of-row, .media-object{
+    width: 40px;
+    height: 40px;
+    border: 0px;
+    .synergy-round-corners(0px)
+  }
+  .media.contact-card{
+    background: #fff;
+    margin-bottom:10px;
+    height: 100px;
+    padding: 0px;
+    border: none;
+    box-shadow: none;
+    .media-body{
+       position: relative;
+    }
+    .top{
+      padding-top:10px;
+      .contact-name{
+        font-size: 13px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: @color-text;
+      }
+    }
+  .icon-wrapper{
+
+      position: absolute;
+      left: 0px;
+      bottom: 10px;
+      span{
+        color: @color-text;
+        font-size: 18px;
+      }
+
+      .icon-cell-inline{
+        display:inline-block;
+        width: 30px;
+      }
+    }
+
+  }
+  .project-content-wrapper{
+    border: 1px solid @color-gray-highlight;
+    box-shadow: 0 0 3px @color-gray-highlight;
+    .list-group{
+      margin-bottom: 0px;
+    }
+    .list-group-item{
+      margin-top: 0px;
+      padding: 0px;
+      border: none;
+      box-shadow: none;
+      margin-bottom: 0px;
+      border-top: 1px solid @color-gray-light;
+      .media-body{
+        padding: 10px;
+      }
+      &:hover{
+        a{color:#fff;}
+        color: #fff;
+        background: @color-light-blue !important;
+      }
+      &:nth-child(even) {
+        background: @color-page;
+      }
+      .project-image{
+        margin-right: 10px;
+      }
+      .project-title-wrapper{
+        position: relative;
+        top: 3px;
+      }
+      .project-portal-wrapper{
+        padding-top: 12px;
+        padding-right: 20px;
+      }
+      @media(max-width: 767px){
+        .media-left{
+          padding: 10px;
+        }
+      }
+    }
+  }
+  
+  a{
+    .icon-font-caret-right{
+      font-size: 20px;
+      display: inline-block;
+      margin: 0px 10px;
+      position:relative;
+      top:3px;
+      .synergy-transition(transform, 0.2s, ease-out);
+      .synergy-transform(rotate(90deg));
+    }
+  }
+  a.collapsed{
+    .icon-font-caret-right{
+      .synergy-transform(rotate(0deg));
+    }
+  }
+  
+  
+  h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  .top-search-box-wrapper{
+    margin-bottom: 25px;
+    background: #fff;
+    border: 1px solid @color-gray-lowlight;
+    box-shadow: 0 0 3px @color-gray-lowlight;
+    input.form-control{
+      border: none;
+      box-shadow: none;
+      height: 50px;
+      font-size: 18px;
+    }
+    .search-button{
+      background: transparent;
+      border: none;
+      .icon-font-search2{
+        color: @color-gray-dark;
+        font-size: 25px;
+      }
+    }
+  }
+  .filter-wrapper{
+    .media{
+      padding:0px;
+      .search-filter{
+        display: block;
+        position: relative;
+        padding: 10px 10px 10px 30px;
+        cursor: pointer;
+        border-bottom: 1px solid @color-gray-lightest;
+        margin-bottom: 0px;
+        color: @color-gray;
+        &:last-child{
+          border-bottom: none;
+        }
+        &:hover{
+          color: #fff;
+          background: @color-light-blue;
+        }
+        input[type="checkbox"]{
+          position: absolute;
+          left: 10px;
+          top: 8px;
+        }
+      }
+    }
+  }
+
+
+  h2{
+    font-size: 18px;
+    border-bottom: 1px solid @color-text;
+    padding: 10px 10px 10px 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    .icon-font-icons_portal_access{
+      font-size: 45px;
+      position: absolute;
+      display: inline-block;
+      top: 0px;
+      left: 0px;
+    }
+    .icon-font-building-o{
+      font-size: 25px;
+      position: absolute;
+      display: inline-block;
+      top: 10px;
+      left: 13px;
+    }
+
+  }
+  .tab-pane{
+    padding-top:30px;
+  }
+
+  .nav-tabs{
+    box-shadow: none;
+    li{
+      margin: 0px;
+      a{
+        padding-left: 20px;
+        padding-right: 20px;
+        &:hover{
+          box-shadow: none;
+        }
+
+      }
+    }
+    li.active a{
+      color: @color-teal;
+    }
+  }
+  .org-content{
+    margin-bottom:20px;
+  }
+  .organisation-title{
+    margin-bottom: 10px !important;
+    a{
+      font-size: 16px;
+      font-weight: bold;
+      color: @color-text;
+      &:hover{
+        text-decoration: none;
+      }
+      &:focus{
+         text-decoration: none;
+      }
+    }
+  }
+  .sub-section-title{
+    margin-bottom: 5px;
+    a{
+      font-weight: bold;
+      color: @color-text;
+      &:hover{
+        text-decoration: none;
+      }
+      &:focus{
+         text-decoration: none;
+      }
+    }
+  }
+
+  .media{
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 3px #dddddd;
+    margin-bottom: 20px;
+    .sub-section-title{
+      padding: 10px;
+      margin: 0px;
+      background: #fff;
+      font-weight: bold;
+      border-bottom: 1px solid @color-gray-lighter;
+    }
+    .logo-of-row{
+      width: 40px;
+    }
+    .large-logo{
+      width: 80px;
+    }
+    .list-group.level-1{
+      /*margin-left: 60px;*/
+      margin-bottom: 0px;
+    }
+    .media-heading{
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      a{
+        padding-left: 10px;
+      }
+    }
+    .list-group{
+      .list-group-item{
+        border: none;
+        border-bottom: 1px solid @color-gray-lighter;
+        margin-bottom: 0px;
+        &:nth-child(odd){
+          background: @color-page;
+        }
+        &:last-child{
+          border-top: none;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 767px){
+    .nav-tabs{
+      margin-top: 20px;
+    }
+    .nav-tabs li.active a{
+      box-shadow: none;
+      border-bottom: none;
+    }
+  }
+  @media(min-width: 786px){
+  }
+}

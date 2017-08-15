@@ -1,0 +1,216 @@
+﻿@import "synergy.colors.less";
+@import "../bootstrap/variables.less";
+@import "mixin.less";
+
+.notification-page-content {
+
+    .announcements {
+        .media {
+            margin-top: 0px;
+
+            .media-left {
+                text-align: center;
+                font-size: 50px;
+                padding-left: 10px;
+
+                span {
+                    line-height: 100px;
+                }
+
+                .media-object {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+
+            .media-heading {
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .media-body {
+                padding: 15px;
+
+                a.btn {
+                    position: absolute;
+                    right: 20px;
+                    bottom: 15px;
+                    background-color: #fff;
+                    border-color: none;
+                    border: none;
+                    .synergy-round-corners();
+                    color: @color-text;
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding: 10px 20px;
+                    min-height: 45px;
+                }
+            }
+        }
+
+        .alert {
+            padding: 0px;
+            border: none;
+            position: relative;
+
+
+            .announcement-close {
+                font-size: 30px;
+                color: #fff;
+                position: absolute;
+                opacity: 1;
+                display: inline-block;
+                right: 15px;
+                top: 5px;
+            }
+
+            &.alert-danger {
+                background-color: @color-red;
+
+                .media-left {
+                    background-color: @color-red-darker;
+                }
+            }
+
+            &.alert-info {
+                .media-left {
+                    background-color: @color-light-blue-darker;
+                }
+            }
+
+            &.alert-success {
+                background-color: @color-gray;
+                background-image: url('/Content/img/work-together-banner.jpg');
+                background-size: cover;
+                background-position: center center;
+
+                .media-left {
+                    .work-together {
+                        display: block;
+                        width: 150px;
+                        height: 150px;
+                        margin: 20px;
+                    }
+                }
+
+                .media-heading {
+                    font-size: 25px;
+                }
+
+                .media-body {
+                    a.btn {
+                        color: #fff;
+                        background-color: @color-light-blue;
+                    }
+                }
+            }
+        }
+
+        @media(max-width: 767px) {
+
+            .alert {
+
+                &.alert-success {
+                    .media-left {
+                        .work-together {
+                            width: 40px !important;
+                            height: 40px !important;
+                            margin: 10px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .notifications {
+        .notice-group {
+            border: 1px solid @color-gray-lowlight;
+            box-shadow: 0 0 3px @color-gray-lowlight;
+            background: #fff;
+
+            p {
+                color: @text-color;
+
+                &.time-stamp {
+                    color: @color-gray-lightest;
+                    font-size: 10px;
+                }
+            }
+
+            a:hover {
+                text-decoration: none;
+
+                p {
+                    color: @color-dark-blue;
+
+                    &.time-stamp {
+                        color: @color-dark-blue-lightest;
+                    }
+                }
+            }
+
+            .media {
+                padding: 5px;
+                border-top: 1px solid @color-gray;
+
+                .media-left {
+                    position: relative;
+
+                    .media-object {
+                        width: 40px;
+                        height: 40px;
+                    }
+
+                    .avator-new-badge {
+                        position: absolute;
+                        top: -3px;
+                        right: 3px;
+                    }
+                }
+
+                .media-body {
+                    padding: 0px;
+
+                    p {
+                        margin-bottom: 3px;
+
+                        &.no-margin{
+                            margin:0;
+                        }
+                    }
+
+                    .content-wrapper {
+                        display: table-cell;
+                        vertical-align: top;
+
+                        .mesage {
+                            color: @color-text;
+
+                            span {
+                                font-weight: bold;
+                            }
+                        }
+
+                        .time-stamp {
+                            color: @color-gray-lightest;
+                        }
+                    }
+                }
+            }
+        }
+
+        a.btn {
+            margin-top: 15px;
+            background-color: #fff;
+            border: solid 1px @color-gray-lowlight;
+            .synergy-round-corners();
+            color: @color-text;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 20px;
+            min-height: 45px;
+        }
+    }
+}

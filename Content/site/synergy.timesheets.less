@@ -1,0 +1,1274 @@
+﻿@import "synergy.colors.less";
+@import "../bootstrap/variables.less";
+
+@week-cell-width: 12.9%; //14.28571428571429%;
+@week-total-cell-width: 11.0%; //14.28571428571429%;
+
+.timesheet-container {
+    position: relative;
+}
+
+.timesheet-date {
+    position: absolute;
+    top: 0;
+}
+
+/*timesheet-history {
+    > div {
+        margin-bottom: 10px;
+    }
+
+    h3.section {
+        span {
+            margin-left: 13px;
+            margin-right: 17px;
+        }
+    }
+}*/
+
+timesheet-history{
+	.icon-font-icons_plus-fat{
+		position: absolute;
+		top: 2px;
+		left: 0px;
+		font-size: 35px;
+		color: #00aeef;
+	}
+}
+
+paged-list-body{
+	.icon-font-icons_plus-skinny{
+		font-size: 30px;
+		position: absolute;
+		top: 5px;
+		left: 3px;
+		color: #00aeef;
+	}
+}
+
+.week-navigation {
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom: 5px;
+
+    .btn {
+        min-width: 40px;
+            border-top-width: 0;
+    }
+
+    input {
+        display: inline-block;
+        width: auto;
+        box-shadow: none;
+    }
+}
+
+.nav-timehseet {
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom: 5px;
+}
+
+paged-list.timesheet {
+    .days-mobile-header {
+        display: none;
+
+        > .days {
+            > p {
+                font-weight: bold;
+                display: inline-block;
+            }
+        }
+    }
+
+    .days-mobile-summary-header {
+        display: none;
+
+        > .days-summary {
+            > p {
+                font-weight: bold;
+                display: inline-block;
+            }
+        }
+    }
+
+    .days-summary {
+        padding-left: 0;
+        padding-right: 0;
+
+        > span, > p {
+            padding-top: 10px;
+        }
+
+        > span, > p, > div {
+            width: @week-total-cell-width;
+            display: inline-block;
+            text-align: center;
+        }
+    }
+
+
+    paged-list-header {
+        .days-summary {
+            > span, > p {
+                padding-top: 0;
+            }
+        }
+    }
+
+    .days {
+        padding-left: 0;
+        padding-right: 0;
+
+        > input.form-control {
+            width: @week-cell-width;
+            display: inline-block;
+            padding: 0;
+            //margin: 0;
+            text-align: center;
+        }
+
+        > span, > p, > div {
+            width: @week-cell-width;
+            display: inline-block;
+            text-align: center;
+        }
+
+        > p {
+            margin-top: 8.5px;
+        }
+
+
+        > div.total {
+            font-weight: bold;
+            position: absolute;
+            right: -7%;
+        }
+    }
+
+    .dollars {
+        padding-left: 0;
+        padding-right: 0;
+
+        > input.form-control {
+            width: @week-cell-width;
+            display: inline-block;
+            padding: 0;
+            text-align: right;
+        }
+
+        > div.dollar-input {
+            width: @week-cell-width;
+            display: inline-block;
+            padding: 0;
+            position: relative;
+
+            > input {
+                display: inline-block;
+                padding: 0 3px 0 0;
+
+                text-align: right;
+            }
+
+            > span {
+                position: absolute;
+                top: 11px;
+                left: 2px;
+                font-size: 12px;
+                vertical-align: middle;
+                color: @color-gray-lighter;
+            }
+        }
+
+        > span, > p {
+            width: @week-cell-width;
+            display: inline-block;
+            text-align: right;
+        }
+
+        > p {
+            margin-top: 8.5px;
+        }
+    }
+
+    .travel {
+        padding-left: 0;
+        padding-right: 0;
+
+        > input.form-control {
+            width: @week-cell-width;
+            display: inline-block;
+            padding: 0;
+            text-align: right;
+        }
+
+        > div.travel-input {
+            width: @week-cell-width;
+            display: inline-block;
+            padding: 0;
+            position: relative;
+
+            > input {
+                display: inline-block;
+                padding: 0;
+				margin-top: 0px;
+				height: 30px;
+                text-align: center;
+            }
+
+            > span {
+                position: absolute;
+                bottom: 1px;
+                right: 2px;
+                font-size: 8px;
+                color: @color-gray-light;
+            }
+        }
+
+        > span, > p {
+            width: @week-cell-width;
+            display: inline-block;
+            text-align: right;
+        }
+
+        > p {
+            margin-top: 8.5px;
+            text-align: center;
+            position: relative;
+
+            > span {
+                position: absolute;
+                bottom: -8px;
+                right: 2px;
+                font-size: 8px;
+                color: @color-gray-light;
+            }
+        }
+    }
+
+    ul.totals {
+        margin-top: 10px;
+    }
+
+    .capitalise:first-Letter {
+        text-transform: capitalize;
+    }
+
+    .timesheetCapacity {
+        position: absolute;
+        bottom: 8px;
+        font-size: 8px;
+        color: @color-gray-light;
+    }
+
+    .first-of-staff {
+        .staff-name {
+            visibility: visible;
+        }
+    }
+
+    .staff-name {
+        visibility: hidden;
+    }
+
+    .no-margin {
+        margin: 0;
+    }
+
+    p.week-total {
+        margin: 6px 6px 0 6px;
+    }
+}
+
+.responsive-list {
+    &.timesheet {
+
+        .days-mobile-header {
+            display: none;
+
+            > .days {
+                > p {
+                    font-weight: bold;
+                    display: inline-block;
+                }
+            }
+        }
+
+        .days-mobile-summary-header {
+            display: none;
+
+            > .days-summary {
+                > p {
+                    font-weight: bold;
+                    display: inline-block;
+                }
+            }
+        }
+
+        .days-summary {
+            padding-left: 0;
+            padding-right: 0;
+
+            > span, > p {
+                padding-top: 10px;
+            }
+
+            > span, > p, > div {
+                width: @week-total-cell-width;
+                display: inline-block;
+                text-align: center;
+            }
+        }
+
+        .days {
+            padding-left: 0;
+            padding-right: 0;
+
+            > input.form-control {
+                width: @week-cell-width;
+                display: inline-block;
+                padding: 0;
+                //margin: 0;
+                text-align: center;
+            }
+
+            > span, > p, > div {
+                width: @week-cell-width;
+                display: inline-block;
+                text-align: center;
+            }
+
+            > p {
+                margin-top: 8.5px;
+            }
+
+
+            > div.total {
+                font-weight: bold;
+                position: absolute;
+                right: -7%;
+            }
+        }
+
+        .dollars {
+            padding-left: 0;
+            padding-right: 0;
+
+            > input.form-control {
+                width: @week-cell-width;
+                display: inline-block;
+                padding: 0;
+                margin: 0;
+                text-align: right;
+            }
+
+            > div.dollar-input {
+                width: @week-cell-width;
+                display: inline-block;
+                padding: 0;
+                margin: 0;
+                position: relative;
+
+                > input {
+                    display: inline-block;
+                    padding: 0 3px 0 0;
+                    margin: 0;
+                    text-align: right;
+                }
+
+                > span {
+                    position: absolute;
+                    top: 11px;
+                    left: 2px;
+                    font-size: 12px;
+                    vertical-align: middle;
+                    color: @color-gray-lighter;
+                }
+            }
+
+            > span, > p {
+                width: @week-cell-width;
+                display: inline-block;
+                text-align: right;
+            }
+        }
+
+        .travel {
+            padding-left: 0;
+            padding-right: 0;
+
+            > input.form-control {
+                width: @week-cell-width;
+                display: inline-block;
+                padding: 0;
+                margin: 0;
+                text-align: right;
+            }
+
+            > div.travel-input {
+                width: @week-cell-width;
+                display: inline-block;
+                padding: 0;
+                margin: 0;
+                position: relative;
+
+                > input {
+                    display: inline-block;
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+                }
+
+                > span {
+                    position: absolute;
+                    bottom: 1px;
+                    right: 2px;
+                    font-size: 8px;
+                    color: @color-gray-light;
+                }
+            }
+
+            > span, > p {
+                width: @week-cell-width;
+                display: inline-block;
+                text-align: right;
+            }
+        }
+
+        ul.totals {
+            margin-top: 10px;
+        }
+    }
+
+    .capitalise:first-Letter {
+        text-transform: capitalize;
+    }
+
+    .timesheetCapacity {
+        position: absolute;
+        bottom: 8px;
+        font-size: 8px;
+        color: @color-gray-light;
+    }
+
+    .first-of-staff {
+        .staff-name {
+            visibility: visible;
+        }
+    }
+
+    .staff-name {
+        visibility: hidden;
+    }
+
+    .no-margin {
+        margin: 0;
+    }
+}
+
+.missing-timesheets {
+
+    .responsive-list:not(:last-of-type) {
+        padding-bottom: 50px !important;
+    }
+}
+
+/* Obsolete - delete after new timesheet entry complete */
+
+.timesheets {
+    position: relative;
+
+    .row.timesheet-tabs {
+        position: absolute;
+        top: -53px;
+        pointer-events: none;
+
+        .btn-primary {
+            background-color: @color-page;
+            color: @text-color;
+            border: none;
+            border-left: solid 2px @color-teal-darker;
+            border-right: solid 2px @color-teal-darker;
+            border-bottom: solid 1px @color-page;
+            pointer-events: all;
+        }
+
+        .btn-default {
+            background-color: @color-page;
+            color: @text-color;
+            border: none;
+            border-left: solid 2px @color-teal-darker;
+            border-right: solid 2px @color-teal-darker;
+            border-bottom: solid 1px @color-gray-lowlight;
+            box-shadow: inset 0px -2px 5px 0px @color-gray-lowlight;
+            pointer-events: all;
+        }
+    }
+
+    .spinner-container {
+        background-color: @color-page;
+        z-index: 999;
+    }
+
+    .input-group-btn {
+        &.spacer {
+            width: 10px;
+        }
+    }
+
+    .header {
+        margin-top: 10px;
+    }
+
+    .content {
+        margin-top: 20px;
+    }
+
+    .mobile-show {
+        display: none;
+    }
+
+    .mobile-hide {
+        display: inline;
+    }
+}
+
+.timesheets-summary-calendar {
+
+    @cell-border-color: @color-gray-lightest;
+    @cell-border: 1px solid @cell-border-color;
+
+    background-color: #ffffff;
+
+    ul.row {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+
+        > li {
+            float: left;
+            padding: 5px;
+            width: 14.28571428571429% !important;
+            border-top: @cell-border;
+            border-left: @cell-border;
+
+            &:last-child {
+                border-right: @cell-border;
+            }
+        }
+
+        &:before, &:after {
+            content: "";
+            display: table;
+        }
+
+        &:after {
+            clear: both;
+        }
+
+        &:last-child {
+            > li {
+                border-bottom: @cell-border;
+            }
+        }
+    }
+
+    ul.header {
+        text-align: center;
+    }
+
+    ul.week {
+
+        > li {
+
+            &:hover {
+                cursor: pointer;
+                background-color: @color-gray-highlight;
+            }
+
+            &.weekend {
+                background-color: @color-light-blue-bright;
+
+                &:hover {
+                    background-color: @color-light-blue-lowlight;
+                }
+            }
+
+            &.not-thismonth {
+                background-color: @color-gray-lowlight;
+
+                &:hover {
+                    background-color: @color-gray-highlight;
+                }
+
+                &.weekend {
+                    background-color: @color-light-blue-highlight;
+
+                    &:hover {
+                        background-color: @color-light-blue-lowlight;
+                    }
+                }
+            }
+
+            &.selected {
+                background-color: @color-teal;
+                color: #ffffff;
+
+                &:hover {
+                    background-color: @color-teal-lightest;
+                }
+            }
+
+            .title {
+                margin-bottom: 5px;
+
+                > .day {
+                    float: left;
+                }
+
+                > .tools {
+                    float: right;
+                    text-align: right;
+                }
+            }
+
+            .hour-expense {
+                width: 100%;
+                min-height: 40px;
+
+                > div {
+                    float: left;
+                    width: 50%;
+                    padding: 10px 1px;
+                    color: #ffffff;
+                    text-align: center;
+                    border: 1px solid #ffffff;
+
+                    &:nth-child(2) {
+                        border-left: none;
+                    }
+                }
+
+                .hour {
+                    background-color: @color-green;
+                    float: left;
+                }
+
+                .expense {
+                    background-color: @color-red-light;
+                    float: right;
+                }
+            }
+        }
+
+        .tools {
+            position: relative;
+        }
+
+        .popover {
+            color: @color-gray-darker;
+            width: 120px;
+            display: block;
+            margin-top: 30px;
+
+            &.schedule {
+                left: -52px;
+            }
+
+            &.util {
+                left: -25px;
+
+                &.last {
+                    left: -60px;
+
+                    > .arrow {
+                        margin-left: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.timesheets-entry.responsive-list {
+
+    @week-cell-width: 14.28571428571429%;
+
+    ul.weekdays {
+        position: relative;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+
+        > li {
+            float: left;
+            width: @week-cell-width !important;
+            text-align: center;
+
+            &.hours {
+                padding-right: 2px;
+
+                .form-control {
+                    padding-left: 1px;
+                    padding-right: 1px;
+                    text-align: center;
+                }
+
+                .chh, .cmm {
+                    width: 50%;
+                    float: left;
+                    text-align: center;
+                    box-shadow: none;
+                    height: 38px;
+                    border: none;
+                }
+
+                .chh {
+                }
+
+                .cmm {
+                    border-left: dashed 1px @color-gray-lowlight;
+                }
+
+                .hoursmins {
+                    position: relative;
+                }
+            }
+        }
+
+        > .popover {
+            border-radius: 2px;
+            top: 33px;
+            width: 100%;
+            max-width: 100% !important;
+            background-color: @color-teal-highlight;
+            border: 1px solid @color-teal;
+
+            > .popover-title {
+                padding: 0;
+            }
+
+            > .popover-content {
+                text-align: center;
+            }
+
+            .form-control {
+                &.hh, &.mm {
+                    display: initial;
+                    width: 50px;
+                    text-align: center;
+                }
+            }
+
+            &.show {
+                display: block;
+            }
+
+            > .arrow {
+                margin-left: -45px;
+                border-bottom-color: @color-teal;
+            }
+
+            &.i1 > .arrow {
+                left: @week-cell-width;
+            }
+
+            &.i2 > .arrow {
+                left: (@week-cell-width *2);
+            }
+
+            &.i3 > .arrow {
+                left: (@week-cell-width *3);
+            }
+
+            &.i4 > .arrow {
+                left: (@week-cell-width *4);
+            }
+
+            &.i5 > .arrow {
+                left: (@week-cell-width *5);
+            }
+
+            &.i6 > .arrow {
+                left: (@week-cell-width *6);
+            }
+
+            &.i7 > .arrow {
+                left: (@week-cell-width *7);
+            }
+        }
+
+        &:before, &:after {
+            content: "";
+            display: table;
+        }
+
+        &:after {
+            clear: both;
+        }
+    }
+
+    ul.header {
+        > li {
+            .row div[class^="col-"] {
+                &.last {
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+
+    ul.content {
+
+        > li {
+
+            > .row div[class^="col-"] > .row div[class^="col-"] {
+                padding-right: 0;
+            }
+
+            .row div[class^="col-"] {
+                overflow: inherit;
+
+                .input-group-btn {
+                    position: initial;
+                }
+
+                ul.dropdown-menu {
+                    width: 100%;
+
+                    > li {
+                        > a {
+                            &:hover {
+                                color: #ffffff;
+                            }
+                        }
+
+                        &.dropdown-tab {
+                            padding-left: 15px;
+                        }
+
+                        &.dropdown-header {
+                            color: @color-text;
+                            font-size: 12px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                &.mobile-stretch {
+                    padding-right: 30px;
+                }
+            }
+
+            &:hover {
+                color: @color-gray-darker;
+            }
+
+            &:nth-child(even):hover {
+                background-color: @color-page;
+            }
+
+            &:nth-child(odd):hover {
+                background-color: #ffffff;
+            }
+
+            &.expanded {
+                .row div[class^="col-"] {
+                    white-space: inherit;
+                }
+            }
+
+            &.has-change {
+                background-color: @color-teal-highlight !important;
+            }
+
+            .tools {
+                right: 10px;
+                top: 10px;
+            }
+        }
+    }
+
+    select.form-control {
+        padding-right: 42px;
+    }
+
+    textarea.form-control {
+        &.single-line {
+            height: 40px;
+            min-height: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            -ms-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+.timesheets-entry.responsive-list.submit-timer {
+    margin-left: 10px;
+    margin-right: 10px;
+
+    ul.weekdays {
+        margin-bottom: 10px;
+
+        > .popover {
+            top: 50px;
+        }
+    }
+}
+
+@media (max-width: @screen-sm-max) {
+
+    .timesheet-date {
+        position: relative;
+        top: 0;
+    }
+
+    paged-list.timesheet {
+        .days-mobile-header, .days-mobile-summary-header {
+            display: block;
+        }
+    }
+
+    .responsive-list {
+        &.timesheet {
+
+            .days-mobile-header, .days-mobile-summary-header {
+                display: block;
+            }
+        }
+    }
+
+    .timesheets {
+
+        .mobile-show {
+            display: inline;
+        }
+
+        .mobile-hide {
+            display: none;
+        }
+    }
+
+    .timesheets-summary-calendar {
+
+        ul.week {
+
+            > li {
+                padding: 1px;
+
+                .hour-expense {
+                    > div {
+                        font-size: 10px;
+                        width: 100%;
+                        float: none;
+                        padding: 1px;
+
+                        > span {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .tools {
+                > .btn {
+                    width: 100%;
+                }
+            }
+
+            .popover {
+
+                &.schedule {
+                    left: -40px;
+                    margin-top: 30px;
+                }
+
+                &.util {
+                    left: -40px;
+                    margin-top: 47px;
+                }
+
+                &.first {
+                    left: 0 !important;
+
+                    > .arrow {
+                        margin-left: -52px !important;
+                    }
+                }
+
+                &.last {
+                    left: -80px !important;
+
+                    > .arrow {
+                        margin-left: 25px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .monthly-calendar {
+        ul.week {
+            > li {
+                padding: 1px;
+
+                .title {
+                    > .day {
+                        float: none !important;
+                        display: block;
+                    }
+
+                    > .tools {
+                        float: none !important;
+                        display: block;
+                    }
+                }
+
+                .hour-expense {
+                    > div {
+                        float: none !important;
+                        width: auto;
+                        display: block;
+                        padding: 1px;
+                    }
+
+                    .measure {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .timesheets-entry.responsive-list {
+
+        ul.weekdays {
+            > li {
+                &.hours {
+
+                    .form-control {
+                        font-size: 11px;
+                    }
+                }
+            }
+
+            > .popover {
+                > .arrow {
+                    margin-left: -30px;
+                }
+            }
+        }
+
+        ul.content {
+
+            > li {
+                .row div[class^="col-"] {
+                    &.mobile-stretch {
+                        padding-right: 10px;
+                        margin-right: -40px;
+                    }
+                }
+
+                > .row div[class^="col-"] > .row div[class^="col-"] {
+                    padding-right: 10px;
+                }
+
+                .card-title {
+                    ul.weekdays {
+                        margin-bottom: 2px;
+
+                        > li {
+                            > div:last-child {
+                                border-bottom: 1px solid @color-gray-lowlight;
+                            }
+                        }
+                    }
+                }
+
+                .card-text {
+                    font-size: 13px;
+                    white-space: initial;
+                    max-height: 30px;
+                    margin-bottom: 15px;
+                }
+
+                .tools {
+                    right: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    .timesheets {
+        .row.timesheet-tabs {
+            position: relative;
+            top: 0;
+            margin-bottom: 10px;
+
+            .btn-primary {
+                background-color: @color-page;
+                color: @text-color;
+                border: solid 1px @color-gray-lowlight;
+                border-bottom: solid 1px @color-page;
+            }
+
+            .btn-default {
+                background-color: @color-page;
+                color: @text-color;
+                border: none;
+                border-bottom: solid 1px @color-gray-lightest;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+/*TIMERS DIRECTIVE*/
+.timesheets-timer-directive {
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    margin: 40px;
+    border-radius: 10px 0;
+}
+
+.timesheet-timer-modal {
+    position: absolute;
+    z-index: 99;
+    background: @color-gray-highlight;
+    top: 0;
+    width: 90%;
+    left: 5%;
+    padding: 30px;
+}
+
+.timesheet-timer-modal-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    opacity: 0.5;
+}
+
+.timesheet-modal-tooltip-holder {
+    .tooltip {
+        top: -18px !important;
+    }
+}
+
+.timesheet-modal-buttons-padding {
+    padding: 0 10px 0 0;
+}
+
+.timesheet-timer {
+    line-height: 38px;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    box-shadow: 0 0 3px #cccccc;
+}
+
+.timesheet-timer:first-child {
+    border-top: 1px solid black;
+}
+
+.timesheet-timer-modal-close {
+    float: right;
+    color: @color-red;
+    position: absolute;
+    right: 37px;
+    top: 20px;
+    font-size: 30px;
+
+    &:hover {
+        cursor: pointer;
+        color: @color-red-darker;
+    }
+}
+
+.timesheet-timer:nth-child(even) {
+    background: white;
+}
+
+.timer-hours-of-week {
+    line-height: 20px;
+    padding-top: 8px;
+
+    span {
+        white-space: nowrap;
+    }
+
+    span:not(:last-child):after {
+        content: ', ';
+    }
+}
+
+.timesheet-delete-timer {
+    margin-right: 5px;
+}
+
+.complete-missing-button {
+    margin-top: 4px;
+    height: 30px;
+    width: 70px;
+    text-align: center;
+
+    span[class^="icon-font"] {
+        margin-right: 5px;
+    }
+
+    @media (max-width: @screen-sm-max) {
+        margin-left: 10px;
+        float: left;
+    }
+}
+
+.timesheet-organisation-cover {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    left: 0;
+    background: #B3B1B1;
+    z-index: 999;
+    opacity: 0.5;
+}
+
+.missing-timesheets-percent {
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.mobile-missing-timesheet-day {
+    width: 40px;
+    height: 45px;
+    position: relative;
+    float: left;
+}
+
+
+.no-padding-right {
+    padding-right: 0 !important;
+}
+
+/*To enable full width on mobile view*/
+@media (max-width: @screen-sm-max) {
+    #missing-timesheets-remover li {
+        padding: 0 0 0 10px;
+    }
+
+    .timesheets-timer-directive {
+        margin: 40px 5px !important;
+    }
+}
